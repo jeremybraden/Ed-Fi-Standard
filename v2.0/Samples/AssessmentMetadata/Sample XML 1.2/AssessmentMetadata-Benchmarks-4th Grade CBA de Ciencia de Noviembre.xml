@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeAssessmentMetadata xmlns:ann="http://ed-fi.org/annotation" xsi:schemaLocation="http://ed-fi.org/0120 ../../Ed-Fi-Core/Ed-Fi-Standard/Schemas/Interchange-AssessmentMetadata.xsd" xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Assessment id="TA-Benchmark-Science-059696498988062508">
+		<AssessmentTitle>CBA de Ciencia de Noviembre 2012-2013</AssessmentTitle>
+		<AssessmentIdentificationCode IdentificationSystem="Test Contractor">
+			<ID>f059ea6d-9b6f-49e8-988d-ce0ff6d25f08</ID>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>Benchmark test</AssessmentCategory>
+		<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+			<ShortDescription>Science</ShortDescription>
+		</AcademicSubject>
+		<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+			<Description>Fourth grade</Description>
+		</GradeLevelAssessed>
+		<ContentStandard>
+			<Title>State Essential Knowledge and Skills</Title>
+		</ContentStandard>
+		<Version>5284</Version>
+		<RevisionDate>2012-10-24</RevisionDate>
+		<MaxRawScore>1</MaxRawScore>
+		<AssessmentItemReference ref="ID_1"/>
+	</Assessment>
+	<AssessmentItem id="ID_1">
+		<IdentificationCode>11242102</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>D</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>112.15.1.A</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+</InterchangeAssessmentMetadata>

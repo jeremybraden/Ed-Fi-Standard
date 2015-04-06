@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeAssessmentMetadata xmlns:ann="http://ed-fi.org/annotation" xsi:schemaLocation="http://ed-fi.org/0120 ../../Ed-Fi-Core/Ed-Fi-Standard/Schemas/Interchange-AssessmentMetadata.xsd" xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Assessment id="TA-Benchmark-Reading-61292646816630189">
+		<AssessmentTitle>5th Reading-Modified 1st Six Weeks, 2012-2013</AssessmentTitle>
+		<AssessmentIdentificationCode IdentificationSystem="Test Contractor">
+			<ID>6c12a9fb-2ca6-4d6e-8d1e-6630b1b8bcc9</ID>
+		</AssessmentIdentificationCode>
+		<AssessmentCategory>Benchmark test</AssessmentCategory>
+		<AcademicSubject namespace="http://www.ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml">
+			<ShortDescription>Reading</ShortDescription>
+		</AcademicSubject>
+		<GradeLevelAssessed namespace="http://www.ed-fi.org/Descriptor/GradeLevelDescriptor.xml">
+			<Description>Fifth grade</Description>
+		</GradeLevelAssessed>
+		<ContentStandard>
+			<Title>State Essential Knowledge and Skills</Title>
+		</ContentStandard>
+		<Version>4923</Version>
+		<RevisionDate>2012-10-01</RevisionDate>
+		<MaxRawScore>10</MaxRawScore>
+		<AssessmentItemReference ref="ID_1"/>
+		<AssessmentItemReference ref="ID_2"/>
+		<AssessmentItemReference ref="ID_3"/>
+		<AssessmentItemReference ref="ID_4"/>
+		<AssessmentItemReference ref="ID_5"/>
+		<AssessmentItemReference ref="ID_6"/>
+		<AssessmentItemReference ref="ID_7"/>
+		<AssessmentItemReference ref="ID_8"/>
+		<AssessmentItemReference ref="ID_9"/>
+		<AssessmentItemReference ref="ID_10"/>
+		<AssessmentItemReference ref="ID_11"/>
+		<AssessmentItemReference ref="ID_12"/>
+		<AssessmentItemReference ref="ID_13"/>
+		<AssessmentItemReference ref="ID_14"/>
+		<AssessmentItemReference ref="ID_15"/>
+		<AssessmentItemReference ref="ID_16"/>
+		<AssessmentItemReference ref="ID_17"/>
+		<AssessmentItemReference ref="ID_18"/>
+		<AssessmentItemReference ref="ID_19"/>
+		<AssessmentItemReference ref="ID_20"/>
+	</Assessment>
+	<AssessmentItem id="ID_1">
+		<IdentificationCode>10091696</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.2.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_2">
+		<IdentificationCode>10091697</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.E</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_3">
+		<IdentificationCode>10091698</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_4">
+		<IdentificationCode>10091699</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.2.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_5">
+		<IdentificationCode>10091700</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_6">
+		<IdentificationCode>10091701</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.6.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_7">
+		<IdentificationCode>10091702</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.6.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_8">
+		<IdentificationCode>10091703</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>C</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_9">
+		<IdentificationCode>10091704</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.6.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_10">
+		<IdentificationCode>10091705</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_11">
+		<IdentificationCode>10091706</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>C</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_12">
+		<IdentificationCode>10091707</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_13">
+		<IdentificationCode>10091708</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_14">
+		<IdentificationCode>10091709</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.6.B</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_15">
+		<IdentificationCode>10091710</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_16">
+		<IdentificationCode>10091711</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_17">
+		<IdentificationCode>10091712</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>C</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_18">
+		<IdentificationCode>10091713</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>C</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.E</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_19">
+		<IdentificationCode>10091714</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>B</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.D</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+	<AssessmentItem id="ID_20">
+		<IdentificationCode>10091715</IdentificationCode>
+		<ItemCategory>List Question</ItemCategory>
+		<MaxRawScore>1</MaxRawScore>
+		<CorrectResponse>A</CorrectResponse>
+		<LearningStandardReference>
+			<LearningStandardIdentity>
+				<LearningStandardId>110.16.RC.F</LearningStandardId>
+				<ContentStandard>
+					<Title>Unknown</Title>
+				</ContentStandard>
+			</LearningStandardIdentity>
+		</LearningStandardReference>
+		<LearningStandardReference/>
+	</AssessmentItem>
+</InterchangeAssessmentMetadata>

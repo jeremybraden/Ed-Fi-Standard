@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterchangeStudentAttendance xmlns:ann="http://ed-fi.org/annotation" xsi:schemaLocation="http://ed-fi.org/0120 ../../Ed-Fi-Core/Ed-Fi-Standard/Schemas/Interchange-StudentAttendance.xsd" xmlns="http://ed-fi.org/0120" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604821</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604825</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>101</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+		<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604829</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604831</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604835</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>101</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604845</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604853</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604855</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604859</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604865</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604875</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-05</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>301</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604878</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604891</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>101</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604906</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-25</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604923</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604845</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604853</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604855</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604859</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604865</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604875</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-05</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>301</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-12</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604878</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-15</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604891</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>101</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-15</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604906</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-15</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604923</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604853</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604855</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604859</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604865</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604875</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-05</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>301</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604878</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-02</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>105</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604891</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>101</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604906</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-05-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604923</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SS-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>205</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604945</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604952</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604970</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604980</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604999</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605017</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605004</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MUS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>501</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605024</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-07</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605071</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604945</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604952</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604970</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604980</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>604999</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>02 - Traditional</ClassPeriodName>
+				<Location>201</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605017</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605004</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MUS-01</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>501</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605024</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-10</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605071</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>MATH-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>202</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605108</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605130</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605159</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605185</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605281</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605321</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>ART-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>07 - Traditional</ClassPeriodName>
+				<Location>505</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-21</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605430</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>207</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-21</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605479</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>207</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-21</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605533</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-03</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>04 - Traditional</ClassPeriodName>
+				<Location>203</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-21</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605525</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>05 - Traditional</ClassPeriodName>
+				<Location>208</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-30</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605565</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-05</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>06 - Traditional</ClassPeriodName>
+				<Location>303</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-24</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605430</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>207</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-03-28</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605430</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>207</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>	
+	<AttendanceEvent>
+		<EventDate>2011-04-28</EventDate>
+		<AttendanceEventCategory namespace="http://www.ed-fi.org/Descriptor/AttendanceEventCategoryDescriptor.xml">
+			<Description>Tardy</Description>
+		</AttendanceEventCategory>
+		<AttendanceEventReason>Tardy</AttendanceEventReason>
+		<EducationalEnvironment>Classroom</EducationalEnvironment>
+		<StudentReference>
+			<StudentIdentity>
+				<StudentUniqueStateId>605430</StudentUniqueStateId>
+			</StudentIdentity>
+		</StudentReference>
+		<SectionReference>
+			<SectionIdentity>
+				<StateOrganizationId>255901107</StateOrganizationId>
+				<LocalCourseCode>SCI-04</LocalCourseCode>
+				<SchoolYear>2010-2011</SchoolYear>
+				<Term>Spring Semester</Term>
+				<ClassPeriodName>03 - Traditional</ClassPeriodName>
+				<Location>207</Location>
+			</SectionIdentity>
+		</SectionReference>
+	</AttendanceEvent>		
+</InterchangeStudentAttendance>
