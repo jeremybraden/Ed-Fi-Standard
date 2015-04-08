@@ -123,28 +123,6 @@
 					</targets>
 					<view ltx="339" lty="-11" rbx="392" rby="45"/>
 				</component>
-				<component name="constant" library="core" uid="59" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="808"/>
-					</targets>
-					<view ltx="663" lty="-175" rbx="810" rby="-157"/>
-					<data>
-						<constant value="Personal Information Verification" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="constant" library="core" uid="60" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="806"/>
-					</targets>
-					<view ltx="611" lty="-86" rbx="755" rby="-68"/>
-					<data>
-						<constant value="US Citizenship Identification" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="constant" library="core" uid="61" kind="2">
 					<properties/>
 					<targets>
@@ -198,17 +176,7 @@
 					</targets>
 					<view ltx="676" lty="109" rbx="790" rby="165"/>
 				</component>
-				<component name="exists" library="core" uid="83" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1380"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1381"/>
-					</targets>
-					<view ltx="663" lty="255" rbx="730" rby="294"/>
-				</component>
-				<component name="{http://ed-fi.org/0120}Ad..." library="core" uid="6" kind="3">
+				<component name="Address" library="core" uid="6" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="165"/>
@@ -218,9 +186,9 @@
 						<datapoint pos="0" key="167"/>
 						<datapoint pos="1" key="168"/>
 					</targets>
-					<view ltx="527" lty="-354" rbx="680" rby="-298"/>
+					<view ltx="527" lty="-354" rbx="630" rby="-298"/>
 				</component>
-				<component name="{http://ed-fi.org/0120}Ad..." library="core" uid="12" kind="3">
+				<component name="AddressLine" library="core" uid="12" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="175"/>
@@ -230,9 +198,9 @@
 						<datapoint pos="0" key="177"/>
 						<datapoint/>
 					</targets>
-					<view ltx="427" lty="-276" rbx="580" rby="-220"/>
+					<view ltx="427" lty="-276" rbx="530" rby="-220"/>
 				</component>
-				<component name="{http://ed-fi.org/0120}Ad..." library="core" uid="16" kind="3">
+				<component name="AddressLine" library="core" uid="16" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="184"/>
@@ -242,9 +210,9 @@
 						<datapoint pos="0" key="186"/>
 						<datapoint/>
 					</targets>
-					<view ltx="427" lty="-196" rbx="580" rby="-140"/>
+					<view ltx="427" lty="-196" rbx="530" rby="-140"/>
 				</component>
-				<component name="{http://ed-fi.org/0120}Ad..." library="core" uid="23" kind="3">
+				<component name="AddressLine" library="core" uid="23" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="193"/>
@@ -254,9 +222,9 @@
 						<datapoint pos="0" key="195"/>
 						<datapoint/>
 					</targets>
-					<view ltx="427" lty="-107" rbx="580" rby="-51"/>
+					<view ltx="427" lty="-107" rbx="530" rby="-51"/>
 				</component>
-				<component name="{http://ed-fi.org/0120}Ad..." library="core" uid="25" kind="3">
+				<component name="AddressLine" library="core" uid="25" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="355"/>
@@ -266,7 +234,7 @@
 						<datapoint pos="0" key="357"/>
 						<datapoint/>
 					</targets>
-					<view ltx="427" lty="-11" rbx="580" rby="45"/>
+					<view ltx="427" lty="-11" rbx="530" rby="45"/>
 				</component>
 				<component name="CodeValueFill" library="user" blackbox="0" uid="75" kind="19" visible="0">
 					<view ltx="215" lty="683" rbx="387" rby="734"/>
@@ -383,11 +351,55 @@
 						</root>
 					</data>
 				</component>
+				<component name="constant" library="core" uid="60" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="806"/>
+					</targets>
+					<view ltx="632" lty="-56" rbx="776" rby="-38"/>
+					<data>
+						<constant value="US Citizenship Identification" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="59" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="808"/>
+					</targets>
+					<view ltx="633" lty="-73" rbx="780" rby="-55"/>
+					<data>
+						<constant value="Personal Information Verification" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="83" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1380"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1381"/>
+					</targets>
+					<view ltx="620" lty="394" rbx="687" rby="433"/>
+				</component>
+				<component name="if-else" library="core" uid="90" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1546"/>
+						<datapoint pos="1" key="1547"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1548"/>
+					</targets>
+					<view ltx="777" lty="394" rbx="874" rby="470"/>
+				</component>
 				<component name="Interchange-Student" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1011" lty="101" rbx="1358" rby="646"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="173">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -401,23 +413,24 @@
 										<entry name="Student" ns="1" inpkey="882" expanded="1">
 											<entry name="id" type="attribute" inpkey="883"/>
 											<entry name="StudentUniqueId" ns="1" inpkey="884"/>
-											<entry name="StudentIdentificationCode" ns="1" inpkey="885" expanded="1">
+											<entry name="StudentIdentificationCode" ns="1" inpkey="885">
 												<entry name="IdentificationCode" ns="1" inpkey="886"/>
-												<entry name="StudentIdentificationSystem" ns="1" inpkey="1300" expanded="1">
+												<entry name="StudentIdentificationSystem" ns="1" inpkey="1300">
 													<entry name="CodeValue" ns="1" inpkey="1301"/>
 												</entry>
 												<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="1302"/>
 											</entry>
-											<entry name="Name" ns="1" inpkey="887" expanded="1">
+											<entry name="Name" ns="1" inpkey="887">
 												<entry name="PersonalTitlePrefix" ns="1" inpkey="888"/>
 												<entry name="FirstName" ns="1" inpkey="889"/>
 												<entry name="MiddleName" ns="1" inpkey="890"/>
 												<entry name="LastSurname" ns="1" inpkey="891"/>
 												<entry name="GenerationCodeSuffix" ns="1" inpkey="892"/>
 												<entry name="MaidenName" ns="1" inpkey="893"/>
-												<entry name="PersonalIdentificationDocument" ns="1" inpkey="1303" expanded="1">
+												<entry name="PersonalIdentificationDocument" ns="1" inpkey="1303">
 													<entry name="DocumentTitle" ns="1" inpkey="1304"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1305"/>
+													<entry name="DocumentExpirationDate" ns="1" inpkey="1525"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1307"/>
 													<entry name="IssuerName" ns="1" inpkey="1308"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1309" expanded="1">
@@ -467,7 +480,7 @@
 												<entry name="AddressLine2" ns="1" inpkey="1385"/>
 												<entry name="AddressLine3" ns="1" inpkey="1386"/>
 												<entry name="AddressLine4" ns="1" inpkey="1387"/>
-												<entry name="Country" ns="1" inpkey="1388" expanded="1">
+												<entry name="Country" ns="1" inpkey="1388">
 													<entry name="CodeValue" ns="1" inpkey="1389"/>
 												</entry>
 											</entry>
@@ -492,6 +505,7 @@
 												<entry name="USCitizenshipIdentificationDocument" ns="1" inpkey="1318" expanded="1">
 													<entry name="DocumentTitle" ns="1" inpkey="1319"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1320"/>
+													<entry name="DocumentExpirationDate" ns="1" inpkey="1537"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1322"/>
 													<entry name="IssuerName" ns="1" inpkey="1323"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1324">
@@ -502,6 +516,7 @@
 												<entry name="ForeignCitizenshipIdentificationDocument" ns="1" inpkey="1327" expanded="1">
 													<entry name="DocumentTitle" ns="1" inpkey="1328"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1329"/>
+													<entry name="DocumentExpirationDate" ns="1" inpkey="1549"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1331"/>
 													<entry name="IssuerName" ns="1" inpkey="1332"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1333">
@@ -586,7 +601,105 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\..\Ed-Fi-Standard\v2.0\Schemas\Interchange-Student.xsd" outputinstance="SampleData\StudentParent.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudent"/>
+						<document schema="..\..\Schemas\Interchange-Student.xsd" outputinstance="SampleData\StudentParent.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudent"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="exists" library="core" uid="94" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1522"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1520"/>
+					</targets>
+					<view ltx="1049" lty="-337" rbx="1116" rby="-298"/>
+				</component>
+				<component name="if-else" library="core" uid="93" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1521"/>
+						<datapoint pos="1" key="1517"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1518"/>
+					</targets>
+					<view ltx="1210" lty="-337" rbx="1307" rby="-261"/>
+				</component>
+				<component name="concat" library="core" uid="92" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1519"/>
+						<datapoint pos="1" key="1523"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1516"/>
+					</targets>
+					<view ltx="1041" lty="-279" rbx="1116" rby="-221"/>
+				</component>
+				<component name="concat" library="core" uid="99" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1541"/>
+						<datapoint pos="1" key="1543"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1544"/>
+					</targets>
+					<view ltx="1049" lty="1" rbx="1124" rby="59"/>
+				</component>
+				<component name="concat" library="core" uid="98" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1535"/>
+						<datapoint pos="1" key="1531"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1526"/>
+					</targets>
+					<view ltx="1049" lty="-146" rbx="1124" rby="-88"/>
+				</component>
+				<component name="if-else" library="core" uid="95" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1533"/>
+						<datapoint pos="1" key="1527"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1534"/>
+					</targets>
+					<view ltx="1210" lty="-196" rbx="1307" rby="-120"/>
+				</component>
+				<component name="exists" library="core" uid="96" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1529"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1532"/>
+					</targets>
+					<view ltx="1049" lty="-196" rbx="1116" rby="-157"/>
+				</component>
+				<component name="exists" library="core" uid="100" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1540"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1538"/>
+					</targets>
+					<view ltx="1057" lty="-69" rbx="1124" rby="-30"/>
+				</component>
+				<component name="constant" library="core" uid="91" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="1515"/>
+					</targets>
+					<view ltx="777" lty="-279" rbx="917" rby="-261"/>
+					<data>
+						<constant value="The original value for DocumentExpirationDate cannot be properly converted to a valid date value.  The previous value was: " datatype="string"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -594,7 +707,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="92" lty="101" rbx="432" rby="646"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="196">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -612,16 +725,17 @@
 												<entry name="IdentificationSystem" type="attribute" outkey="207"/>
 												<entry name="IdentificationCode" ns="1" outkey="209"/>
 											</entry>
-											<entry name="Name" ns="1" outkey="210" expanded="1">
+											<entry name="Name" ns="1" outkey="210">
 												<entry name="PersonalTitlePrefix" ns="1" outkey="211"/>
 												<entry name="FirstName" ns="1" outkey="212"/>
 												<entry name="MiddleName" ns="1" outkey="213"/>
 												<entry name="LastSurname" ns="1" outkey="214"/>
 												<entry name="GenerationCodeSuffix" ns="1" outkey="215"/>
 												<entry name="MaidenName" ns="1" outkey="216"/>
-												<entry name="PersonalInformationVerification" ns="1" outkey="217" expanded="1">
+												<entry name="PersonalInformationVerification" ns="1" outkey="217">
 													<entry name="DocumentTitle" ns="1" outkey="218"/>
 													<entry name="DocumentCategory" ns="1" outkey="585"/>
+													<entry name="DocumentExpirationDate" ns="1" outkey="1524"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="220"/>
 													<entry name="IssuerName" ns="1" outkey="221"/>
 													<entry name="IssuerCountry" ns="1" outkey="222"/>
@@ -636,7 +750,7 @@
 												<entry name="GenerationCodeSuffix" ns="1" outkey="229"/>
 											</entry>
 											<entry name="Sex" ns="1" outkey="230"/>
-											<entry name="BirthData" ns="1" outkey="231" expanded="1">
+											<entry name="BirthData" ns="1" outkey="231">
 												<entry name="BirthDate" ns="1" outkey="232"/>
 												<entry name="CityOfBirth" ns="1" outkey="233"/>
 												<entry name="StateOfBirthAbbreviation" ns="1" outkey="234"/>
@@ -645,7 +759,7 @@
 												<entry name="DateEnteredUS" ns="1" outkey="237"/>
 												<entry name="MultipleBirthStatus" ns="1" outkey="238"/>
 											</entry>
-											<entry name="Address" ns="1" outkey="239" expanded="1">
+											<entry name="Address" ns="1" outkey="239">
 												<entry name="AddressType" type="attribute" outkey="240"/>
 												<entry name="StreetNumberName" ns="1" outkey="241"/>
 												<entry name="ApartmentRoomSuiteNumber" ns="1" outkey="242"/>
@@ -685,6 +799,7 @@
 												<entry name="USCitizenshipDocumentation" ns="1" outkey="269" expanded="1">
 													<entry name="DocumentTitle" ns="1" outkey="270"/>
 													<entry name="DocumentCategory" ns="1" outkey="589"/>
+													<entry name="DocumentExpirationDate" ns="1" outkey="1536"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="272"/>
 													<entry name="IssuerName" ns="1" outkey="273"/>
 													<entry name="IssuerCountry" ns="1" outkey="274"/>
@@ -692,6 +807,7 @@
 												<entry name="ForeignCitizenshipDocumentation" ns="1" outkey="275" expanded="1">
 													<entry name="DocumentTitle" ns="1" outkey="276"/>
 													<entry name="DocumentCategory" ns="1" outkey="590"/>
+													<entry name="DocumentExpirationDate" ns="1" outkey="1550"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="278"/>
 													<entry name="IssuerName" ns="1" outkey="279"/>
 													<entry name="IssuerCountry" ns="1" outkey="280"/>
@@ -796,9 +912,21 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\..\Ed-Fi-Standard\v1.2\Schemas\Interchange-StudentParent.xsd" inputinstance="Sample XML 1.2\StudentParent.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentParent"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentParent.xsd" inputinstance="Sample XML 1.2\StudentParent.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentParent"/>
 						<wsdl/>
 					</data>
+				</component>
+				<component name="if-else" library="core" uid="101" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1539"/>
+						<datapoint pos="1" key="1545"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1542"/>
+					</targets>
+					<view ltx="1210" lty="-69" rbx="1307" rby="7"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -1140,6 +1268,7 @@
 					<vertex vertexkey="250">
 						<edges>
 							<edge vertexkey="1380" edgekey="1449"/>
+							<edge vertexkey="1547" edgekey="1551"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="251">
@@ -1673,8 +1802,7 @@
 					</vertex>
 					<vertex vertexkey="1381">
 						<edges>
-							<edge vertexkey="1388" edgekey="1504"/>
-							<edge vertexkey="1389" edgekey="1505"/>
+							<edge vertexkey="1546" edgekey="1552"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1438">
@@ -1700,6 +1828,82 @@
 					<vertex vertexkey="1442">
 						<edges>
 							<edge vertexkey="1420" edgekey="1510"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1515">
+						<edges>
+							<edge vertexkey="1523" edgekey="1553"/>
+							<edge vertexkey="1531" edgekey="1554"/>
+							<edge vertexkey="1541" edgekey="1555"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1516">
+						<edges>
+							<edge vertexkey="1517" edgekey="1556"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1518">
+						<edges>
+							<edge vertexkey="1525" edgekey="1557"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1520">
+						<edges>
+							<edge vertexkey="1521" edgekey="1558"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1524">
+						<edges>
+							<edge vertexkey="1519" edgekey="1559"/>
+							<edge vertexkey="1522" edgekey="1560"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1526">
+						<edges>
+							<edge vertexkey="1527" edgekey="1561"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1532">
+						<edges>
+							<edge vertexkey="1533" edgekey="1562"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1534">
+						<edges>
+							<edge vertexkey="1537" edgekey="1563"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1536">
+						<edges>
+							<edge vertexkey="1535" edgekey="1564"/>
+							<edge vertexkey="1529" edgekey="1565"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1538">
+						<edges>
+							<edge vertexkey="1539" edgekey="1566"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1542">
+						<edges>
+							<edge vertexkey="1549" edgekey="1567"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1544">
+						<edges>
+							<edge vertexkey="1545" edgekey="1568"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1548">
+						<edges>
+							<edge vertexkey="1388" edgekey="1569"/>
+							<edge vertexkey="1389" edgekey="1570"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1550">
+						<edges>
+							<edge vertexkey="1543" edgekey="1571"/>
+							<edge vertexkey="1540" edgekey="1572"/>
 						</edges>
 					</vertex>
 				</vertices>
