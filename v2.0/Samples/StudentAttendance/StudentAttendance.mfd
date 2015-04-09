@@ -776,7 +776,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance-Tardy.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
 						<wsdl/>
 					</data>
 				</component>
