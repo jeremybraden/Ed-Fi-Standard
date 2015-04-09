@@ -74,11 +74,57 @@
 						</root>
 					</data>
 				</component>
+				<component name="CoalesceCodeValue" library="user" blackbox="0" uid="20" kind="19" visible="0">
+					<view ltx="747" lty="-4" rbx="919" rby="47"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="471" componentid="15"/>
+							<entry name="replacewith" inpkey="473" componentid="12"/>
+							<entry name="replacewith2" inpkey="470" componentid="9"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="472" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="CoalesceCodeValue" library="user" blackbox="0" uid="21" kind="19" visible="0">
+					<view ltx="17" lty="708" rbx="189" rby="759"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="671" componentid="15"/>
+							<entry name="replacewith" inpkey="668" componentid="12"/>
+							<entry name="replacewith2" inpkey="670" componentid="9"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="669" componentid="6"/>
+						</root>
+					</data>
+				</component>
 				<component name="Interchange-StudentTranscript" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="6" lty="90" rbx="326" rby="660"/>
 					<data>
-						<root scrollposition="877">
+						<root scrollposition="1249">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -91,7 +137,7 @@
 									<entry name="InterchangeStudentTranscript" ns="1" outkey="1" expanded="1">
 										<entry name="StudentAcademicRecord" ns="1" outkey="2" expanded="1">
 											<entry name="id" type="attribute" outkey="3"/>
-											<entry name="CumulativeCreditsEarned" ns="1" outkey="4">
+											<entry name="CumulativeCreditsEarned" ns="1" outkey="4" expanded="1">
 												<entry name="CreditType" type="attribute" outkey="5"/>
 												<entry name="CreditConversion" type="attribute" outkey="6"/>
 												<entry name="Credit" ns="1" outkey="7"/>
@@ -191,7 +237,7 @@
 												<entry name="DiplomaDescription" ns="1" outkey="37"/>
 												<entry name="DiplomaAwardExpiresDate" ns="1" outkey="38"/>
 											</entry>
-											<entry name="StudentReference" ns="1" outkey="39">
+											<entry name="StudentReference" ns="1" outkey="39" expanded="1">
 												<entry name="id" type="attribute" outkey="40"/>
 												<entry name="ref" type="attribute" outkey="41"/>
 												<entry name="StudentIdentity" ns="1" outkey="42" expanded="1">
@@ -224,8 +270,12 @@
 														<entry name="GenerationCodeSuffix" ns="1" outkey="611"/>
 													</entry>
 													<entry name="Sex" ns="1" outkey="612"/>
-													<entry name="BirthData" ns="1" outkey="613">
+													<entry name="BirthData" ns="1" outkey="613" expanded="1">
 														<entry name="BirthDate" ns="1" outkey="614"/>
+														<entry name="CityOfBirth" ns="1" outkey="1026"/>
+														<entry name="StateOfBirthAbbreviation" ns="1" outkey="1027"/>
+														<entry name="InternationalProvinceOfBirth" ns="1" outkey="1028"/>
+														<entry name="CountryOfBirthCode" ns="1" outkey="1029"/>
 														<entry name="DateEnteredUS" ns="1" outkey="615"/>
 														<entry name="MultipleBirthStatus" ns="1" outkey="616"/>
 													</entry>
@@ -235,7 +285,7 @@
 													</entry>
 												</entry>
 											</entry>
-											<entry name="SessionReference" ns="1">
+											<entry name="SessionReference" ns="1" expanded="1">
 												<entry name="SessionIdentity" ns="1" expanded="1">
 													<entry name="StateOrganizationId" ns="1" outkey="391"/>
 													<entry name="EducationOrgIdentificationCode" ns="1" outkey="619" expanded="1">
@@ -283,8 +333,12 @@
 																<entry name="GenerationCodeSuffix" ns="1" outkey="821"/>
 															</entry>
 															<entry name="Sex" ns="1" outkey="822"/>
-															<entry name="BirthData" ns="1" outkey="823">
+															<entry name="BirthData" ns="1" outkey="823" expanded="1">
 																<entry name="BirthDate" ns="1" outkey="824"/>
+																<entry name="CityOfBirth" ns="1" outkey="1035"/>
+																<entry name="StateOfBirthAbbreviation" ns="1" outkey="1036"/>
+																<entry name="InternationalProvinceOfBirth" ns="1" outkey="1037"/>
+																<entry name="CountryOfBirthCode" ns="1" outkey="1038"/>
 																<entry name="DateEnteredUS" ns="1" outkey="825"/>
 																<entry name="MultipleBirthStatus" ns="1" outkey="826"/>
 															</entry>
@@ -465,57 +519,11 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="CoalesceCodeValue" library="user" blackbox="0" uid="20" kind="19" visible="0">
-					<view ltx="747" lty="-4" rbx="919" rby="47"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="471" componentid="15"/>
-							<entry name="replacewith" inpkey="473" componentid="12"/>
-							<entry name="replacewith2" inpkey="470" componentid="9"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="472" componentid="6"/>
-						</root>
-					</data>
-				</component>
-				<component name="CoalesceCodeValue" library="user" blackbox="0" uid="21" kind="19" visible="0">
-					<view ltx="17" lty="708" rbx="189" rby="759"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="671" componentid="15"/>
-							<entry name="replacewith" inpkey="668" componentid="12"/>
-							<entry name="replacewith2" inpkey="670" componentid="9"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="669" componentid="6"/>
-						</root>
-					</data>
-				</component>
 				<component name="Interchange-StudentTranscript" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="629" lty="90" rbx="922" rby="660"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="21">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -528,12 +536,12 @@
 									<entry name="InterchangeStudentTranscript" ns="1" inpkey="91" expanded="1">
 										<entry name="StudentAcademicRecord" ns="1" inpkey="92" expanded="1">
 											<entry name="id" type="attribute" inpkey="93"/>
-											<entry name="CumulativeEarnedCredits" ns="1" inpkey="94">
+											<entry name="CumulativeEarnedCredits" ns="1" inpkey="94" expanded="1">
 												<entry name="Credits" ns="1" inpkey="540"/>
 												<entry name="CreditType" ns="1" inpkey="96"/>
 												<entry name="CreditConversion" ns="1" inpkey="97"/>
 											</entry>
-											<entry name="CumulativeAttemptedCredits" ns="1" inpkey="98">
+											<entry name="CumulativeAttemptedCredits" ns="1" inpkey="98" expanded="1">
 												<entry name="Credits" ns="1" inpkey="541"/>
 												<entry name="CreditType" ns="1" inpkey="100"/>
 												<entry name="CreditConversion" ns="1" inpkey="101"/>
@@ -541,14 +549,14 @@
 											<entry name="CumulativeGradePointsEarned" ns="1" inpkey="102"/>
 											<entry name="CumulativeGradePointAverage" ns="1" inpkey="103"/>
 											<entry name="GradeValueQualifier" ns="1" inpkey="104"/>
-											<entry name="ClassRanking" ns="1" inpkey="105">
+											<entry name="ClassRanking" ns="1" inpkey="105" expanded="1">
 												<entry name="ClassRank" ns="1" inpkey="106"/>
 												<entry name="TotalNumberInClass" ns="1" inpkey="107"/>
 												<entry name="PercentageRanking" ns="1" inpkey="108"/>
 												<entry name="ClassRankingDate" ns="1" inpkey="109"/>
 											</entry>
 											<entry name="AcademicHonor" ns="1" inpkey="110" expanded="1">
-												<entry name="Achievement" ns="1">
+												<entry name="Achievement" ns="1" expanded="1">
 													<entry name="AchievementTitle" ns="1" inpkey="111"/>
 													<entry name="AchievementCategory" ns="1" inpkey="112" expanded="1">
 														<entry name="id" type="attribute" inpkey="113"/>
@@ -569,7 +577,7 @@
 												<entry name="HonorAwardDate" ns="1" inpkey="117"/>
 												<entry name="HonorAwardExpiresDate" ns="1" inpkey="118"/>
 											</entry>
-											<entry name="Recognition" ns="1" inpkey="297">
+											<entry name="Recognition" ns="1" inpkey="297" expanded="1">
 												<entry name="Achievement" ns="1" expanded="1">
 													<entry name="AchievementTitle" ns="1" inpkey="298"/>
 													<entry name="AchievementCategory" ns="1" inpkey="299" expanded="1">
@@ -604,7 +612,7 @@
 											</entry>
 											<entry name="SessionGradePointsEarned" ns="1" inpkey="120"/>
 											<entry name="SessionGradePointAverage" ns="1" inpkey="121"/>
-											<entry name="Diploma" ns="1" inpkey="122">
+											<entry name="Diploma" ns="1" inpkey="122" expanded="1">
 												<entry name="Achievement" ns="1" expanded="1">
 													<entry name="AchievementTitle" ns="1" inpkey="321"/>
 													<entry name="AchievementCategory" ns="1" inpkey="322" expanded="1">
@@ -668,8 +676,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="572"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="573"/>
-													<entry name="BirthData" ns="1" inpkey="574">
+													<entry name="BirthData" ns="1" inpkey="574" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="575"/>
+														<entry name="BirthCity" ns="1" inpkey="1021"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="1022"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="1023"/>
+														<entry name="BirthCountry" ns="1" inpkey="1024" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="1025"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="576"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="577"/>
 													</entry>
@@ -677,7 +691,7 @@
 													<entry name="Race" ns="1" inpkey="579"/>
 												</entry>
 											</entry>
-											<entry name="EducationOrganizationReference" ns="1">
+											<entry name="EducationOrganizationReference" ns="1" expanded="1">
 												<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
 													<entry name="EducationOrganizationId" ns="1" inpkey="333"/>
 												</entry>
@@ -739,8 +753,14 @@
 																<entry name="OtherNameType" ns="1" inpkey="697"/>
 															</entry>
 															<entry name="Sex" ns="1" inpkey="698"/>
-															<entry name="BirthData" ns="1" inpkey="699">
+															<entry name="BirthData" ns="1" inpkey="699" expanded="1">
 																<entry name="BirthDate" ns="1" inpkey="700"/>
+																<entry name="BirthCity" ns="1" inpkey="1039"/>
+																<entry name="BirthStateAbbreviation" ns="1" inpkey="1040"/>
+																<entry name="BirthInternationalProvince" ns="1" inpkey="1041"/>
+																<entry name="BirthCountry" ns="1" inpkey="1042" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="1043"/>
+																</entry>
 																<entry name="DateEnteredUS" ns="1" inpkey="701"/>
 																<entry name="MultipleBirthStatus" ns="1" inpkey="702"/>
 															</entry>
@@ -2492,6 +2512,48 @@
 					<vertex vertexkey="888">
 						<edges>
 							<edge vertexkey="795" edgekey="1019"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1026">
+						<edges>
+							<edge vertexkey="1021" edgekey="1030"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1027">
+						<edges>
+							<edge vertexkey="1022" edgekey="1031"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1028">
+						<edges>
+							<edge vertexkey="1023" edgekey="1032"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1029">
+						<edges>
+							<edge vertexkey="1024" edgekey="1033"/>
+							<edge vertexkey="1025" edgekey="1034"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1035">
+						<edges>
+							<edge vertexkey="1039" edgekey="1044"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1036">
+						<edges>
+							<edge vertexkey="1040" edgekey="1045"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1037">
+						<edges>
+							<edge vertexkey="1041" edgekey="1046"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1038">
+						<edges>
+							<edge vertexkey="1042" edgekey="1047"/>
+							<edge vertexkey="1043" edgekey="1048"/>
 						</edges>
 					</vertex>
 				</vertices>

@@ -26,18 +26,6 @@
 					</targets>
 					<view ltx="87" lty="-53" rbx="176" rby="-14"/>
 				</component>
-				<component name="AttendanceEvent" library="core" uid="4" kind="3">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1"/>
-						<datapoint pos="1" key="2"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="3"/>
-						<datapoint/>
-					</targets>
-					<view ltx="189" lty="-53" rbx="332" rby="3"/>
-				</component>
 				<component name="exists" library="core" uid="25" kind="5">
 					<properties/>
 					<sources>
@@ -163,11 +151,174 @@
 						</root>
 					</data>
 				</component>
+				<component name="AttendanceEvent" library="core" uid="4" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1"/>
+						<datapoint pos="1" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+						<datapoint/>
+					</targets>
+					<view ltx="189" lty="-53" rbx="332" rby="3"/>
+				</component>
+				<component name="Interchange-StudentAttendance" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="44" lty="147" rbx="476" rby="814"/>
+					<data>
+						<root scrollposition="392">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentAttendance" ns="1" expanded="1">
+										<entry name="AttendanceEvent" ns="1" outkey="24" expanded="1">
+											<entry name="id" type="attribute" outkey="25"/>
+											<entry name="EventDate" ns="1" outkey="26"/>
+											<entry name="AttendanceEventCategory" ns="1" outkey="27" expanded="1">
+												<entry name="id" type="attribute" outkey="28"/>
+												<entry name="ref" type="attribute" outkey="29"/>
+												<entry name="namespace" type="attribute" outkey="327"/>
+												<entry name="CodeValue" ns="1" outkey="30"/>
+												<entry name="ShortDescription" ns="1" outkey="68"/>
+												<entry name="Description" ns="1" outkey="69"/>
+											</entry>
+											<entry name="AttendanceEventReason" ns="1" outkey="31"/>
+											<entry name="EducationalEnvironment" ns="1" outkey="32"/>
+											<entry name="StudentReference" ns="1" outkey="33" expanded="1">
+												<entry name="id" type="attribute" outkey="34"/>
+												<entry name="ref" type="attribute" outkey="35"/>
+												<entry name="StudentIdentity" ns="1" outkey="36" expanded="1">
+													<entry name="PersonUniqueStateId" ns="1" outkey="471"/>
+													<entry name="StudentIdentificationCode" ns="1" outkey="666" expanded="1">
+														<entry name="IdentificationSystem" type="attribute" outkey="667"/>
+														<entry name="AssigningOrganizationCode" type="attribute" outkey="668"/>
+														<entry name="IdentificationCode" ns="1" outkey="669"/>
+													</entry>
+													<entry name="StudentUniqueStateId" ns="1" outkey="37"/>
+													<entry name="Name" ns="1" outkey="670" expanded="1">
+														<entry name="PersonalTitlePrefix" ns="1" outkey="671"/>
+														<entry name="FirstName" ns="1" outkey="672"/>
+														<entry name="MiddleName" ns="1" outkey="673"/>
+														<entry name="LastSurname" ns="1" outkey="674"/>
+														<entry name="GenerationCodeSuffix" ns="1" outkey="675"/>
+														<entry name="MaidenName" ns="1" outkey="676"/>
+														<entry name="PersonalInformationVerification" ns="1" outkey="677" expanded="1">
+															<entry name="DocumentTitle" ns="1" outkey="678"/>
+															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="679"/>
+															<entry name="IssuerName" ns="1" outkey="680"/>
+															<entry name="IssuerCountry" ns="1" outkey="681"/>
+														</entry>
+													</entry>
+													<entry name="OtherName" ns="1" outkey="682">
+														<entry name="OtherNameType" type="attribute" outkey="683"/>
+														<entry name="PersonalTitlePrefix" ns="1" outkey="684"/>
+														<entry name="FirstName" ns="1" outkey="685"/>
+														<entry name="MiddleName" ns="1" outkey="686"/>
+														<entry name="LastSurname" ns="1" outkey="687"/>
+														<entry name="GenerationCodeSuffix" ns="1" outkey="688"/>
+													</entry>
+													<entry name="Sex" ns="1" outkey="689"/>
+													<entry name="BirthData" ns="1" outkey="690" expanded="1">
+														<entry name="BirthDate" ns="1" outkey="691"/>
+														<entry name="CityOfBirth" ns="1" outkey="973"/>
+														<entry name="StateOfBirthAbbreviation" ns="1" outkey="974"/>
+														<entry name="InternationalProvinceOfBirth" ns="1" outkey="975"/>
+														<entry name="CountryOfBirthCode" ns="1" outkey="976"/>
+														<entry name="DateEnteredUS" ns="1" outkey="692"/>
+														<entry name="MultipleBirthStatus" ns="1" outkey="693"/>
+													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" outkey="694"/>
+													<entry name="Race" ns="1" expanded="1">
+														<entry name="RacialCategory" ns="1" outkey="695"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SchoolReference" ns="1" outkey="88">
+												<entry name="id" type="attribute" outkey="89"/>
+												<entry name="ref" type="attribute" outkey="90"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="231" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="232"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" outkey="696" expanded="1">
+														<entry name="IdentificationSystem" type="attribute" outkey="697"/>
+														<entry name="ID" ns="1" outkey="698"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SessionReference" ns="1" outkey="91">
+												<entry name="id" type="attribute" outkey="92"/>
+												<entry name="ref" type="attribute" outkey="93"/>
+												<entry name="SessionIdentity" ns="1" outkey="94" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="233"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													<entry name="SchoolYear" ns="1" outkey="95"/>
+													<entry name="Term" ns="1" outkey="96"/>
+												</entry>
+											</entry>
+											<entry name="SectionReference" ns="1" outkey="97" expanded="1">
+												<entry name="id" type="attribute" outkey="234"/>
+												<entry name="ref" type="attribute" outkey="235"/>
+												<entry name="SectionIdentity" ns="1" outkey="236" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="237"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													<entry name="CourseCode" ns="1" expanded="1"/>
+													<entry name="LocalCourseCode" ns="1" outkey="238"/>
+													<entry name="SchoolYear" ns="1" outkey="239"/>
+													<entry name="Term" ns="1" outkey="240"/>
+													<entry name="ClassPeriodName" ns="1" outkey="241"/>
+													<entry name="Location" ns="1" outkey="242"/>
+												</entry>
+											</entry>
+											<entry name="InterventionReference" ns="1" outkey="38" expanded="1">
+												<entry name="id" type="attribute" outkey="39"/>
+												<entry name="ref" type="attribute" outkey="40"/>
+												<entry name="InterventionIdentity" ns="1" outkey="41" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" outkey="977" expanded="1">
+														<entry name="id" type="attribute" outkey="978"/>
+														<entry name="ref" type="attribute" outkey="979"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="980" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="981"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ProgramReference" ns="1" outkey="98">
+												<entry name="id" type="attribute" outkey="99"/>
+												<entry name="ref" type="attribute" outkey="100"/>
+												<entry name="ProgramIdentity" ns="1" outkey="101" expanded="1">
+													<entry name="ProgramType" ns="1" outkey="102"/>
+													<entry name="ProgramName" ns="1" outkey="103"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="104" expanded="1">
+														<entry name="id" type="attribute" outkey="105"/>
+														<entry name="ref" type="attribute" outkey="106"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="107" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="108"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
+						<wsdl/>
+					</data>
+				</component>
 				<component name="Interchange-StudentAttendance" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1136" lty="168" rbx="1481" rby="827"/>
 					<data>
-						<root scrollposition="4664">
+						<root scrollposition="6169">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -180,7 +331,7 @@
 									<entry name="InterchangeStudentAttendance" ns="1" expanded="1">
 										<entry name="StudentInterventionAttendanceEvent" ns="1" inpkey="4" expanded="1">
 											<entry name="id" type="attribute" inpkey="5"/>
-											<entry name="AttendanceEvent" ns="1" inpkey="6">
+											<entry name="AttendanceEvent" ns="1" inpkey="6" expanded="1">
 												<entry name="EventDate" ns="1" inpkey="8"/>
 												<entry name="AttendanceEventCategory" ns="1" inpkey="9" expanded="1">
 													<entry name="id" type="attribute" inpkey="10"/>
@@ -222,7 +373,7 @@
 															</entry>
 														</entry>
 													</entry>
-													<entry name="OtherName" ns="1" inpkey="718">
+													<entry name="OtherName" ns="1" inpkey="718" expanded="1">
 														<entry name="PersonalTitlePrefix" ns="1" inpkey="719"/>
 														<entry name="FirstName" ns="1" inpkey="720"/>
 														<entry name="MiddleName" ns="1" inpkey="721"/>
@@ -231,8 +382,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="724"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="725"/>
-													<entry name="BirthData" ns="1" inpkey="726">
+													<entry name="BirthData" ns="1" inpkey="726" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="727"/>
+														<entry name="BirthCity" ns="1" inpkey="982"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="983"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="984"/>
+														<entry name="BirthCountry" ns="1" inpkey="985" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="986"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="728"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="729"/>
 													</entry>
@@ -240,10 +397,21 @@
 													<entry name="Race" ns="1" inpkey="731"/>
 												</entry>
 											</entry>
-											<entry name="InterventionReference" ns="1" inpkey="20">
+											<entry name="InterventionReference" ns="1" inpkey="20" expanded="1">
 												<entry name="id" type="attribute" inpkey="21"/>
 												<entry name="ref" type="attribute" inpkey="22"/>
-												<entry name="InterventionIdentity" ns="1" inpkey="23" expanded="1"/>
+												<entry name="InterventionIdentity" ns="1" inpkey="23" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" inpkey="987" expanded="1">
+														<entry name="id" type="attribute" inpkey="988"/>
+														<entry name="ref" type="attribute" inpkey="989"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="990" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="991"/>
+														</entry>
+														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="992"/>
+														</entry>
+													</entry>
+												</entry>
 											</entry>
 										</entry>
 										<entry name="StudentProgramAttendanceEvent" ns="1" inpkey="109" expanded="1">
@@ -299,8 +467,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="756"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="757"/>
-													<entry name="BirthData" ns="1" inpkey="758">
+													<entry name="BirthData" ns="1" inpkey="758" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="759"/>
+														<entry name="BirthCity" ns="1" inpkey="993"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="994"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="995"/>
+														<entry name="BirthCountry" ns="1" inpkey="996" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="997"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="760"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="761"/>
 													</entry>
@@ -387,8 +561,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="789"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="790"/>
-													<entry name="BirthData" ns="1" inpkey="791">
+													<entry name="BirthData" ns="1" inpkey="791" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="792"/>
+														<entry name="BirthCity" ns="1" inpkey="998"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="999"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="1000"/>
+														<entry name="BirthCountry" ns="1" inpkey="1001" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="1002"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="793"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="794"/>
 													</entry>
@@ -496,8 +676,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="828"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="829"/>
-													<entry name="BirthData" ns="1" inpkey="830">
+													<entry name="BirthData" ns="1" inpkey="830" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="831"/>
+														<entry name="BirthCity" ns="1" inpkey="1003"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="1004"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="1005"/>
+														<entry name="BirthCountry" ns="1" inpkey="1006" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="1007"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="832"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="833"/>
 													</entry>
@@ -639,144 +825,6 @@
 							</entry>
 						</root>
 						<document schema="..\..\Schemas\Interchange-StudentAttendance.xsd" outputinstance="Sample XML 2.0\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAttendance"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="Interchange-StudentAttendance" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="44" lty="147" rbx="476" rby="814"/>
-					<data>
-						<root scrollposition="499">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentAttendance" ns="1" expanded="1">
-										<entry name="AttendanceEvent" ns="1" outkey="24" expanded="1">
-											<entry name="id" type="attribute" outkey="25"/>
-											<entry name="EventDate" ns="1" outkey="26"/>
-											<entry name="AttendanceEventCategory" ns="1" outkey="27">
-												<entry name="id" type="attribute" outkey="28"/>
-												<entry name="ref" type="attribute" outkey="29"/>
-												<entry name="namespace" type="attribute" outkey="327"/>
-												<entry name="CodeValue" ns="1" outkey="30"/>
-												<entry name="ShortDescription" ns="1" outkey="68"/>
-												<entry name="Description" ns="1" outkey="69"/>
-											</entry>
-											<entry name="AttendanceEventReason" ns="1" outkey="31"/>
-											<entry name="EducationalEnvironment" ns="1" outkey="32"/>
-											<entry name="StudentReference" ns="1" outkey="33" expanded="1">
-												<entry name="id" type="attribute" outkey="34"/>
-												<entry name="ref" type="attribute" outkey="35"/>
-												<entry name="StudentIdentity" ns="1" outkey="36" expanded="1">
-													<entry name="PersonUniqueStateId" ns="1" outkey="471"/>
-													<entry name="StudentIdentificationCode" ns="1" outkey="666" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="667"/>
-														<entry name="AssigningOrganizationCode" type="attribute" outkey="668"/>
-														<entry name="IdentificationCode" ns="1" outkey="669"/>
-													</entry>
-													<entry name="StudentUniqueStateId" ns="1" outkey="37"/>
-													<entry name="Name" ns="1" outkey="670" expanded="1">
-														<entry name="PersonalTitlePrefix" ns="1" outkey="671"/>
-														<entry name="FirstName" ns="1" outkey="672"/>
-														<entry name="MiddleName" ns="1" outkey="673"/>
-														<entry name="LastSurname" ns="1" outkey="674"/>
-														<entry name="GenerationCodeSuffix" ns="1" outkey="675"/>
-														<entry name="MaidenName" ns="1" outkey="676"/>
-														<entry name="PersonalInformationVerification" ns="1" outkey="677" expanded="1">
-															<entry name="DocumentTitle" ns="1" outkey="678"/>
-															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="679"/>
-															<entry name="IssuerName" ns="1" outkey="680"/>
-															<entry name="IssuerCountry" ns="1" outkey="681"/>
-														</entry>
-													</entry>
-													<entry name="OtherName" ns="1" outkey="682">
-														<entry name="OtherNameType" type="attribute" outkey="683"/>
-														<entry name="PersonalTitlePrefix" ns="1" outkey="684"/>
-														<entry name="FirstName" ns="1" outkey="685"/>
-														<entry name="MiddleName" ns="1" outkey="686"/>
-														<entry name="LastSurname" ns="1" outkey="687"/>
-														<entry name="GenerationCodeSuffix" ns="1" outkey="688"/>
-													</entry>
-													<entry name="Sex" ns="1" outkey="689"/>
-													<entry name="BirthData" ns="1" outkey="690">
-														<entry name="BirthDate" ns="1" outkey="691"/>
-														<entry name="DateEnteredUS" ns="1" outkey="692"/>
-														<entry name="MultipleBirthStatus" ns="1" outkey="693"/>
-													</entry>
-													<entry name="HispanicLatinoEthnicity" ns="1" outkey="694"/>
-													<entry name="Race" ns="1" expanded="1">
-														<entry name="RacialCategory" ns="1" outkey="695"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SchoolReference" ns="1" outkey="88" expanded="1">
-												<entry name="id" type="attribute" outkey="89"/>
-												<entry name="ref" type="attribute" outkey="90"/>
-												<entry name="EducationOrganizationIdentity" ns="1" outkey="231" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="232"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" outkey="696" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="697"/>
-														<entry name="ID" ns="1" outkey="698"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SessionReference" ns="1" outkey="91">
-												<entry name="id" type="attribute" outkey="92"/>
-												<entry name="ref" type="attribute" outkey="93"/>
-												<entry name="SessionIdentity" ns="1" outkey="94" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="233"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-													<entry name="SchoolYear" ns="1" outkey="95"/>
-													<entry name="Term" ns="1" outkey="96"/>
-												</entry>
-											</entry>
-											<entry name="SectionReference" ns="1" outkey="97" expanded="1">
-												<entry name="id" type="attribute" outkey="234"/>
-												<entry name="ref" type="attribute" outkey="235"/>
-												<entry name="SectionIdentity" ns="1" outkey="236" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="237"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-													<entry name="CourseCode" ns="1" expanded="1"/>
-													<entry name="LocalCourseCode" ns="1" outkey="238"/>
-													<entry name="SchoolYear" ns="1" outkey="239"/>
-													<entry name="Term" ns="1" outkey="240"/>
-													<entry name="ClassPeriodName" ns="1" outkey="241"/>
-													<entry name="Location" ns="1" outkey="242"/>
-												</entry>
-											</entry>
-											<entry name="InterventionReference" ns="1" outkey="38">
-												<entry name="id" type="attribute" outkey="39"/>
-												<entry name="ref" type="attribute" outkey="40"/>
-												<entry name="InterventionIdentity" ns="1" outkey="41" expanded="1"/>
-											</entry>
-											<entry name="ProgramReference" ns="1" outkey="98">
-												<entry name="id" type="attribute" outkey="99"/>
-												<entry name="ref" type="attribute" outkey="100"/>
-												<entry name="ProgramIdentity" ns="1" outkey="101" expanded="1">
-													<entry name="ProgramType" ns="1" outkey="102"/>
-													<entry name="ProgramName" ns="1" outkey="103"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="104" expanded="1">
-														<entry name="id" type="attribute" outkey="105"/>
-														<entry name="ref" type="attribute" outkey="106"/>
-														<entry name="EducationOrganizationIdentity" ns="1" outkey="107" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="108"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -1470,6 +1518,68 @@
 					<vertex vertexkey="698">
 						<edges>
 							<edge vertexkey="800" edgekey="972"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="973">
+						<edges>
+							<edge vertexkey="982" edgekey="1008"/>
+							<edge vertexkey="993" edgekey="1009"/>
+							<edge vertexkey="998" edgekey="1010"/>
+							<edge vertexkey="1003" edgekey="1011"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="974">
+						<edges>
+							<edge vertexkey="983" edgekey="1012"/>
+							<edge vertexkey="994" edgekey="1013"/>
+							<edge vertexkey="999" edgekey="1014"/>
+							<edge vertexkey="1004" edgekey="1015"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="975">
+						<edges>
+							<edge vertexkey="984" edgekey="1016"/>
+							<edge vertexkey="995" edgekey="1017"/>
+							<edge vertexkey="1000" edgekey="1018"/>
+							<edge vertexkey="1005" edgekey="1019"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="976">
+						<edges>
+							<edge vertexkey="985" edgekey="1020"/>
+							<edge vertexkey="986" edgekey="1021"/>
+							<edge vertexkey="996" edgekey="1022"/>
+							<edge vertexkey="997" edgekey="1023"/>
+							<edge vertexkey="1001" edgekey="1024"/>
+							<edge vertexkey="1002" edgekey="1025"/>
+							<edge vertexkey="1006" edgekey="1026"/>
+							<edge vertexkey="1007" edgekey="1027"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="977">
+						<edges>
+							<edge vertexkey="987" edgekey="1028"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="978">
+						<edges>
+							<edge vertexkey="988" edgekey="1029"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="979">
+						<edges>
+							<edge vertexkey="989" edgekey="1030"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="980">
+						<edges>
+							<edge vertexkey="990" edgekey="1031"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="981">
+						<edges>
+							<edge vertexkey="991" edgekey="1032"/>
+							<edge vertexkey="992" edgekey="1033"/>
 						</edges>
 					</vertex>
 				</vertices>
