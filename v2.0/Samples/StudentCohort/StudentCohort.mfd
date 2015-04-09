@@ -43,7 +43,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="963" lty="226" rbx="1268" rby="819"/>
 					<data>
-						<root scrollposition="1384">
+						<root scrollposition="2735">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -168,8 +168,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="314"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="315"/>
-													<entry name="BirthData" ns="1" inpkey="316">
+													<entry name="BirthData" ns="1" inpkey="316" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="317"/>
+														<entry name="BirthCity" ns="1" inpkey="562"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="563"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="564"/>
+														<entry name="BirthCountry" ns="1" inpkey="565" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="566"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="318"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="319"/>
 													</entry>
@@ -344,7 +350,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="91" lty="226" rbx="400" rby="819"/>
 					<data>
-						<root scrollposition="562">
+						<root scrollposition="1307">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -435,8 +441,12 @@
 														<entry name="GenerationCodeSuffix" ns="1" outkey="390"/>
 													</entry>
 													<entry name="Sex" ns="1" outkey="391"/>
-													<entry name="BirthData" ns="1" outkey="392">
+													<entry name="BirthData" ns="1" outkey="392" expanded="1">
 														<entry name="BirthDate" ns="1" outkey="393"/>
+														<entry name="CityOfBirth" ns="1" outkey="567"/>
+														<entry name="StateOfBirthAbbreviation" ns="1" outkey="568"/>
+														<entry name="InternationalProvinceOfBirth" ns="1" outkey="569"/>
+														<entry name="CountryOfBirthCode" ns="1" outkey="570"/>
 														<entry name="DateEnteredUS" ns="1" outkey="394"/>
 														<entry name="MultipleBirthStatus" ns="1" outkey="395"/>
 													</entry>
@@ -481,7 +491,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StaffCohortAssociation" ns="1" outkey="48" expanded="1">
+										<entry name="StaffCohortAssociation" ns="1" outkey="48">
 											<entry name="StaffReference" ns="1" outkey="49" expanded="1">
 												<entry name="id" type="attribute" outkey="50"/>
 												<entry name="ref" type="attribute" outkey="51"/>
@@ -1372,6 +1382,27 @@
 						<edges>
 							<edge vertexkey="549" edgekey="560"/>
 							<edge vertexkey="550" edgekey="561"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="567">
+						<edges>
+							<edge vertexkey="562" edgekey="571"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="568">
+						<edges>
+							<edge vertexkey="563" edgekey="572"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="569">
+						<edges>
+							<edge vertexkey="564" edgekey="573"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="570">
+						<edges>
+							<edge vertexkey="565" edgekey="574"/>
+							<edge vertexkey="566" edgekey="575"/>
 						</edges>
 					</vertex>
 				</vertices>

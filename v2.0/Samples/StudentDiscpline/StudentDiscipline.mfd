@@ -124,7 +124,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="317" rby="643"/>
 					<data>
-						<root scrollposition="3239">
+						<root scrollposition="2888">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -142,7 +142,7 @@
 											<entry name="IncidentTime" ns="1" outkey="68"/>
 											<entry name="IncidentLocation" ns="1" outkey="69"/>
 											<entry name="IncidentDescription" ns="1" outkey="70"/>
-											<entry name="ReporterDescription" ns="1" outkey="71" expanded="1">
+											<entry name="ReporterDescription" ns="1" outkey="71">
 												<entry name="id" type="attribute" outkey="72"/>
 												<entry name="ref" type="attribute" outkey="73"/>
 												<entry name="namespace" type="attribute" outkey="356"/>
@@ -151,7 +151,7 @@
 												<entry name="Description" ns="1" outkey="198"/>
 											</entry>
 											<entry name="ReporterName" ns="1" outkey="75"/>
-											<entry name="Behaviors" ns="1" outkey="199" expanded="1">
+											<entry name="Behaviors" ns="1" outkey="199">
 												<entry name="id" type="attribute" outkey="200"/>
 												<entry name="ref" type="attribute" outkey="201"/>
 												<entry name="namespace" type="attribute" outkey="357"/>
@@ -171,7 +171,7 @@
 											<entry name="ReportedToLawEnforcement" ns="1" outkey="76"/>
 											<entry name="CaseNumber" ns="1" outkey="77"/>
 											<entry name="IncidentCost" ns="1" outkey="78"/>
-											<entry name="EducationOrganizationReference" ns="1" outkey="233" expanded="1">
+											<entry name="EducationOrganizationReference" ns="1" outkey="233">
 												<entry name="id" type="attribute" outkey="234"/>
 												<entry name="ref" type="attribute" outkey="235"/>
 												<entry name="EducationOrganizationIdentity" ns="1" outkey="236" expanded="1">
@@ -225,8 +225,10 @@
 														<entry name="TextMessageCapabilityIndicator" type="attribute" outkey="415"/>
 														<entry name="TelephoneNumber" ns="1" outkey="416"/>
 													</entry>
-													<entry name="ElectronicMail" ns="1" outkey="417">
+													<entry name="ElectronicMail" ns="1" outkey="417" expanded="1">
+														<entry name="EmailAddressType" type="attribute" outkey="848"/>
 														<entry name="PrimaryEmailAddressIndicator" type="attribute" outkey="418"/>
+														<entry name="EmailAddress" ns="1" outkey="849"/>
 													</entry>
 												</entry>
 											</entry>
@@ -265,8 +267,12 @@
 														<entry name="GenerationCodeSuffix" ns="1" outkey="532"/>
 													</entry>
 													<entry name="Sex" ns="1" outkey="533"/>
-													<entry name="BirthData" ns="1" outkey="534">
+													<entry name="BirthData" ns="1" outkey="534" expanded="1">
 														<entry name="BirthDate" ns="1" outkey="535"/>
+														<entry name="CityOfBirth" ns="1" outkey="850"/>
+														<entry name="StateOfBirthAbbreviation" ns="1" outkey="851"/>
+														<entry name="InternationalProvinceOfBirth" ns="1" outkey="852"/>
+														<entry name="CountryOfBirthCode" ns="1" outkey="853"/>
 														<entry name="DateEnteredUS" ns="1" outkey="536"/>
 														<entry name="MultipleBirthStatus" ns="1" outkey="537"/>
 													</entry>
@@ -354,8 +360,12 @@
 														<entry name="GenerationCodeSuffix" ns="1" outkey="610"/>
 													</entry>
 													<entry name="Sex" ns="1" outkey="611"/>
-													<entry name="BirthData" ns="1" outkey="612">
+													<entry name="BirthData" ns="1" outkey="612" expanded="1">
 														<entry name="BirthDate" ns="1" outkey="613"/>
+														<entry name="CityOfBirth" ns="1" outkey="854"/>
+														<entry name="StateOfBirthAbbreviation" ns="1" outkey="855"/>
+														<entry name="InternationalProvinceOfBirth" ns="1" outkey="856"/>
+														<entry name="CountryOfBirthCode" ns="1" outkey="857"/>
 														<entry name="DateEnteredUS" ns="1" outkey="614"/>
 														<entry name="MultipleBirthStatus" ns="1" outkey="615"/>
 													</entry>
@@ -467,7 +477,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="986" lty="-57" rbx="1299" rby="586"/>
 					<data>
-						<root scrollposition="4893">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -571,12 +581,16 @@
 														<entry name="OrderOfPriority" ns="1" inpkey="448"/>
 														<entry name="TextMessageCapabilityIndicator" ns="1" inpkey="449"/>
 													</entry>
-													<entry name="ElectronicMail" ns="1" inpkey="450">
+													<entry name="ElectronicMail" ns="1" inpkey="450" expanded="1">
+														<entry name="ElectronicMailAddress" ns="1" inpkey="858"/>
+														<entry name="ElectronicMailType" ns="1" inpkey="859"/>
 														<entry name="PrimaryEmailAddressIndicator" ns="1" inpkey="451"/>
 													</entry>
 													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="452"/>
 													<entry name="Race" ns="1" inpkey="453"/>
-													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1"/>
+													</entry>
 												</entry>
 											</entry>
 										</entry>
@@ -621,8 +635,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="509"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="510"/>
-													<entry name="BirthData" ns="1" inpkey="511">
+													<entry name="BirthData" ns="1" inpkey="511" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="512"/>
+														<entry name="BirthCity" ns="1" inpkey="860"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="861"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="862"/>
+														<entry name="BirthCountry" ns="1" inpkey="863" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="864"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="513"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="514"/>
 													</entry>
@@ -718,8 +738,14 @@
 														<entry name="OtherNameType" ns="1" inpkey="582"/>
 													</entry>
 													<entry name="Sex" ns="1" inpkey="583"/>
-													<entry name="BirthData" ns="1" inpkey="584">
+													<entry name="BirthData" ns="1" inpkey="584" expanded="1">
 														<entry name="BirthDate" ns="1" inpkey="585"/>
+														<entry name="BirthCity" ns="1" inpkey="865"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="866"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="867"/>
+														<entry name="BirthCountry" ns="1" inpkey="868" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="869"/>
+														</entry>
 														<entry name="DateEnteredUS" ns="1" inpkey="586"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="587"/>
 													</entry>
@@ -2175,6 +2201,58 @@
 						<edges>
 							<edge vertexkey="828" edgekey="846"/>
 							<edge vertexkey="829" edgekey="847"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="848">
+						<edges>
+							<edge vertexkey="859" edgekey="870"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="849">
+						<edges>
+							<edge vertexkey="858" edgekey="871"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="850">
+						<edges>
+							<edge vertexkey="860" edgekey="872"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="851">
+						<edges>
+							<edge vertexkey="861" edgekey="873"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="852">
+						<edges>
+							<edge vertexkey="862" edgekey="874"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="853">
+						<edges>
+							<edge vertexkey="863" edgekey="875"/>
+							<edge vertexkey="864" edgekey="876"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="854">
+						<edges>
+							<edge vertexkey="865" edgekey="877"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="855">
+						<edges>
+							<edge vertexkey="866" edgekey="878"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="856">
+						<edges>
+							<edge vertexkey="867" edgekey="879"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="857">
+						<edges>
+							<edge vertexkey="868" edgekey="880"/>
+							<edge vertexkey="869" edgekey="881"/>
 						</edges>
 					</vertex>
 				</vertices>
