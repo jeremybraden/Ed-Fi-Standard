@@ -147,11 +147,233 @@
 					</targets>
 					<view ltx="628" lty="-74" rbx="738" rby="-35"/>
 				</component>
+				<component name="Interchange-StudentAssessment" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="24" lty="115" rbx="341" rby="767"/>
+					<data>
+						<root scrollposition="983">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" outkey="379" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentAssessment" ns="1" outkey="53" expanded="1">
+										<entry name="AssessmentReference" ns="1" outkey="760">
+											<entry name="id" type="attribute" outkey="761"/>
+											<entry name="ref" type="attribute" outkey="762"/>
+											<entry name="AssessmentIdentity" ns="1" outkey="763" expanded="1">
+												<entry name="AssessmentIdentificationCode" ns="1" outkey="788" expanded="1">
+													<entry name="IdentificationSystem" type="attribute" outkey="789"/>
+													<entry name="AssigningOrganizationCode" type="attribute" outkey="843"/>
+													<entry name="ID" ns="1" outkey="844"/>
+												</entry>
+												<entry name="AssessmentFamilyTitle" ns="1" outkey="790"/>
+												<entry name="AssessmentTitle" ns="1" outkey="764"/>
+												<entry name="AssessmentCategory" ns="1" outkey="791"/>
+												<entry name="AcademicSubject" ns="1" outkey="765" expanded="1">
+													<entry name="id" type="attribute" outkey="766"/>
+													<entry name="ref" type="attribute" outkey="767"/>
+													<entry name="namespace" type="attribute" outkey="792"/>
+													<entry name="CodeValue" ns="1" outkey="768"/>
+												</entry>
+												<entry name="GradeLevelAssessed" ns="1" outkey="793">
+													<entry name="id" type="attribute" outkey="794"/>
+													<entry name="ref" type="attribute" outkey="795"/>
+													<entry name="namespace" type="attribute" outkey="796"/>
+													<entry name="CodeValue" ns="1" outkey="797"/>
+												</entry>
+												<entry name="Version" ns="1" outkey="769"/>
+											</entry>
+										</entry>
+										<entry name="StudentAssessment" ns="1" outkey="54" expanded="1">
+											<entry name="id" type="attribute" outkey="55"/>
+											<entry name="AdministrationDate" ns="1" outkey="56"/>
+											<entry name="AdministrationEndDate" ns="1" outkey="57"/>
+											<entry name="SerialNumber" ns="1" outkey="58"/>
+											<entry name="AdministrationLanguage" ns="1" outkey="59">
+												<entry name="id" type="attribute" outkey="60"/>
+												<entry name="ref" type="attribute" outkey="61"/>
+												<entry name="namespace" type="attribute" outkey="946"/>
+												<entry name="CodeValue" ns="1" outkey="62"/>
+												<entry name="ShortDescription" ns="1" outkey="162"/>
+												<entry name="Description" ns="1" outkey="161"/>
+											</entry>
+											<entry name="AdministrationEnvironment" ns="1" outkey="63"/>
+											<entry name="Accommodation" ns="1" outkey="64">
+												<entry name="id" type="attribute" outkey="65"/>
+												<entry name="ref" type="attribute" outkey="66"/>
+												<entry name="namespace" type="attribute" outkey="947"/>
+												<entry name="CodeValue" ns="1" outkey="67"/>
+												<entry name="ShortDescription" ns="1" outkey="168"/>
+												<entry name="Description" ns="1" outkey="167"/>
+											</entry>
+											<entry name="RetestIndicator" ns="1" outkey="68"/>
+											<entry name="ReasonNotTested" ns="1" outkey="69"/>
+											<entry name="ScoreResults" ns="1" outkey="189">
+												<entry name="AssessmentReportingMethod" type="attribute" outkey="190"/>
+												<entry name="Result" ns="1" outkey="191"/>
+												<entry name="ResultDatatype" ns="1" outkey="192"/>
+											</entry>
+											<entry name="GradeLevelWhenAssessed" ns="1" outkey="193">
+												<entry name="id" type="attribute" outkey="194"/>
+												<entry name="ref" type="attribute" outkey="195"/>
+												<entry name="namespace" type="attribute" outkey="948"/>
+												<entry name="CodeValue" ns="1" outkey="175"/>
+												<entry name="ShortDescription" ns="1" outkey="174"/>
+												<entry name="Description" ns="1" outkey="173"/>
+											</entry>
+											<entry name="PerformanceLevels" ns="1" outkey="196" expanded="1">
+												<entry name="id" type="attribute" outkey="197"/>
+												<entry name="ref" type="attribute" outkey="198"/>
+												<entry name="namespace" type="attribute" outkey="949"/>
+												<entry name="CodeValue" ns="1" outkey="199"/>
+												<entry name="ShortDescription" ns="1" outkey="200"/>
+												<entry name="Description" ns="1" outkey="201"/>
+												<entry name="PerformanceLevelMet" ns="1" outkey="202"/>
+											</entry>
+											<entry name="EventCircumstance" ns="1" outkey="70"/>
+											<entry name="EventDescription" ns="1" outkey="71"/>
+											<entry name="StudentReference" ns="1" outkey="72" expanded="1">
+												<entry name="id" type="attribute" outkey="73"/>
+												<entry name="ref" type="attribute" outkey="74"/>
+												<entry name="StudentIdentity" ns="1" outkey="950" expanded="1">
+													<entry name="PersonUniqueStateId" ns="1" outkey="951"/>
+													<entry name="StudentIdentificationCode" ns="1" outkey="952">
+														<entry name="IdentificationCode" ns="1" outkey="953"/>
+													</entry>
+													<entry name="StudentUniqueStateId" ns="1" outkey="76"/>
+													<entry name="Name" ns="1" outkey="954">
+														<entry name="PersonalTitlePrefix" ns="1" outkey="955"/>
+														<entry name="FirstName" ns="1" outkey="956"/>
+														<entry name="MiddleName" ns="1" outkey="957"/>
+														<entry name="LastSurname" ns="1" outkey="958"/>
+														<entry name="GenerationCodeSuffix" ns="1" outkey="959"/>
+														<entry name="MaidenName" ns="1" outkey="960"/>
+													</entry>
+													<entry name="OtherName" ns="1" outkey="961">
+														<entry name="OtherNameType" type="attribute" outkey="962"/>
+														<entry name="PersonalTitlePrefix" ns="1" outkey="963"/>
+														<entry name="FirstName" ns="1" outkey="964"/>
+														<entry name="MiddleName" ns="1" outkey="965"/>
+														<entry name="LastSurname" ns="1" outkey="966"/>
+														<entry name="GenerationCodeSuffix" ns="1" outkey="967"/>
+													</entry>
+													<entry name="Sex" ns="1" outkey="968"/>
+													<entry name="BirthData" ns="1" outkey="969">
+														<entry name="BirthDate" ns="1" outkey="970"/>
+														<entry name="DateEnteredUS" ns="1" outkey="971"/>
+														<entry name="MultipleBirthStatus" ns="1" outkey="972"/>
+													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" outkey="973"/>
+													<entry name="Race" ns="1" outkey="974"/>
+												</entry>
+											</entry>
+											<entry name="AssessmentReference" ns="1" outkey="975" expanded="1">
+												<entry name="id" type="attribute" outkey="976"/>
+												<entry name="ref" type="attribute" outkey="977"/>
+												<entry name="AssessmentIdentity" ns="1" outkey="978" expanded="1">
+													<entry name="AssessmentIdentificationCode" ns="1" outkey="1161"/>
+													<entry name="AssessmentTitle" ns="1" outkey="979"/>
+													<entry name="AssessmentCategory" ns="1" outkey="1162"/>
+													<entry name="AcademicSubject" ns="1" outkey="980" expanded="1">
+														<entry name="id" type="attribute" outkey="981"/>
+														<entry name="ref" type="attribute" outkey="982"/>
+														<entry name="namespace" type="attribute" outkey="1163"/>
+														<entry name="CodeValue" ns="1" outkey="983"/>
+													</entry>
+													<entry name="GradeLevelAssessed" ns="1" outkey="1164" expanded="1">
+														<entry name="id" type="attribute" outkey="1165"/>
+														<entry name="ref" type="attribute" outkey="1166"/>
+														<entry name="namespace" type="attribute" outkey="1167"/>
+														<entry name="CodeValue" ns="1" outkey="1168"/>
+													</entry>
+													<entry name="Version" ns="1" outkey="984"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentObjectiveAssessment" ns="1" outkey="770" expanded="1">
+											<entry name="id" type="attribute" outkey="771"/>
+											<entry name="ScoreResults" ns="1" outkey="985">
+												<entry name="AssessmentReportingMethod" type="attribute" outkey="986"/>
+												<entry name="Result" ns="1" outkey="987"/>
+											</entry>
+											<entry name="PerformanceLevels" ns="1" outkey="988" expanded="1">
+												<entry name="id" type="attribute" outkey="989"/>
+												<entry name="ref" type="attribute" outkey="990"/>
+												<entry name="namespace" type="attribute" outkey="1134"/>
+												<entry name="CodeValue" ns="1" outkey="991"/>
+												<entry name="PerformanceLevelMet" ns="1" outkey="992"/>
+											</entry>
+											<entry name="StudentAssessmentReference" ns="1" outkey="993" expanded="1">
+												<entry name="id" type="attribute" outkey="994"/>
+												<entry name="ref" type="attribute" outkey="995"/>
+												<entry name="StudentAssessmentIdentity" ns="1" outkey="996"/>
+											</entry>
+											<entry name="ObjectiveAssessmentReference" ns="1" outkey="997" expanded="1">
+												<entry name="id" type="attribute" outkey="998"/>
+												<entry name="ref" type="attribute" outkey="999"/>
+												<entry name="ObjectiveAssessmentIdentity" ns="1" outkey="1000" expanded="1">
+													<entry name="ObjectiveAssessmentIdentificationCode" ns="1" outkey="1137"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentAssessmentItem" ns="1" outkey="772">
+											<entry name="AssessmentResponse" ns="1" outkey="1001"/>
+											<entry name="DescriptiveFeedback" ns="1" outkey="1002"/>
+											<entry name="ResponseIndicator" ns="1" outkey="1003"/>
+											<entry name="AssessmentItemResult" ns="1" outkey="1004"/>
+											<entry name="RawScoreResult" ns="1" outkey="1005"/>
+											<entry name="TimeAssessed" ns="1" outkey="1006"/>
+											<entry name="StudentAssessmentReference" ns="1">
+												<entry name="StudentAssessmentIdentity" ns="1" expanded="1">
+													<entry name="AssessmentReference" ns="1" outkey="1007" expanded="1">
+														<entry name="id" type="attribute" outkey="1008"/>
+														<entry name="ref" type="attribute" outkey="1009"/>
+														<entry name="AssessmentIdentity" ns="1" outkey="1010" expanded="1">
+															<entry name="AssessmentIdentificationCode" ns="1" outkey="1011"/>
+															<entry name="AssessmentTitle" ns="1" outkey="1012"/>
+															<entry name="AssessmentCategory" ns="1" outkey="1013"/>
+															<entry name="AcademicSubject" ns="1" outkey="1014">
+																<entry name="id" type="attribute" outkey="1015"/>
+																<entry name="ref" type="attribute" outkey="1016"/>
+																<entry name="CodeValue" ns="1" outkey="1017"/>
+															</entry>
+															<entry name="GradeLevelAssessed" ns="1" outkey="1018" expanded="1">
+																<entry name="id" type="attribute" outkey="1019"/>
+																<entry name="ref" type="attribute" outkey="1020"/>
+																<entry name="namespace" type="attribute" outkey="1021"/>
+																<entry name="CodeValue" ns="1" outkey="1022"/>
+															</entry>
+															<entry name="Version" ns="1" outkey="1023"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="AssessmentItemReference" ns="1" outkey="1024" expanded="1">
+												<entry name="id" type="attribute" outkey="1025"/>
+												<entry name="ref" type="attribute" outkey="1026"/>
+												<entry name="AssessmentItemIdentity" ns="1" outkey="1027" expanded="1">
+													<entry name="AssessmentItemIdentificationCode" ns="1" outkey="1028"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" inputinstance="Sample XML 1.2\StudentAssessment-ACT.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
+						<wsdl/>
+					</data>
+				</component>
 				<component name="Interchange-StudentAssessment" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1073" lty="86" rbx="1385" rby="738"/>
 					<data>
-						<root scrollposition="1526">
+						<root scrollposition="766">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -431,228 +653,6 @@
 							</entry>
 						</root>
 						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="Interchange-StudentAssessment" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="24" lty="115" rbx="341" rby="767"/>
-					<data>
-						<root scrollposition="983">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" outkey="379" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentAssessment" ns="1" outkey="53" expanded="1">
-										<entry name="AssessmentReference" ns="1" outkey="760">
-											<entry name="id" type="attribute" outkey="761"/>
-											<entry name="ref" type="attribute" outkey="762"/>
-											<entry name="AssessmentIdentity" ns="1" outkey="763" expanded="1">
-												<entry name="AssessmentIdentificationCode" ns="1" outkey="788" expanded="1">
-													<entry name="IdentificationSystem" type="attribute" outkey="789"/>
-													<entry name="AssigningOrganizationCode" type="attribute" outkey="843"/>
-													<entry name="ID" ns="1" outkey="844"/>
-												</entry>
-												<entry name="AssessmentFamilyTitle" ns="1" outkey="790"/>
-												<entry name="AssessmentTitle" ns="1" outkey="764"/>
-												<entry name="AssessmentCategory" ns="1" outkey="791"/>
-												<entry name="AcademicSubject" ns="1" outkey="765" expanded="1">
-													<entry name="id" type="attribute" outkey="766"/>
-													<entry name="ref" type="attribute" outkey="767"/>
-													<entry name="namespace" type="attribute" outkey="792"/>
-													<entry name="CodeValue" ns="1" outkey="768"/>
-												</entry>
-												<entry name="GradeLevelAssessed" ns="1" outkey="793">
-													<entry name="id" type="attribute" outkey="794"/>
-													<entry name="ref" type="attribute" outkey="795"/>
-													<entry name="namespace" type="attribute" outkey="796"/>
-													<entry name="CodeValue" ns="1" outkey="797"/>
-												</entry>
-												<entry name="Version" ns="1" outkey="769"/>
-											</entry>
-										</entry>
-										<entry name="StudentAssessment" ns="1" outkey="54" expanded="1">
-											<entry name="id" type="attribute" outkey="55"/>
-											<entry name="AdministrationDate" ns="1" outkey="56"/>
-											<entry name="AdministrationEndDate" ns="1" outkey="57"/>
-											<entry name="SerialNumber" ns="1" outkey="58"/>
-											<entry name="AdministrationLanguage" ns="1" outkey="59">
-												<entry name="id" type="attribute" outkey="60"/>
-												<entry name="ref" type="attribute" outkey="61"/>
-												<entry name="namespace" type="attribute" outkey="946"/>
-												<entry name="CodeValue" ns="1" outkey="62"/>
-												<entry name="ShortDescription" ns="1" outkey="162"/>
-												<entry name="Description" ns="1" outkey="161"/>
-											</entry>
-											<entry name="AdministrationEnvironment" ns="1" outkey="63"/>
-											<entry name="Accommodation" ns="1" outkey="64">
-												<entry name="id" type="attribute" outkey="65"/>
-												<entry name="ref" type="attribute" outkey="66"/>
-												<entry name="namespace" type="attribute" outkey="947"/>
-												<entry name="CodeValue" ns="1" outkey="67"/>
-												<entry name="ShortDescription" ns="1" outkey="168"/>
-												<entry name="Description" ns="1" outkey="167"/>
-											</entry>
-											<entry name="RetestIndicator" ns="1" outkey="68"/>
-											<entry name="ReasonNotTested" ns="1" outkey="69"/>
-											<entry name="ScoreResults" ns="1" outkey="189">
-												<entry name="AssessmentReportingMethod" type="attribute" outkey="190"/>
-												<entry name="Result" ns="1" outkey="191"/>
-												<entry name="ResultDatatype" ns="1" outkey="192"/>
-											</entry>
-											<entry name="GradeLevelWhenAssessed" ns="1" outkey="193">
-												<entry name="id" type="attribute" outkey="194"/>
-												<entry name="ref" type="attribute" outkey="195"/>
-												<entry name="namespace" type="attribute" outkey="948"/>
-												<entry name="CodeValue" ns="1" outkey="175"/>
-												<entry name="ShortDescription" ns="1" outkey="174"/>
-												<entry name="Description" ns="1" outkey="173"/>
-											</entry>
-											<entry name="PerformanceLevels" ns="1" outkey="196" expanded="1">
-												<entry name="id" type="attribute" outkey="197"/>
-												<entry name="ref" type="attribute" outkey="198"/>
-												<entry name="namespace" type="attribute" outkey="949"/>
-												<entry name="CodeValue" ns="1" outkey="199"/>
-												<entry name="ShortDescription" ns="1" outkey="200"/>
-												<entry name="Description" ns="1" outkey="201"/>
-												<entry name="PerformanceLevelMet" ns="1" outkey="202"/>
-											</entry>
-											<entry name="EventCircumstance" ns="1" outkey="70"/>
-											<entry name="EventDescription" ns="1" outkey="71"/>
-											<entry name="StudentReference" ns="1" outkey="72" expanded="1">
-												<entry name="id" type="attribute" outkey="73"/>
-												<entry name="ref" type="attribute" outkey="74"/>
-												<entry name="StudentIdentity" ns="1" outkey="950" expanded="1">
-													<entry name="PersonUniqueStateId" ns="1" outkey="951"/>
-													<entry name="StudentIdentificationCode" ns="1" outkey="952">
-														<entry name="IdentificationCode" ns="1" outkey="953"/>
-													</entry>
-													<entry name="StudentUniqueStateId" ns="1" outkey="76"/>
-													<entry name="Name" ns="1" outkey="954">
-														<entry name="PersonalTitlePrefix" ns="1" outkey="955"/>
-														<entry name="FirstName" ns="1" outkey="956"/>
-														<entry name="MiddleName" ns="1" outkey="957"/>
-														<entry name="LastSurname" ns="1" outkey="958"/>
-														<entry name="GenerationCodeSuffix" ns="1" outkey="959"/>
-														<entry name="MaidenName" ns="1" outkey="960"/>
-													</entry>
-													<entry name="OtherName" ns="1" outkey="961">
-														<entry name="OtherNameType" type="attribute" outkey="962"/>
-														<entry name="PersonalTitlePrefix" ns="1" outkey="963"/>
-														<entry name="FirstName" ns="1" outkey="964"/>
-														<entry name="MiddleName" ns="1" outkey="965"/>
-														<entry name="LastSurname" ns="1" outkey="966"/>
-														<entry name="GenerationCodeSuffix" ns="1" outkey="967"/>
-													</entry>
-													<entry name="Sex" ns="1" outkey="968"/>
-													<entry name="BirthData" ns="1" outkey="969">
-														<entry name="BirthDate" ns="1" outkey="970"/>
-														<entry name="DateEnteredUS" ns="1" outkey="971"/>
-														<entry name="MultipleBirthStatus" ns="1" outkey="972"/>
-													</entry>
-													<entry name="HispanicLatinoEthnicity" ns="1" outkey="973"/>
-													<entry name="Race" ns="1" outkey="974"/>
-												</entry>
-											</entry>
-											<entry name="AssessmentReference" ns="1" outkey="975" expanded="1">
-												<entry name="id" type="attribute" outkey="976"/>
-												<entry name="ref" type="attribute" outkey="977"/>
-												<entry name="AssessmentIdentity" ns="1" outkey="978" expanded="1">
-													<entry name="AssessmentIdentificationCode" ns="1" outkey="1161"/>
-													<entry name="AssessmentTitle" ns="1" outkey="979"/>
-													<entry name="AssessmentCategory" ns="1" outkey="1162"/>
-													<entry name="AcademicSubject" ns="1" outkey="980" expanded="1">
-														<entry name="id" type="attribute" outkey="981"/>
-														<entry name="ref" type="attribute" outkey="982"/>
-														<entry name="namespace" type="attribute" outkey="1163"/>
-														<entry name="CodeValue" ns="1" outkey="983"/>
-													</entry>
-													<entry name="GradeLevelAssessed" ns="1" outkey="1164" expanded="1">
-														<entry name="id" type="attribute" outkey="1165"/>
-														<entry name="ref" type="attribute" outkey="1166"/>
-														<entry name="namespace" type="attribute" outkey="1167"/>
-														<entry name="CodeValue" ns="1" outkey="1168"/>
-													</entry>
-													<entry name="Version" ns="1" outkey="984"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentObjectiveAssessment" ns="1" outkey="770" expanded="1">
-											<entry name="id" type="attribute" outkey="771"/>
-											<entry name="ScoreResults" ns="1" outkey="985">
-												<entry name="AssessmentReportingMethod" type="attribute" outkey="986"/>
-												<entry name="Result" ns="1" outkey="987"/>
-											</entry>
-											<entry name="PerformanceLevels" ns="1" outkey="988" expanded="1">
-												<entry name="id" type="attribute" outkey="989"/>
-												<entry name="ref" type="attribute" outkey="990"/>
-												<entry name="namespace" type="attribute" outkey="1134"/>
-												<entry name="CodeValue" ns="1" outkey="991"/>
-												<entry name="PerformanceLevelMet" ns="1" outkey="992"/>
-											</entry>
-											<entry name="StudentAssessmentReference" ns="1" outkey="993" expanded="1">
-												<entry name="id" type="attribute" outkey="994"/>
-												<entry name="ref" type="attribute" outkey="995"/>
-												<entry name="StudentAssessmentIdentity" ns="1" outkey="996"/>
-											</entry>
-											<entry name="ObjectiveAssessmentReference" ns="1" outkey="997" expanded="1">
-												<entry name="id" type="attribute" outkey="998"/>
-												<entry name="ref" type="attribute" outkey="999"/>
-												<entry name="ObjectiveAssessmentIdentity" ns="1" outkey="1000" expanded="1">
-													<entry name="ObjectiveAssessmentIdentificationCode" ns="1" outkey="1137"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentAssessmentItem" ns="1" outkey="772">
-											<entry name="AssessmentResponse" ns="1" outkey="1001"/>
-											<entry name="DescriptiveFeedback" ns="1" outkey="1002"/>
-											<entry name="ResponseIndicator" ns="1" outkey="1003"/>
-											<entry name="AssessmentItemResult" ns="1" outkey="1004"/>
-											<entry name="RawScoreResult" ns="1" outkey="1005"/>
-											<entry name="TimeAssessed" ns="1" outkey="1006"/>
-											<entry name="StudentAssessmentReference" ns="1">
-												<entry name="StudentAssessmentIdentity" ns="1" expanded="1">
-													<entry name="AssessmentReference" ns="1" outkey="1007" expanded="1">
-														<entry name="id" type="attribute" outkey="1008"/>
-														<entry name="ref" type="attribute" outkey="1009"/>
-														<entry name="AssessmentIdentity" ns="1" outkey="1010" expanded="1">
-															<entry name="AssessmentIdentificationCode" ns="1" outkey="1011"/>
-															<entry name="AssessmentTitle" ns="1" outkey="1012"/>
-															<entry name="AssessmentCategory" ns="1" outkey="1013"/>
-															<entry name="AcademicSubject" ns="1" outkey="1014">
-																<entry name="id" type="attribute" outkey="1015"/>
-																<entry name="ref" type="attribute" outkey="1016"/>
-																<entry name="CodeValue" ns="1" outkey="1017"/>
-															</entry>
-															<entry name="GradeLevelAssessed" ns="1" outkey="1018" expanded="1">
-																<entry name="id" type="attribute" outkey="1019"/>
-																<entry name="ref" type="attribute" outkey="1020"/>
-																<entry name="namespace" type="attribute" outkey="1021"/>
-																<entry name="CodeValue" ns="1" outkey="1022"/>
-															</entry>
-															<entry name="Version" ns="1" outkey="1023"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="AssessmentItemReference" ns="1" outkey="1024" expanded="1">
-												<entry name="id" type="attribute" outkey="1025"/>
-												<entry name="ref" type="attribute" outkey="1026"/>
-												<entry name="AssessmentItemIdentity" ns="1" outkey="1027" expanded="1">
-													<entry name="AssessmentItemIdentificationCode" ns="1" outkey="1028"/>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" inputinstance="Sample XML 1.2\*" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
 						<wsdl/>
 					</data>
 				</component>
