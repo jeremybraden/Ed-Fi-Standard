@@ -116,16 +116,6 @@
 					</targets>
 					<view ltx="1371" lty="915" rbx="1468" rby="991"/>
 				</component>
-				<component name="exists" library="core" uid="92" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1085"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1089"/>
-					</targets>
-					<view ltx="996" lty="897" rbx="1085" rby="936"/>
-				</component>
 				<component name="exists" library="core" uid="96" kind="5">
 					<properties/>
 					<sources>
@@ -313,8 +303,18 @@
 					</targets>
 					<view ltx="457" lty="1068" rbx="550" rby="1126"/>
 				</component>
+				<component name="exists" library="core" uid="92" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1085"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1089"/>
+					</targets>
+					<view ltx="996" lty="897" rbx="1085" rby="936"/>
+				</component>
 				<component name="Lookup" library="user" blackbox="0" uid="77" kind="19" visible="0">
-					<view ltx="643" lty="884" rbx="892" rby="969"/>
+					<view ltx="643" lty="884" rbx="892" rby="986"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -327,6 +327,7 @@
 							<entry name="Term" inpkey="653" componentid="86"/>
 							<entry name="ClassPeriodName" inpkey="654" componentid="87"/>
 							<entry name="Location" inpkey="655" componentid="90"/>
+							<entry name="SchoolId" inpkey="1383" componentid="108"/>
 						</root>
 						<root rootindex="1">
 							<header>
@@ -343,7 +344,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1136" lty="168" rbx="1481" rby="827"/>
 					<data>
-						<root scrollposition="481">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -450,7 +451,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentProgramAttendanceEvent" ns="1" inpkey="109">
+										<entry name="StudentProgramAttendanceEvent" ns="1" inpkey="109" expanded="1">
 											<entry name="id" type="attribute" inpkey="110"/>
 											<entry name="AttendanceEvent" ns="1" inpkey="111">
 												<entry name="EventDate" ns="1" inpkey="113"/>
@@ -463,7 +464,7 @@
 												<entry name="AttendanceEventReason" ns="1" inpkey="118"/>
 												<entry name="EducationalEnvironment" ns="1" inpkey="119"/>
 											</entry>
-											<entry name="StudentReference" ns="1" inpkey="120">
+											<entry name="StudentReference" ns="1" inpkey="120" expanded="1">
 												<entry name="id" type="attribute" inpkey="121"/>
 												<entry name="ref" type="attribute" inpkey="122"/>
 												<entry name="StudentIdentity" ns="1" inpkey="123" expanded="1">
@@ -712,7 +713,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentSectionAttendanceEvent" ns="1" inpkey="248" expanded="1">
+										<entry name="StudentSectionAttendanceEvent" ns="1" inpkey="248">
 											<entry name="id" type="attribute" inpkey="249"/>
 											<entry name="AttendanceEvent" ns="1" inpkey="250">
 												<entry name="EventDate" ns="1" inpkey="252"/>
@@ -1010,7 +1011,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="44" lty="147" rbx="447" rby="856"/>
 					<data>
-						<root scrollposition="1206">
+						<root scrollposition="203">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1038,7 +1039,6 @@
 												<entry name="id" type="attribute" outkey="34"/>
 												<entry name="ref" type="attribute" outkey="35"/>
 												<entry name="StudentIdentity" ns="1" outkey="36" expanded="1">
-													<entry name="PersonUniqueStateId" ns="1" outkey="471"/>
 													<entry name="StudentIdentificationCode" ns="1" outkey="666" expanded="1">
 														<entry name="IdentificationSystem" type="attribute" outkey="667"/>
 														<entry name="AssigningOrganizationCode" type="attribute" outkey="668"/>
@@ -1169,7 +1169,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance-Tardy.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -1294,6 +1294,7 @@
 							<edge vertexkey="764" edgekey="837"/>
 							<edge vertexkey="803" edgekey="838"/>
 							<edge vertexkey="699" edgekey="1061"/>
+							<edge vertexkey="472" edgekey="1385"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="38">
@@ -1565,6 +1566,7 @@
 							<edge vertexkey="1056" edgekey="1376"/>
 							<edge vertexkey="275" edgekey="1377"/>
 							<edge vertexkey="1248" edgekey="1378"/>
+							<edge vertexkey="1383" edgekey="1384"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="238">
@@ -1604,11 +1606,6 @@
 							<edge vertexkey="329" edgekey="336"/>
 							<edge vertexkey="328" edgekey="337"/>
 							<edge vertexkey="330" edgekey="338"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="471">
-						<edges>
-							<edge vertexkey="472" edgekey="494"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="648">
@@ -2360,64 +2357,6 @@
 						<parameter usageKind="input" name="ClassPeriodName"/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="89" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="53"/>
-						<datapoint pos="1" key="67"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="54"/>
-					</targets>
-					<view ltx="735" lty="313" rbx="821" rby="369"/>
-				</component>
-				<component name="equal" library="core" uid="88" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="51"/>
-						<datapoint pos="1" key="68"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="52"/>
-					</targets>
-					<view ltx="735" lty="409" rbx="821" rby="465"/>
-				</component>
-				<component name="equal" library="core" uid="83" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="34"/>
-						<datapoint pos="1" key="64"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="32"/>
-					</targets>
-					<view ltx="735" lty="146" rbx="821" rby="202"/>
-				</component>
-				<component name="equal" library="core" uid="70" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="6"/>
-						<datapoint pos="1" key="10"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="7"/>
-					</targets>
-					<view ltx="735" lty="37" rbx="821" rby="93"/>
-				</component>
-				<component name="logical-and" library="core" uid="81" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="23"/>
-						<datapoint pos="1" key="55"/>
-						<datapoint pos="2" key="50"/>
-						<datapoint pos="3" key="59"/>
-						<datapoint pos="4" key="66"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="18"/>
-					</targets>
-					<view ltx="878" lty="211" rbx="990" rby="323"/>
-				</component>
 				<component name="UniqueSectionCode" library="core" uid="82" kind="3">
 					<properties/>
 					<sources>
@@ -2525,11 +2464,85 @@
 						<parameter usageKind="input" name="LocalCourseCode"/>
 					</data>
 				</component>
+				<component name="equal" library="core" uid="89" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="53"/>
+						<datapoint pos="1" key="67"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="54"/>
+					</targets>
+					<view ltx="735" lty="313" rbx="821" rby="369"/>
+				</component>
+				<component name="equal" library="core" uid="88" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="68"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="52"/>
+					</targets>
+					<view ltx="735" lty="409" rbx="821" rby="465"/>
+				</component>
+				<component name="equal" library="core" uid="83" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="34"/>
+						<datapoint pos="1" key="64"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="32"/>
+					</targets>
+					<view ltx="735" lty="146" rbx="821" rby="202"/>
+				</component>
+				<component name="equal" library="core" uid="70" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="10"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view ltx="735" lty="37" rbx="821" rby="93"/>
+				</component>
+				<component name="logical-and" library="core" uid="81" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="23"/>
+						<datapoint pos="1" key="55"/>
+						<datapoint pos="2" key="50"/>
+						<datapoint pos="3" key="59"/>
+						<datapoint pos="4" key="66"/>
+						<datapoint pos="5" key="99"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="18"/>
+					</targets>
+					<view ltx="878" lty="211" rbx="990" rby="341"/>
+				</component>
+				<component name="SchoolId" library="core" uid="108" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="94"/>
+					</targets>
+					<view ltx="574" lty="538" rbx="675" rby="577"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolId"/>
+					</data>
+				</component>
 				<component name="Interchange-MasterSchedule" library="xml" uid="73" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="60" lty="24" rbx="496" rby="538"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="209">
 							<header>
 								<namespaces>
 									<namespace uid="http://ed-fi.org/0120"/>
@@ -2559,8 +2572,10 @@
 													<entry name="SchoolYear" outkey="90"/>
 												</entry>
 											</entry>
-											<entry name="SchoolReference">
-												<entry name="EducationOrganizationIdentity" expanded="1"/>
+											<entry name="SchoolReference" expanded="1">
+												<entry name="EducationOrganizationIdentity" expanded="1">
+													<entry name="StateOrganizationId" outkey="100"/>
+												</entry>
 											</entry>
 											<entry name="LocationReference" expanded="1">
 												<entry name="LocationIdentity" expanded="1">
@@ -2580,6 +2595,17 @@
 						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\MasterSchedule\Sample XML 1.2\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
 						<wsdl/>
 					</data>
+				</component>
+				<component name="equal" library="core" uid="107" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="95"/>
+						<datapoint pos="1" key="97"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="96"/>
+					</targets>
+					<view ltx="725" lty="538" rbx="811" rby="594"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -2684,6 +2710,21 @@
 					<vertex vertexkey="90">
 						<edges>
 							<edge vertexkey="64" edgekey="93"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94">
+						<edges>
+							<edge vertexkey="95" edgekey="98"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="96">
+						<edges>
+							<edge vertexkey="99" edgekey="101"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="100">
+						<edges>
+							<edge vertexkey="97" edgekey="102"/>
 						</edges>
 					</vertex>
 				</vertices>
