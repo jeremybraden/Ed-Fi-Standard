@@ -303,11 +303,48 @@
 					</targets>
 					<view ltx="457" lty="1068" rbx="550" rby="1126"/>
 				</component>
+				<component name="exists" library="core" uid="92" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1085"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1089"/>
+					</targets>
+					<view ltx="996" lty="897" rbx="1085" rby="936"/>
+				</component>
+				<component name="Lookup" library="user" blackbox="0" uid="77" kind="19" visible="0">
+					<view ltx="643" lty="884" rbx="892" rby="986"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="LocalCourseCode" inpkey="643" componentid="69"/>
+							<entry name="SchoolYear" inpkey="652" componentid="84"/>
+							<entry name="Term" inpkey="653" componentid="86"/>
+							<entry name="ClassPeriodName" inpkey="654" componentid="87"/>
+							<entry name="Location" inpkey="655" componentid="90"/>
+							<entry name="SchoolId" inpkey="1383" componentid="108"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="648" componentid="79"/>
+							<entry name="UniqueSectionCode" outkey="649" componentid="78"/>
+						</root>
+					</data>
+				</component>
 				<component name="Interchange-StudentAttendance" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1136" lty="168" rbx="1481" rby="827"/>
 					<data>
-						<root scrollposition="481">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -414,7 +451,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentProgramAttendanceEvent" ns="1" inpkey="109">
+										<entry name="StudentProgramAttendanceEvent" ns="1" inpkey="109" expanded="1">
 											<entry name="id" type="attribute" inpkey="110"/>
 											<entry name="AttendanceEvent" ns="1" inpkey="111">
 												<entry name="EventDate" ns="1" inpkey="113"/>
@@ -427,7 +464,7 @@
 												<entry name="AttendanceEventReason" ns="1" inpkey="118"/>
 												<entry name="EducationalEnvironment" ns="1" inpkey="119"/>
 											</entry>
-											<entry name="StudentReference" ns="1" inpkey="120">
+											<entry name="StudentReference" ns="1" inpkey="120" expanded="1">
 												<entry name="id" type="attribute" inpkey="121"/>
 												<entry name="ref" type="attribute" inpkey="122"/>
 												<entry name="StudentIdentity" ns="1" inpkey="123" expanded="1">
@@ -676,7 +713,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentSectionAttendanceEvent" ns="1" inpkey="248" expanded="1">
+										<entry name="StudentSectionAttendanceEvent" ns="1" inpkey="248">
 											<entry name="id" type="attribute" inpkey="249"/>
 											<entry name="AttendanceEvent" ns="1" inpkey="250">
 												<entry name="EventDate" ns="1" inpkey="252"/>
@@ -970,48 +1007,11 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="exists" library="core" uid="92" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1085"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1089"/>
-					</targets>
-					<view ltx="996" lty="897" rbx="1085" rby="936"/>
-				</component>
-				<component name="Lookup" library="user" blackbox="0" uid="77" kind="19" visible="0">
-					<view ltx="643" lty="884" rbx="892" rby="986"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="LocalCourseCode" inpkey="643" componentid="69"/>
-							<entry name="SchoolYear" inpkey="652" componentid="84"/>
-							<entry name="Term" inpkey="653" componentid="86"/>
-							<entry name="ClassPeriodName" inpkey="654" componentid="87"/>
-							<entry name="Location" inpkey="655" componentid="90"/>
-							<entry name="SchoolId" inpkey="1383" componentid="108"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="SequenceOfCourse" outkey="648" componentid="79"/>
-							<entry name="UniqueSectionCode" outkey="649" componentid="78"/>
-						</root>
-					</data>
-				</component>
 				<component name="Interchange-StudentAttendance" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="44" lty="147" rbx="447" rby="856"/>
 					<data>
-						<root scrollposition="1174">
+						<root scrollposition="203">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1039,7 +1039,6 @@
 												<entry name="id" type="attribute" outkey="34"/>
 												<entry name="ref" type="attribute" outkey="35"/>
 												<entry name="StudentIdentity" ns="1" outkey="36" expanded="1">
-													<entry name="PersonUniqueStateId" ns="1" outkey="471"/>
 													<entry name="StudentIdentificationCode" ns="1" outkey="666" expanded="1">
 														<entry name="IdentificationSystem" type="attribute" outkey="667"/>
 														<entry name="AssigningOrganizationCode" type="attribute" outkey="668"/>
@@ -1170,7 +1169,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance-Tardy.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAttendance.xsd" inputinstance="Sample XML 1.2\StudentAttendance.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAttendance"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -1295,6 +1294,7 @@
 							<edge vertexkey="764" edgekey="837"/>
 							<edge vertexkey="803" edgekey="838"/>
 							<edge vertexkey="699" edgekey="1061"/>
+							<edge vertexkey="472" edgekey="1385"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="38">
@@ -1606,11 +1606,6 @@
 							<edge vertexkey="329" edgekey="336"/>
 							<edge vertexkey="328" edgekey="337"/>
 							<edge vertexkey="330" edgekey="338"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="471">
-						<edges>
-							<edge vertexkey="472" edgekey="494"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="648">
