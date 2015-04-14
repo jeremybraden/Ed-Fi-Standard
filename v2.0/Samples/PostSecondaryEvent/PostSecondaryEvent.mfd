@@ -5,50 +5,6 @@
 		<properties SelectedLanguage="xslt2"/>
 		<structure>
 			<children>
-				<component name="exists" library="core" uid="22" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="131"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="134"/>
-					</targets>
-					<view ltx="540" lty="564" rbx="607" rby="603"/>
-				</component>
-				<component name="concat" library="core" uid="25" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="130"/>
-						<datapoint pos="1" key="133"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="128"/>
-					</targets>
-					<view ltx="532" lty="622" rbx="607" rby="680"/>
-				</component>
-				<component name="constant" library="core" uid="24" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="132"/>
-					</targets>
-					<view ltx="268" lty="622" rbx="408" rby="640"/>
-					<data>
-						<constant value="The original value for DocumentExpirationDate cannot be properly converted to a valid date value.  The previous value was: " datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="if-else" library="core" uid="23" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="135"/>
-						<datapoint pos="1" key="129"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="136"/>
-					</targets>
-					<view ltx="701" lty="564" rbx="798" rby="640"/>
-				</component>
 				<component name="constant" library="core" uid="19" kind="2">
 					<properties/>
 					<targets>
@@ -64,7 +20,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="892" lty="88" rbx="1310" rby="502"/>
 					<data>
-						<root scrollposition="571">
+						<root scrollposition="352">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -109,17 +65,16 @@
 														</entry>
 														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="71"/>
 													</entry>
-													<entry name="Name" ns="1" inpkey="84" expanded="1">
+													<entry name="Name" ns="1" inpkey="84">
 														<entry name="PersonalTitlePrefix" ns="1" inpkey="85"/>
 														<entry name="FirstName" ns="1" inpkey="86"/>
 														<entry name="MiddleName" ns="1" inpkey="87"/>
 														<entry name="LastSurname" ns="1" inpkey="88"/>
 														<entry name="GenerationCodeSuffix" ns="1" inpkey="89"/>
 														<entry name="MaidenName" ns="1" inpkey="90"/>
-														<entry name="PersonalIdentificationDocument" ns="1" inpkey="91" expanded="1">
+														<entry name="PersonalIdentificationDocument" ns="1" inpkey="91">
 															<entry name="DocumentTitle" ns="1" inpkey="92"/>
 															<entry name="PersonalInformationVerification" ns="1" inpkey="93"/>
-															<entry name="DocumentExpirationDate" ns="1" inpkey="94"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="95"/>
 															<entry name="IssuerName" ns="1" inpkey="96"/>
 															<entry name="IssuerCountry" ns="1" inpkey="97" expanded="1">
@@ -148,6 +103,8 @@
 														<entry name="DateEnteredUS" ns="1" inpkey="168"/>
 														<entry name="MultipleBirthStatus" ns="1" inpkey="169"/>
 													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="195"/>
+													<entry name="Race" ns="1" inpkey="196"/>
 												</entry>
 											</entry>
 										</entry>
@@ -163,7 +120,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="7" lty="106" rbx="357" rby="483"/>
 					<data>
-						<root scrollposition="286">
+						<root scrollposition="167">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -199,7 +156,7 @@
 														<entry name="IdentificationCode" ns="1" outkey="78"/>
 													</entry>
 													<entry name="StudentUniqueStateId" ns="1" outkey="28"/>
-													<entry name="Name" ns="1" outkey="99" expanded="1">
+													<entry name="Name" ns="1" outkey="99">
 														<entry name="PersonalTitlePrefix" ns="1" outkey="100"/>
 														<entry name="FirstName" ns="1" outkey="101"/>
 														<entry name="MiddleName" ns="1" outkey="102"/>
@@ -209,7 +166,6 @@
 														<entry name="PersonalInformationVerification" ns="1" outkey="106" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="107"/>
 															<entry name="DocumentCategory" ns="1" outkey="108"/>
-															<entry name="DocumentExpirationDate" ns="1" outkey="109"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="110"/>
 															<entry name="IssuerName" ns="1" outkey="111"/>
 															<entry name="IssuerCountry" ns="1" outkey="112"/>
@@ -224,7 +180,7 @@
 														<entry name="GenerationCodeSuffix" ns="1" outkey="143"/>
 													</entry>
 													<entry name="Sex" ns="1" outkey="144"/>
-													<entry name="BirthData" ns="1" outkey="145" expanded="1">
+													<entry name="BirthData" ns="1" outkey="145">
 														<entry name="BirthDate" ns="1" outkey="146"/>
 														<entry name="CityOfBirth" ns="1" outkey="147"/>
 														<entry name="StateOfBirthAbbreviation" ns="1" outkey="148"/>
@@ -232,6 +188,10 @@
 														<entry name="CountryOfBirthCode" ns="1" outkey="150"/>
 														<entry name="DateEnteredUS" ns="1" outkey="151"/>
 														<entry name="MultipleBirthStatus" ns="1" outkey="152"/>
+													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" outkey="197"/>
+													<entry name="Race" ns="1" expanded="1">
+														<entry name="RacialCategory" ns="1" outkey="198"/>
 													</entry>
 												</entry>
 											</entry>
@@ -422,12 +382,6 @@
 							<edge vertexkey="93" edgekey="123"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="109">
-						<edges>
-							<edge vertexkey="131" edgekey="170"/>
-							<edge vertexkey="130" edgekey="171"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="110">
 						<edges>
 							<edge vertexkey="95" edgekey="125"/>
@@ -442,26 +396,6 @@
 						<edges>
 							<edge vertexkey="97" edgekey="127"/>
 							<edge vertexkey="193" edgekey="194"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="128">
-						<edges>
-							<edge vertexkey="129" edgekey="172"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="132">
-						<edges>
-							<edge vertexkey="133" edgekey="173"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="134">
-						<edges>
-							<edge vertexkey="135" edgekey="174"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="136">
-						<edges>
-							<edge vertexkey="94" edgekey="175"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="137">
@@ -543,6 +477,16 @@
 					<vertex vertexkey="152">
 						<edges>
 							<edge vertexkey="169" edgekey="192"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="197">
+						<edges>
+							<edge vertexkey="195" edgekey="199"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="198">
+						<edges>
+							<edge vertexkey="196" edgekey="200"/>
 						</edges>
 					</vertex>
 				</vertices>

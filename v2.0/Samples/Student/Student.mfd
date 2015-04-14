@@ -165,17 +165,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="substitute-missing" library="core" uid="88" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1377"/>
-						<datapoint pos="1" key="1378"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1379"/>
-					</targets>
-					<view ltx="676" lty="109" rbx="790" rby="165"/>
-				</component>
 				<component name="Address" library="core" uid="6" kind="3">
 					<properties/>
 					<sources>
@@ -395,11 +384,22 @@
 					</targets>
 					<view ltx="777" lty="394" rbx="874" rby="470"/>
 				</component>
+				<component name="substitute-missing" library="core" uid="88" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1377"/>
+						<datapoint pos="1" key="1378"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1379"/>
+					</targets>
+					<view ltx="678" lty="101" rbx="792" rby="157"/>
+				</component>
 				<component name="Interchange-Student" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1011" lty="101" rbx="1358" rby="646"/>
 					<data>
-						<root scrollposition="173">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -413,9 +413,9 @@
 										<entry name="Student" ns="1" inpkey="882" expanded="1">
 											<entry name="id" type="attribute" inpkey="883"/>
 											<entry name="StudentUniqueId" ns="1" inpkey="884"/>
-											<entry name="StudentIdentificationCode" ns="1" inpkey="885">
+											<entry name="StudentIdentificationCode" ns="1" inpkey="885" expanded="1">
 												<entry name="IdentificationCode" ns="1" inpkey="886"/>
-												<entry name="StudentIdentificationSystem" ns="1" inpkey="1300">
+												<entry name="StudentIdentificationSystem" ns="1" inpkey="1300" expanded="1">
 													<entry name="CodeValue" ns="1" inpkey="1301"/>
 												</entry>
 												<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="1302"/>
@@ -430,7 +430,6 @@
 												<entry name="PersonalIdentificationDocument" ns="1" inpkey="1303">
 													<entry name="DocumentTitle" ns="1" inpkey="1304"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1305"/>
-													<entry name="DocumentExpirationDate" ns="1" inpkey="1525"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1307"/>
 													<entry name="IssuerName" ns="1" inpkey="1308"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1309" expanded="1">
@@ -505,7 +504,6 @@
 												<entry name="USCitizenshipIdentificationDocument" ns="1" inpkey="1318" expanded="1">
 													<entry name="DocumentTitle" ns="1" inpkey="1319"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1320"/>
-													<entry name="DocumentExpirationDate" ns="1" inpkey="1537"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1322"/>
 													<entry name="IssuerName" ns="1" inpkey="1323"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1324">
@@ -516,7 +514,6 @@
 												<entry name="ForeignCitizenshipIdentificationDocument" ns="1" inpkey="1327" expanded="1">
 													<entry name="DocumentTitle" ns="1" inpkey="1328"/>
 													<entry name="PersonalInformationVerification" ns="1" inpkey="1329"/>
-													<entry name="DocumentExpirationDate" ns="1" inpkey="1549"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1331"/>
 													<entry name="IssuerName" ns="1" inpkey="1332"/>
 													<entry name="IssuerCountry" ns="1" inpkey="1333">
@@ -555,7 +552,7 @@
 												</entry>
 												<entry name="LanguageUse" ns="1" inpkey="1405"/>
 											</entry>
-											<entry name="Disability" ns="1" inpkey="1406" expanded="1">
+											<entry name="Disability" ns="1" inpkey="1406">
 												<entry name="Disability" ns="1" inpkey="1407" expanded="1">
 													<entry name="id" type="attribute" inpkey="1408"/>
 													<entry name="ref" type="attribute" inpkey="1409"/>
@@ -566,7 +563,7 @@
 												<entry name="OrderOfDisability" ns="1" inpkey="1413"/>
 											</entry>
 											<entry name="DisplacementStatus" ns="1" inpkey="943"/>
-											<entry name="ProgramParticipation" ns="1" inpkey="1414" expanded="1">
+											<entry name="ProgramParticipation" ns="1" inpkey="1414">
 												<entry name="ProgramType" ns="1" inpkey="1415"/>
 												<entry name="ProgramCharacteristic" ns="1" inpkey="1416" expanded="1">
 													<entry name="id" type="attribute" inpkey="1417"/>
@@ -578,16 +575,16 @@
 												<entry name="EndDate" ns="1" inpkey="1422"/>
 												<entry name="DesignatedBy" ns="1" inpkey="1423"/>
 											</entry>
-											<entry name="LearningStyle" ns="1" inpkey="1424" expanded="1">
+											<entry name="LearningStyle" ns="1" inpkey="1424">
 												<entry name="VisualLearning" ns="1" inpkey="1425"/>
 												<entry name="AuditoryLearning" ns="1" inpkey="1426"/>
 												<entry name="TactileLearning" ns="1" inpkey="1427"/>
 											</entry>
-											<entry name="CohortYear" ns="1" inpkey="1428" expanded="1">
+											<entry name="CohortYear" ns="1" inpkey="1428">
 												<entry name="SchoolYear" ns="1" inpkey="1429"/>
 												<entry name="CohortYearType" ns="1" inpkey="1430"/>
 											</entry>
-											<entry name="StudentIndicator" ns="1" inpkey="1431" expanded="1">
+											<entry name="StudentIndicator" ns="1" inpkey="1431">
 												<entry name="IndicatorGroup" ns="1" inpkey="1432"/>
 												<entry name="IndicatorName" ns="1" inpkey="1433"/>
 												<entry name="Indicator" ns="1" inpkey="1434"/>
@@ -605,109 +602,11 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="exists" library="core" uid="94" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1522"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1520"/>
-					</targets>
-					<view ltx="1049" lty="-337" rbx="1116" rby="-298"/>
-				</component>
-				<component name="if-else" library="core" uid="93" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1521"/>
-						<datapoint pos="1" key="1517"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1518"/>
-					</targets>
-					<view ltx="1210" lty="-337" rbx="1307" rby="-261"/>
-				</component>
-				<component name="concat" library="core" uid="92" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1519"/>
-						<datapoint pos="1" key="1523"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1516"/>
-					</targets>
-					<view ltx="1041" lty="-279" rbx="1116" rby="-221"/>
-				</component>
-				<component name="concat" library="core" uid="99" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1541"/>
-						<datapoint pos="1" key="1543"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1544"/>
-					</targets>
-					<view ltx="1049" lty="1" rbx="1124" rby="59"/>
-				</component>
-				<component name="concat" library="core" uid="98" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1535"/>
-						<datapoint pos="1" key="1531"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1526"/>
-					</targets>
-					<view ltx="1049" lty="-146" rbx="1124" rby="-88"/>
-				</component>
-				<component name="if-else" library="core" uid="95" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1533"/>
-						<datapoint pos="1" key="1527"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1534"/>
-					</targets>
-					<view ltx="1210" lty="-196" rbx="1307" rby="-120"/>
-				</component>
-				<component name="exists" library="core" uid="96" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1529"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1532"/>
-					</targets>
-					<view ltx="1049" lty="-196" rbx="1116" rby="-157"/>
-				</component>
-				<component name="exists" library="core" uid="100" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1540"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1538"/>
-					</targets>
-					<view ltx="1057" lty="-69" rbx="1124" rby="-30"/>
-				</component>
-				<component name="constant" library="core" uid="91" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="1515"/>
-					</targets>
-					<view ltx="777" lty="-279" rbx="917" rby="-261"/>
-					<data>
-						<constant value="The original value for DocumentExpirationDate cannot be properly converted to a valid date value.  The previous value was: " datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="Interchange-StudentParent" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="92" lty="101" rbx="432" rby="646"/>
 					<data>
-						<root scrollposition="196">
+						<root scrollposition="50">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -723,6 +622,7 @@
 											<entry name="StudentUniqueStateId" ns="1" outkey="205"/>
 											<entry name="StudentIdentificationCode" ns="1" outkey="206" expanded="1">
 												<entry name="IdentificationSystem" type="attribute" outkey="207"/>
+												<entry name="AssigningOrganizationCode" type="attribute" outkey="1577"/>
 												<entry name="IdentificationCode" ns="1" outkey="209"/>
 											</entry>
 											<entry name="Name" ns="1" outkey="210">
@@ -735,7 +635,6 @@
 												<entry name="PersonalInformationVerification" ns="1" outkey="217">
 													<entry name="DocumentTitle" ns="1" outkey="218"/>
 													<entry name="DocumentCategory" ns="1" outkey="585"/>
-													<entry name="DocumentExpirationDate" ns="1" outkey="1524"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="220"/>
 													<entry name="IssuerName" ns="1" outkey="221"/>
 													<entry name="IssuerCountry" ns="1" outkey="222"/>
@@ -799,7 +698,6 @@
 												<entry name="USCitizenshipDocumentation" ns="1" outkey="269" expanded="1">
 													<entry name="DocumentTitle" ns="1" outkey="270"/>
 													<entry name="DocumentCategory" ns="1" outkey="589"/>
-													<entry name="DocumentExpirationDate" ns="1" outkey="1536"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="272"/>
 													<entry name="IssuerName" ns="1" outkey="273"/>
 													<entry name="IssuerCountry" ns="1" outkey="274"/>
@@ -807,7 +705,6 @@
 												<entry name="ForeignCitizenshipDocumentation" ns="1" outkey="275" expanded="1">
 													<entry name="DocumentTitle" ns="1" outkey="276"/>
 													<entry name="DocumentCategory" ns="1" outkey="590"/>
-													<entry name="DocumentExpirationDate" ns="1" outkey="1550"/>
 													<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="278"/>
 													<entry name="IssuerName" ns="1" outkey="279"/>
 													<entry name="IssuerCountry" ns="1" outkey="280"/>
@@ -916,17 +813,16 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="if-else" library="core" uid="101" kind="4">
+				<component name="substitute-missing" library="core" uid="104" kind="5">
 					<properties/>
 					<sources>
-						<datapoint pos="0" key="1539"/>
-						<datapoint pos="1" key="1545"/>
-						<datapoint/>
+						<datapoint pos="0" key="1578"/>
+						<datapoint pos="1" key="1579"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="1542"/>
+						<datapoint pos="0" key="1580"/>
 					</targets>
-					<view ltx="1210" lty="-69" rbx="1307" rby="7"/>
+					<view ltx="693" lty="233" rbx="807" rby="289"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -1051,7 +947,7 @@
 						<edges>
 							<edge vertexkey="1300" edgekey="1339"/>
 							<edge vertexkey="1301" edgekey="1340"/>
-							<edge vertexkey="1302" edgekey="1514"/>
+							<edge vertexkey="1579" edgekey="1581"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="209">
@@ -1830,80 +1726,20 @@
 							<edge vertexkey="1420" edgekey="1510"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="1515">
-						<edges>
-							<edge vertexkey="1523" edgekey="1553"/>
-							<edge vertexkey="1531" edgekey="1554"/>
-							<edge vertexkey="1541" edgekey="1555"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1516">
-						<edges>
-							<edge vertexkey="1517" edgekey="1556"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1518">
-						<edges>
-							<edge vertexkey="1525" edgekey="1557"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1520">
-						<edges>
-							<edge vertexkey="1521" edgekey="1558"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1524">
-						<edges>
-							<edge vertexkey="1519" edgekey="1559"/>
-							<edge vertexkey="1522" edgekey="1560"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1526">
-						<edges>
-							<edge vertexkey="1527" edgekey="1561"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1532">
-						<edges>
-							<edge vertexkey="1533" edgekey="1562"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1534">
-						<edges>
-							<edge vertexkey="1537" edgekey="1563"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1536">
-						<edges>
-							<edge vertexkey="1535" edgekey="1564"/>
-							<edge vertexkey="1529" edgekey="1565"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1538">
-						<edges>
-							<edge vertexkey="1539" edgekey="1566"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1542">
-						<edges>
-							<edge vertexkey="1549" edgekey="1567"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1544">
-						<edges>
-							<edge vertexkey="1545" edgekey="1568"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="1548">
 						<edges>
 							<edge vertexkey="1388" edgekey="1569"/>
 							<edge vertexkey="1389" edgekey="1570"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="1550">
+					<vertex vertexkey="1577">
 						<edges>
-							<edge vertexkey="1543" edgekey="1571"/>
-							<edge vertexkey="1540" edgekey="1572"/>
+							<edge vertexkey="1578" edgekey="1582"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1580">
+						<edges>
+							<edge vertexkey="1302" edgekey="1583"/>
 						</edges>
 					</vertex>
 				</vertices>
