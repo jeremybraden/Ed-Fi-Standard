@@ -285,7 +285,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="938" lty="24" rbx="1259" rby="573"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="1171">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -296,7 +296,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentProgram" ns="1" inpkey="1" expanded="1">
-										<entry name="StudentProgramAssociation" ns="1" inpkey="2" expanded="1">
+										<entry name="StudentProgramAssociation" ns="1" inpkey="2">
 											<entry name="StudentReference" ns="1" inpkey="3" expanded="1">
 												<entry name="id" type="attribute" inpkey="4"/>
 												<entry name="ref" type="attribute" inpkey="5"/>
@@ -321,6 +321,7 @@
 														<entry name="MaidenName" ns="1" inpkey="944"/>
 														<entry name="PersonalIdentificationDocument" ns="1" inpkey="1840" expanded="1">
 															<entry name="DocumentTitle" ns="1" inpkey="1841"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="2014"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1842"/>
 															<entry name="IssuerName" ns="1" inpkey="1843"/>
 															<entry name="IssuerCountry" ns="1" inpkey="1844" expanded="1">
@@ -430,7 +431,7 @@
 											<entry name="ServedOutsideOfRegularSession" ns="1" inpkey="33"/>
 										</entry>
 										<entry name="StudentSpecialEducationProgramAssociation" ns="1" inpkey="474" expanded="1">
-											<entry name="StudentReference" ns="1" inpkey="475" expanded="1">
+											<entry name="StudentReference" ns="1" inpkey="475">
 												<entry name="id" type="attribute" inpkey="476"/>
 												<entry name="ref" type="attribute" inpkey="477"/>
 												<entry name="StudentIdentity" ns="1" inpkey="478" expanded="1">
@@ -443,6 +444,7 @@
 														<entry name="StudentIdentificationSystem" ns="1" inpkey="1326" expanded="1">
 															<entry name="CodeValue" ns="1" inpkey="1327"/>
 														</entry>
+														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="2015"/>
 													</entry>
 													<entry name="Name" ns="1" inpkey="974" expanded="1">
 														<entry name="PersonalTitlePrefix" ns="1" inpkey="975"/>
@@ -453,6 +455,7 @@
 														<entry name="MaidenName" ns="1" inpkey="980"/>
 														<entry name="PersonalIdentificationDocument" ns="1" inpkey="1846" expanded="1">
 															<entry name="DocumentTitle" ns="1" inpkey="1847"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="2016"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1848"/>
 															<entry name="IssuerName" ns="1" inpkey="1849"/>
 															<entry name="IssuerCountry" ns="1" inpkey="1850" expanded="1">
@@ -502,7 +505,7 @@
 											<entry name="ProgramReference" ns="1" inpkey="480" expanded="1">
 												<entry name="id" type="attribute" inpkey="481"/>
 												<entry name="ref" type="attribute" inpkey="482"/>
-												<entry name="ProgramIdentity" ns="1" inpkey="483" expanded="1">
+												<entry name="ProgramIdentity" ns="1" inpkey="483">
 													<entry name="ProgramType" ns="1" inpkey="484"/>
 													<entry name="ProgramName" ns="1" inpkey="485"/>
 													<entry name="EducationOrganizationReference" ns="1" inpkey="486" expanded="1">
@@ -525,7 +528,9 @@
 													<entry name="EducationOrganizationReference" ns="1" inpkey="1003" expanded="1">
 														<entry name="id" type="attribute" inpkey="1004"/>
 														<entry name="ref" type="attribute" inpkey="1005"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="1006" expanded="1"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="1006" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="2017"/>
+														</entry>
 														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
 															<entry name="EducationOrganizationId" ns="1" inpkey="1007"/>
 															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="1331" expanded="1">
@@ -590,6 +595,13 @@
 													</entry>
 													<entry name="StaffLookup" ns="1" expanded="1">
 														<entry name="StaffUniqueId" ns="1" inpkey="1013"/>
+														<entry name="StaffIdentificationCode" ns="1" inpkey="2018">
+															<entry name="IdentificationCode" ns="1" inpkey="2019"/>
+															<entry name="StaffIdentificationSystem" ns="1" inpkey="2020" expanded="1">
+																<entry name="CodeValue" ns="1" inpkey="2021"/>
+															</entry>
+															<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="2022"/>
+														</entry>
 														<entry name="Name" ns="1" inpkey="1014" expanded="1">
 															<entry name="PersonalTitlePrefix" ns="1" inpkey="1015"/>
 															<entry name="FirstName" ns="1" inpkey="1016"/>
@@ -599,6 +611,7 @@
 															<entry name="MaidenName" ns="1" inpkey="1020"/>
 															<entry name="PersonalIdentificationDocument" ns="1" inpkey="1852" expanded="1">
 																<entry name="DocumentTitle" ns="1" inpkey="1853"/>
+																<entry name="PersonalInformationVerification" ns="1" inpkey="2023"/>
 																<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="1854"/>
 																<entry name="IssuerName" ns="1" inpkey="1855"/>
 																<entry name="IssuerCountry" ns="1" inpkey="1856" expanded="1">
@@ -642,7 +655,7 @@
 											<entry name="IEPBeginDate" ns="1" inpkey="512"/>
 											<entry name="IEPEndDate" ns="1" inpkey="513"/>
 										</entry>
-										<entry name="RestraintEvent" ns="1" inpkey="34" expanded="1">
+										<entry name="RestraintEvent" ns="1" inpkey="34">
 											<entry name="id" type="attribute" inpkey="35"/>
 											<entry name="RestraintEventIdentifier" ns="1" inpkey="36"/>
 											<entry name="EventDate" ns="1" inpkey="37"/>
@@ -769,7 +782,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentCTEProgramAssociation" ns="1" inpkey="57" expanded="1">
+										<entry name="StudentCTEProgramAssociation" ns="1" inpkey="57">
 											<entry name="StudentReference" ns="1" inpkey="58" expanded="1">
 												<entry name="id" type="attribute" inpkey="59"/>
 												<entry name="ref" type="attribute" inpkey="60"/>
@@ -880,7 +893,7 @@
 												<entry name="CTEProgramCompletionIndicator" ns="1" inpkey="88"/>
 											</entry>
 										</entry>
-										<entry name="StudentTitleIPartAProgramAssociation" ns="1" inpkey="89" expanded="1">
+										<entry name="StudentTitleIPartAProgramAssociation" ns="1" inpkey="89">
 											<entry name="StudentReference" ns="1" inpkey="90" expanded="1">
 												<entry name="id" type="attribute" inpkey="91"/>
 												<entry name="ref" type="attribute" inpkey="92"/>
@@ -1015,7 +1028,7 @@
 											<entry name="ServedOutsideOfRegularSession" ns="1" inpkey="115"/>
 											<entry name="TitleIPartAParticipant" ns="1" inpkey="116"/>
 										</entry>
-										<entry name="StudentMigrantEducationProgramAssociation" ns="1" inpkey="117" expanded="1">
+										<entry name="StudentMigrantEducationProgramAssociation" ns="1" inpkey="117">
 											<entry name="StudentReference" ns="1" inpkey="118" expanded="1">
 												<entry name="id" type="attribute" inpkey="119"/>
 												<entry name="ref" type="attribute" inpkey="120"/>
@@ -1173,7 +1186,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="295" rby="549"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="911">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1184,7 +1197,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentProgram" ns="1" outkey="153" expanded="1">
-										<entry name="StudentProgramAssociation" ns="1" outkey="154" expanded="1">
+										<entry name="StudentProgramAssociation" ns="1" outkey="154">
 											<entry name="StudentReference" ns="1" outkey="155" expanded="1">
 												<entry name="id" type="attribute" outkey="156"/>
 												<entry name="ref" type="attribute" outkey="157"/>
@@ -1204,6 +1217,7 @@
 														<entry name="MaidenName" ns="1" outkey="1074"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="1805" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="1806"/>
+															<entry name="DocumentCategory" ns="1" outkey="2024"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="1807"/>
 															<entry name="IssuerName" ns="1" outkey="1808"/>
 															<entry name="IssuerCountry" ns="1" outkey="1809"/>
@@ -1284,12 +1298,13 @@
 											<entry name="ServedOutsideOfRegularSession" ns="1" outkey="181"/>
 										</entry>
 										<entry name="StudentSpecialEdProgramAssociation" ns="1" outkey="535" expanded="1">
-											<entry name="StudentReference" ns="1" outkey="545" expanded="1">
+											<entry name="StudentReference" ns="1" outkey="545">
 												<entry name="id" type="attribute" outkey="534"/>
 												<entry name="ref" type="attribute" outkey="538"/>
 												<entry name="StudentIdentity" ns="1" outkey="536" expanded="1">
 													<entry name="StudentIdentificationCode" ns="1" outkey="1095" expanded="1">
 														<entry name="IdentificationSystem" type="attribute" outkey="1371"/>
+														<entry name="AssigningOrganizationCode" type="attribute" outkey="2025"/>
 														<entry name="IdentificationCode" ns="1" outkey="1096"/>
 													</entry>
 													<entry name="StudentUniqueStateId" ns="1" outkey="537"/>
@@ -1302,6 +1317,7 @@
 														<entry name="MaidenName" ns="1" outkey="1103"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="1810" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="1811"/>
+															<entry name="DocumentCategory" ns="1" outkey="2026"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="1812"/>
 															<entry name="IssuerName" ns="1" outkey="1813"/>
 															<entry name="IssuerCountry" ns="1" outkey="1814"/>
@@ -1395,6 +1411,11 @@
 													<entry name="id" type="attribute" outkey="639"/>
 													<entry name="ref" type="attribute" outkey="640"/>
 													<entry name="StaffIdentity" ns="1" outkey="641" expanded="1">
+														<entry name="StaffIdentificationCode" ns="1" outkey="2027" expanded="1">
+															<entry name="IdentificationSystem" type="attribute" outkey="2028"/>
+															<entry name="AssigningOrganizationCode" type="attribute" outkey="2029"/>
+															<entry name="ID" ns="1" outkey="2030"/>
+														</entry>
 														<entry name="StaffUniqueStateId" ns="1" outkey="642"/>
 														<entry name="Name" ns="1" outkey="1126" expanded="1">
 															<entry name="PersonalTitlePrefix" ns="1" outkey="1127"/>
@@ -1405,6 +1426,7 @@
 															<entry name="MaidenName" ns="1" outkey="1132"/>
 															<entry name="PersonalInformationVerification" ns="1" outkey="1815" expanded="1">
 																<entry name="DocumentTitle" ns="1" outkey="1816"/>
+																<entry name="DocumentCategory" ns="1" outkey="2031"/>
 																<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="1817"/>
 																<entry name="IssuerName" ns="1" outkey="1818"/>
 																<entry name="IssuerCountry" ns="1" outkey="1819"/>
@@ -3461,6 +3483,7 @@
 							<edge vertexkey="1311" edgekey="1313"/>
 							<edge vertexkey="1328" edgekey="1396"/>
 							<edge vertexkey="1332" edgekey="1397"/>
+							<edge vertexkey="2017" edgekey="2032"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1124">
@@ -4677,6 +4700,47 @@
 						<edges>
 							<edge vertexkey="1954" edgekey="2012"/>
 							<edge vertexkey="1955" edgekey="2013"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2024">
+						<edges>
+							<edge vertexkey="2014" edgekey="2033"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2025">
+						<edges>
+							<edge vertexkey="2015" edgekey="2034"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2026">
+						<edges>
+							<edge vertexkey="2016" edgekey="2035"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2027">
+						<edges>
+							<edge vertexkey="2018" edgekey="2036"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2028">
+						<edges>
+							<edge vertexkey="2020" edgekey="2037"/>
+							<edge vertexkey="2021" edgekey="2038"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2029">
+						<edges>
+							<edge vertexkey="2022" edgekey="2039"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2030">
+						<edges>
+							<edge vertexkey="2019" edgekey="2040"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2031">
+						<edges>
+							<edge vertexkey="2023" edgekey="2041"/>
 						</edges>
 					</vertex>
 				</vertices>
