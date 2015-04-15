@@ -99,9 +99,9 @@
 				</component>
 				<component name="Interchange-StudentGradebook" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="20" lty="139" rbx="434" rby="241"/>
+					<view ltx="20" lty="139" rbx="434" rby="364"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="1168">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -112,7 +112,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentGradebook" ns="1" outkey="1" expanded="1">
-										<entry name="GradebookEntry" ns="1" outkey="2">
+										<entry name="GradebookEntry" ns="1" outkey="2" expanded="1">
 											<entry name="id" type="attribute" outkey="3"/>
 											<entry name="GradebookEntryTitle" ns="1" outkey="4"/>
 											<entry name="GradebookEntryType" ns="1" outkey="5"/>
@@ -168,6 +168,8 @@
 														<entry name="IdentificationSystem" type="attribute" outkey="604"/>
 														<entry name="ID" ns="1" outkey="605"/>
 													</entry>
+													<entry name="UniqueSectionCode" ns="1" outkey="1021"/>
+													<entry name="CourseCode" ns="1" expanded="1"/>
 													<entry name="LocalCourseCode" ns="1" outkey="279"/>
 													<entry name="ClassPeriodName" ns="1" outkey="22"/>
 													<entry name="Location" ns="1" outkey="282"/>
@@ -200,7 +202,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentGradebookEntry" ns="1" outkey="36">
+										<entry name="StudentGradebookEntry" ns="1" outkey="36" expanded="1">
 											<entry name="id" type="attribute" outkey="37"/>
 											<entry name="DateFulfilled" ns="1" outkey="38"/>
 											<entry name="LetterGradeEarned" ns="1" outkey="39"/>
@@ -233,6 +235,7 @@
 														<entry name="MaidenName" ns="1" outkey="621"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="622" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="623"/>
+															<entry name="DocumentCategory" ns="1" outkey="1022"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="624"/>
 															<entry name="IssuerName" ns="1" outkey="625"/>
 															<entry name="IssuerCountry" ns="1" outkey="626"/>
@@ -258,7 +261,7 @@
 													</entry>
 												</entry>
 											</entry>
-											<entry name="SectionReference" ns="1" outkey="308">
+											<entry name="SectionReference" ns="1" outkey="308" expanded="1">
 												<entry name="id" type="attribute" outkey="309"/>
 												<entry name="ref" type="attribute" outkey="310"/>
 												<entry name="SectionIdentity" ns="1" outkey="311" expanded="1">
@@ -267,6 +270,7 @@
 														<entry name="IdentificationSystem" type="attribute" outkey="642"/>
 														<entry name="ID" ns="1" outkey="643"/>
 													</entry>
+													<entry name="UniqueSectionCode" ns="1" outkey="1023"/>
 													<entry name="LocalCourseCode" ns="1" outkey="313"/>
 													<entry name="ClassPeriodName" ns="1" outkey="316"/>
 													<entry name="Location" ns="1" outkey="317"/>
@@ -387,11 +391,112 @@
 						<wsdl/>
 					</data>
 				</component>
+				<component name="Interchange-MasterSchedule" library="xml" uid="21" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="20" lty="572" rbx="450" rby="711"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeMasterSchedule" ns="1" expanded="1">
+										<entry name="Section" ns="1" outkey="881">
+											<entry name="id" type="attribute" outkey="882"/>
+											<entry name="UniqueSectionCode" ns="1" outkey="883"/>
+											<entry name="SequenceOfCourse" ns="1" outkey="884"/>
+											<entry name="CourseOfferingReference" ns="1" outkey="885" expanded="1">
+												<entry name="id" type="attribute" outkey="886"/>
+												<entry name="ref" type="attribute" outkey="887"/>
+												<entry name="CourseOfferingIdentity" ns="1" outkey="888" expanded="1">
+													<entry name="LocalCourseCode" ns="1" outkey="889"/>
+													<entry name="CourseCode" ns="1" expanded="1"/>
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SchoolReference" ns="1" outkey="890">
+												<entry name="id" type="attribute" outkey="891"/>
+												<entry name="ref" type="attribute" outkey="892"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="893" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="894"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" outkey="895" expanded="1">
+														<entry name="IdentificationSystem" type="attribute" outkey="896"/>
+														<entry name="ID" ns="1" outkey="897"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SessionReference" ns="1" outkey="898">
+												<entry name="id" type="attribute" outkey="899"/>
+												<entry name="ref" type="attribute" outkey="900"/>
+												<entry name="SessionIdentity" ns="1" outkey="901" expanded="1">
+													<entry name="EducationOrgIdentificationCode" ns="1" outkey="902" expanded="1">
+														<entry name="IdentificationSystem" type="attribute" outkey="903"/>
+														<entry name="ID" ns="1" outkey="904"/>
+													</entry>
+													<entry name="SessionName" ns="1" outkey="905"/>
+													<entry name="SchoolYear" ns="1" outkey="906"/>
+													<entry name="Term" ns="1" outkey="907"/>
+												</entry>
+											</entry>
+											<entry name="LocationReference" ns="1" outkey="908">
+												<entry name="id" type="attribute" outkey="909"/>
+												<entry name="ref" type="attribute" outkey="910"/>
+												<entry name="LocationIdentity" ns="1" outkey="911" expanded="1">
+													<entry name="ClassroomIdentificationCode" ns="1" outkey="912"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="913" expanded="1">
+														<entry name="id" type="attribute" outkey="914"/>
+														<entry name="ref" type="attribute" outkey="915"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="916" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="917"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" outkey="918" expanded="1">
+																<entry name="IdentificationSystem" type="attribute" outkey="919"/>
+																<entry name="ID" ns="1" outkey="920"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ClassPeriodReference" ns="1" outkey="921">
+												<entry name="id" type="attribute" outkey="922"/>
+												<entry name="ref" type="attribute" outkey="923"/>
+												<entry name="ClassPeriodIdentity" ns="1" outkey="924" expanded="1">
+													<entry name="ClassPeriodName" ns="1" outkey="925"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="926" expanded="1">
+														<entry name="id" type="attribute" outkey="927"/>
+														<entry name="ref" type="attribute" outkey="928"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="929" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="930"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" outkey="931" expanded="1">
+																<entry name="IdentificationSystem" type="attribute" outkey="932"/>
+																<entry name="ID" ns="1" outkey="933"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\..\..\v1.2\Samples\MasterSchedule.xml" outputinstance="..\..\..\v1.2\Samples\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
+						<wsdl/>
+					</data>
+				</component>
 				<component name="Interchange-StudentGradebook" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="780" lty="139" rbx="1077" rby="793"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="500">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -402,7 +507,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentGradebook" ns="1" inpkey="91" expanded="1">
-										<entry name="SectionReference" ns="1" inpkey="797" expanded="1">
+										<entry name="SectionReference" ns="1" inpkey="797">
 											<entry name="id" type="attribute" inpkey="798"/>
 											<entry name="SectionIdentity" ns="1" expanded="1">
 												<entry name="LocationReference" ns="1" inpkey="799">
@@ -632,7 +737,7 @@
 															</entry>
 														</entry>
 													</entry>
-													<entry name="CourseOfferingReference" ns="1">
+													<entry name="CourseOfferingReference" ns="1" expanded="1">
 														<entry name="CourseOfferingIdentity" ns="1" expanded="1">
 															<entry name="LocalCourseCode" ns="1" inpkey="421"/>
 															<entry name="SchoolReference" ns="1" expanded="1">
@@ -642,10 +747,11 @@
 															</entry>
 														</entry>
 													</entry>
+													<entry name="UniqueSectionCode" ns="1" inpkey="1018"/>
 												</entry>
 												<entry name="SectionLookup" ns="1" expanded="1"/>
 											</entry>
-											<entry name="GradingPeriodReference" ns="1" inpkey="113" expanded="1">
+											<entry name="GradingPeriodReference" ns="1" inpkey="113">
 												<entry name="id" type="attribute" inpkey="114"/>
 												<entry name="ref" type="attribute" inpkey="115"/>
 												<entry name="GradingPeriodIdentity" ns="1" inpkey="116" expanded="1">
@@ -675,7 +781,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentGradebookEntry" ns="1" inpkey="126">
+										<entry name="StudentGradebookEntry" ns="1" inpkey="126" expanded="1">
 											<entry name="id" type="attribute" inpkey="127"/>
 											<entry name="DateFulfilled" ns="1" inpkey="128"/>
 											<entry name="LetterGradeEarned" ns="1" inpkey="129"/>
@@ -713,6 +819,7 @@
 																<entry name="MaidenName" ns="1" inpkey="509"/>
 																<entry name="PersonalIdentificationDocument" ns="1" inpkey="510" expanded="1">
 																	<entry name="DocumentTitle" ns="1" inpkey="511"/>
+																	<entry name="PersonalInformationVerification" ns="1" inpkey="1019"/>
 																	<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="512"/>
 																	<entry name="IssuerName" ns="1" inpkey="513"/>
 																	<entry name="IssuerCountry" ns="1" inpkey="514" expanded="1">
@@ -742,7 +849,7 @@
 														<entry name="id" type="attribute" inpkey="330"/>
 														<entry name="ref" type="attribute" inpkey="331"/>
 														<entry name="SectionIdentity" ns="1" inpkey="332" expanded="1">
-															<entry name="LocationReference" ns="1" expanded="1">
+															<entry name="LocationReference" ns="1">
 																<entry name="LocationIdentity" ns="1" expanded="1">
 																	<entry name="ClassroomIdentificationCode" ns="1" inpkey="333"/>
 																	<entry name="SchoolReference" ns="1" expanded="1">
@@ -761,7 +868,7 @@
 																	</entry>
 																</entry>
 															</entry>
-															<entry name="ClassPeriodReference" ns="1" expanded="1">
+															<entry name="ClassPeriodReference" ns="1">
 																<entry name="ClassPeriodIdentity" ns="1" expanded="1">
 																	<entry name="ClassPeriodName" ns="1" inpkey="425"/>
 																	<entry name="SchoolReference" ns="1" expanded="1">
@@ -780,7 +887,7 @@
 																	</entry>
 																</entry>
 															</entry>
-															<entry name="CourseOfferingReference" ns="1" expanded="1">
+															<entry name="CourseOfferingReference" ns="1">
 																<entry name="CourseOfferingIdentity" ns="1" expanded="1">
 																	<entry name="LocalCourseCode" ns="1" inpkey="427"/>
 																	<entry name="SessionReference" ns="1" expanded="1"/>
@@ -800,6 +907,7 @@
 																	</entry>
 																</entry>
 															</entry>
+															<entry name="UniqueSectionCode" ns="1" inpkey="1020"/>
 														</entry>
 													</entry>
 												</entry>
@@ -968,107 +1076,6 @@
 							</entry>
 						</root>
 						<document schema="..\..\Schemas\Interchange-StudentGradebook.xsd" outputinstance="SampleData\Interchange-StudentGradebook.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentGradebook"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="Interchange-MasterSchedule" library="xml" uid="21" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="4" lty="386" rbx="434" rby="525"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeMasterSchedule" ns="1" expanded="1">
-										<entry name="Section" ns="1" outkey="881">
-											<entry name="id" type="attribute" outkey="882"/>
-											<entry name="UniqueSectionCode" ns="1" outkey="883"/>
-											<entry name="SequenceOfCourse" ns="1" outkey="884"/>
-											<entry name="CourseOfferingReference" ns="1" outkey="885" expanded="1">
-												<entry name="id" type="attribute" outkey="886"/>
-												<entry name="ref" type="attribute" outkey="887"/>
-												<entry name="CourseOfferingIdentity" ns="1" outkey="888" expanded="1">
-													<entry name="LocalCourseCode" ns="1" outkey="889"/>
-													<entry name="CourseCode" ns="1" expanded="1"/>
-													<entry name="EducationOrganizationReference" ns="1" expanded="1">
-														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
-															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SchoolReference" ns="1" outkey="890">
-												<entry name="id" type="attribute" outkey="891"/>
-												<entry name="ref" type="attribute" outkey="892"/>
-												<entry name="EducationOrganizationIdentity" ns="1" outkey="893" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="894"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" outkey="895" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="896"/>
-														<entry name="ID" ns="1" outkey="897"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SessionReference" ns="1" outkey="898">
-												<entry name="id" type="attribute" outkey="899"/>
-												<entry name="ref" type="attribute" outkey="900"/>
-												<entry name="SessionIdentity" ns="1" outkey="901" expanded="1">
-													<entry name="EducationOrgIdentificationCode" ns="1" outkey="902" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="903"/>
-														<entry name="ID" ns="1" outkey="904"/>
-													</entry>
-													<entry name="SessionName" ns="1" outkey="905"/>
-													<entry name="SchoolYear" ns="1" outkey="906"/>
-													<entry name="Term" ns="1" outkey="907"/>
-												</entry>
-											</entry>
-											<entry name="LocationReference" ns="1" outkey="908">
-												<entry name="id" type="attribute" outkey="909"/>
-												<entry name="ref" type="attribute" outkey="910"/>
-												<entry name="LocationIdentity" ns="1" outkey="911" expanded="1">
-													<entry name="ClassroomIdentificationCode" ns="1" outkey="912"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="913" expanded="1">
-														<entry name="id" type="attribute" outkey="914"/>
-														<entry name="ref" type="attribute" outkey="915"/>
-														<entry name="EducationOrganizationIdentity" ns="1" outkey="916" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="917"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" outkey="918" expanded="1">
-																<entry name="IdentificationSystem" type="attribute" outkey="919"/>
-																<entry name="ID" ns="1" outkey="920"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ClassPeriodReference" ns="1" outkey="921">
-												<entry name="id" type="attribute" outkey="922"/>
-												<entry name="ref" type="attribute" outkey="923"/>
-												<entry name="ClassPeriodIdentity" ns="1" outkey="924" expanded="1">
-													<entry name="ClassPeriodName" ns="1" outkey="925"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="926" expanded="1">
-														<entry name="id" type="attribute" outkey="927"/>
-														<entry name="ref" type="attribute" outkey="928"/>
-														<entry name="EducationOrganizationIdentity" ns="1" outkey="929" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="930"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" outkey="931" expanded="1">
-																<entry name="IdentificationSystem" type="attribute" outkey="932"/>
-																<entry name="ID" ns="1" outkey="933"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\..\..\v1.2\Samples\MasterSchedule.xml" outputinstance="..\..\..\v1.2\Samples\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -2488,6 +2495,21 @@
 					<vertex vertexkey="933">
 						<edges>
 							<edge vertexkey="826" edgekey="1017"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1021">
+						<edges>
+							<edge vertexkey="1018" edgekey="1024"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1022">
+						<edges>
+							<edge vertexkey="1019" edgekey="1025"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1023">
+						<edges>
+							<edge vertexkey="1020" edgekey="1026"/>
 						</edges>
 					</vertex>
 				</vertices>
