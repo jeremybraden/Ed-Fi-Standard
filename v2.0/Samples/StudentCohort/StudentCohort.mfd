@@ -40,7 +40,7 @@
 					<view ltx="360" lty="91" rbx="474" rby="147"/>
 				</component>
 				<component name="Lookup" library="user" blackbox="0" uid="40" kind="19" visible="0">
-					<view ltx="532" lty="881" rbx="781" rby="966"/>
+					<view ltx="537" lty="770" rbx="786" rby="872"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -53,6 +53,7 @@
 							<entry name="Term" inpkey="610" componentid="31"/>
 							<entry name="ClassPeriodName" inpkey="611" componentid="24"/>
 							<entry name="Location" inpkey="612" componentid="33"/>
+							<entry name="SchoolId" inpkey="650" componentid="42"/>
 						</root>
 						<root rootindex="1">
 							<header>
@@ -65,357 +66,11 @@
 						</root>
 					</data>
 				</component>
-				<component name="Interchange-StudentCohort" library="xml" uid="3" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="963" lty="226" rbx="1268" rby="819"/>
-					<data>
-						<root scrollposition="92">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentCohort" ns="1" inpkey="66" expanded="1">
-										<entry name="Cohort" ns="1" inpkey="67">
-											<entry name="id" type="attribute" inpkey="68"/>
-											<entry name="CohortIdentifier" ns="1" inpkey="69"/>
-											<entry name="CohortDescription" ns="1" inpkey="70"/>
-											<entry name="CohortType" ns="1" inpkey="71"/>
-											<entry name="CohortScope" ns="1" inpkey="72"/>
-											<entry name="AcademicSubject" ns="1" inpkey="73">
-												<entry name="id" type="attribute" inpkey="74"/>
-												<entry name="ref" type="attribute" inpkey="75"/>
-												<entry name="CodeValue" ns="1" inpkey="76"/>
-												<entry name="Namespace" ns="1" inpkey="272"/>
-											</entry>
-											<entry name="EducationOrganizationReference" ns="1" inpkey="77">
-												<entry name="id" type="attribute" inpkey="78"/>
-												<entry name="ref" type="attribute" inpkey="79"/>
-												<entry name="EducationOrganizationIdentity" ns="1" inpkey="80" expanded="1">
-													<entry name="EducationOrganizationId" ns="1" inpkey="204"/>
-												</entry>
-												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="273" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="274"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="275" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="276"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ProgramReference" ns="1" inpkey="81">
-												<entry name="id" type="attribute" inpkey="82"/>
-												<entry name="ref" type="attribute" inpkey="83"/>
-												<entry name="ProgramIdentity" ns="1" inpkey="84" expanded="1">
-													<entry name="ProgramType" ns="1" inpkey="85"/>
-													<entry name="ProgramName" ns="1" inpkey="86"/>
-													<entry name="EducationOrganizationReference" ns="1" inpkey="87" expanded="1">
-														<entry name="id" type="attribute" inpkey="88"/>
-														<entry name="ref" type="attribute" inpkey="89"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="90" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="205"/>
-														</entry>
-														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="277"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="278" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="279"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="280" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="281"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-												<entry name="ProgramLookup" ns="1" expanded="1">
-													<entry name="EducationOrganizationReference" ns="1" inpkey="282" expanded="1">
-														<entry name="id" type="attribute" inpkey="283"/>
-														<entry name="ref" type="attribute" inpkey="284"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="285" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="286"/>
-														</entry>
-														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="287"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="288" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="289"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="290" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="291"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="ProgramId" ns="1" inpkey="292"/>
-													<entry name="ProgramName" ns="1" inpkey="293"/>
-													<entry name="ProgramType" ns="1" inpkey="294"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentCohortAssociation" ns="1" inpkey="91">
-											<entry name="StudentReference" ns="1" inpkey="92">
-												<entry name="id" type="attribute" inpkey="93"/>
-												<entry name="ref" type="attribute" inpkey="94"/>
-												<entry name="StudentIdentity" ns="1" inpkey="95" expanded="1">
-													<entry name="StudentUniqueId" ns="1" inpkey="262"/>
-												</entry>
-												<entry name="StudentLookup" ns="1" expanded="1">
-													<entry name="StudentUniqueId" ns="1" inpkey="295"/>
-													<entry name="StudentIdentificationCode" ns="1" inpkey="296" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="297"/>
-														<entry name="StudentIdentificationSystem" ns="1" inpkey="298" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="299"/>
-														</entry>
-														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="300"/>
-													</entry>
-													<entry name="Name" ns="1" inpkey="301" expanded="1">
-														<entry name="PersonalTitlePrefix" ns="1" inpkey="302"/>
-														<entry name="FirstName" ns="1" inpkey="303"/>
-														<entry name="MiddleName" ns="1" inpkey="304"/>
-														<entry name="LastSurname" ns="1" inpkey="305"/>
-														<entry name="GenerationCodeSuffix" ns="1" inpkey="306"/>
-														<entry name="MaidenName" ns="1" inpkey="307"/>
-														<entry name="PersonalIdentificationDocument" ns="1" inpkey="545" expanded="1">
-															<entry name="DocumentTitle" ns="1" inpkey="546"/>
-															<entry name="PersonalInformationVerification" ns="1" inpkey="626"/>
-															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="547"/>
-															<entry name="IssuerName" ns="1" inpkey="548"/>
-															<entry name="IssuerCountry" ns="1" inpkey="549" expanded="1">
-																<entry name="CodeValue" ns="1" inpkey="550"/>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="OtherName" ns="1" inpkey="308">
-														<entry name="PersonalTitlePrefix" ns="1" inpkey="309"/>
-														<entry name="FirstName" ns="1" inpkey="310"/>
-														<entry name="MiddleName" ns="1" inpkey="311"/>
-														<entry name="LastSurname" ns="1" inpkey="312"/>
-														<entry name="GenerationCodeSuffix" ns="1" inpkey="313"/>
-														<entry name="OtherNameType" ns="1" inpkey="314"/>
-													</entry>
-													<entry name="Sex" ns="1" inpkey="315"/>
-													<entry name="BirthData" ns="1" inpkey="316">
-														<entry name="BirthDate" ns="1" inpkey="317"/>
-														<entry name="BirthCity" ns="1" inpkey="562"/>
-														<entry name="BirthStateAbbreviation" ns="1" inpkey="563"/>
-														<entry name="BirthInternationalProvince" ns="1" inpkey="564"/>
-														<entry name="BirthCountry" ns="1" inpkey="565" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="566"/>
-														</entry>
-														<entry name="DateEnteredUS" ns="1" inpkey="318"/>
-														<entry name="MultipleBirthStatus" ns="1" inpkey="319"/>
-													</entry>
-													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="320"/>
-													<entry name="Race" ns="1" inpkey="321"/>
-												</entry>
-											</entry>
-											<entry name="CohortReference" ns="1" inpkey="97">
-												<entry name="id" type="attribute" inpkey="98"/>
-												<entry name="ref" type="attribute" inpkey="99"/>
-												<entry name="CohortIdentity" ns="1" inpkey="100" expanded="1">
-													<entry name="CohortIdentifier" ns="1" inpkey="101"/>
-													<entry name="EducationOrganizationReference" ns="1" inpkey="102" expanded="1">
-														<entry name="id" type="attribute" inpkey="103"/>
-														<entry name="ref" type="attribute" inpkey="104"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="105" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="212"/>
-														</entry>
-														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="322"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="323" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="324"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="325" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="326"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="BeginDate" ns="1" inpkey="106"/>
-											<entry name="EndDate" ns="1" inpkey="107"/>
-											<entry name="SectionReference" ns="1" inpkey="108" expanded="1">
-												<entry name="id" type="attribute" inpkey="109"/>
-												<entry name="ref" type="attribute" inpkey="110"/>
-												<entry name="SectionIdentity" ns="1" inpkey="111" expanded="1">
-													<entry name="LocationReference" ns="1" expanded="1">
-														<entry name="LocationIdentity" ns="1">
-															<entry name="ClassroomIdentificationCode" ns="1" inpkey="213"/>
-															<entry name="SchoolReference" ns="1" expanded="1">
-																<entry name="SchoolIdentity" ns="1" expanded="1">
-																	<entry name="SchoolId" ns="1" inpkey="214"/>
-																</entry>
-																<entry name="SchoolLookup" ns="1" expanded="1">
-																	<entry name="SchoolId" ns="1" inpkey="583"/>
-																	<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="584" expanded="1">
-																		<entry name="IdentificationCode" ns="1" inpkey="585"/>
-																		<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="586" expanded="1">
-																			<entry name="CodeValue" ns="1" inpkey="587"/>
-																		</entry>
-																	</entry>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="ClassPeriodReference" ns="1">
-														<entry name="ClassPeriodIdentity" ns="1" expanded="1">
-															<entry name="ClassPeriodName" ns="1" inpkey="250"/>
-															<entry name="SchoolReference" ns="1" expanded="1">
-																<entry name="SchoolIdentity" ns="1" expanded="1">
-																	<entry name="SchoolId" ns="1" inpkey="251"/>
-																</entry>
-																<entry name="SchoolLookup" ns="1" expanded="1">
-																	<entry name="SchoolId" ns="1" inpkey="588"/>
-																	<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="622" expanded="1">
-																		<entry name="IdentificationCode" ns="1" inpkey="589"/>
-																		<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="590" expanded="1">
-																			<entry name="CodeValue" ns="1" inpkey="592"/>
-																		</entry>
-																	</entry>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="CourseOfferingReference" ns="1" expanded="1">
-														<entry name="CourseOfferingIdentity" ns="1" expanded="1">
-															<entry name="LocalCourseCode" ns="1" inpkey="252"/>
-															<entry name="SessionReference" ns="1" expanded="1">
-																<entry name="SessionIdentity" ns="1" expanded="1">
-																	<entry name="SchoolReference" ns="1" expanded="1">
-																		<entry name="SchoolIdentity" ns="1" expanded="1">
-																			<entry name="SchoolId" ns="1" inpkey="629"/>
-																		</entry>
-																		<entry name="SchoolLookup" ns="1" expanded="1">
-																			<entry name="SchoolId" ns="1" inpkey="630"/>
-																			<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="631" expanded="1">
-																				<entry name="IdentificationCode" ns="1" inpkey="632"/>
-																				<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="633" expanded="1">
-																					<entry name="CodeValue" ns="1" inpkey="634"/>
-																				</entry>
-																			</entry>
-																		</entry>
-																	</entry>
-																	<entry name="SchoolYear" ns="1" inpkey="266"/>
-																	<entry name="Term" ns="1" inpkey="267" expanded="1">
-																		<entry name="CodeValue" ns="1" inpkey="268"/>
-																	</entry>
-																</entry>
-															</entry>
-															<entry name="SchoolReference" ns="1">
-																<entry name="SchoolIdentity" ns="1" expanded="1">
-																	<entry name="SchoolId" ns="1" inpkey="255"/>
-																</entry>
-																<entry name="SchoolLookup" ns="1" expanded="1">
-																	<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="UniqueSectionCode" ns="1" inpkey="606"/>
-													<entry name="SequenceOfCourse" ns="1" inpkey="607"/>
-												</entry>
-												<entry name="SectionLookup" ns="1" expanded="1"/>
-											</entry>
-										</entry>
-										<entry name="StaffCohortAssociation" ns="1" inpkey="113" expanded="1">
-											<entry name="StaffReference" ns="1" inpkey="114" expanded="1">
-												<entry name="id" type="attribute" inpkey="115"/>
-												<entry name="ref" type="attribute" inpkey="116"/>
-												<entry name="StaffIdentity" ns="1" inpkey="117" expanded="1">
-													<entry name="StaffUniqueId" ns="1" inpkey="263"/>
-												</entry>
-												<entry name="StaffLookup" ns="1" expanded="1">
-													<entry name="StaffUniqueId" ns="1" inpkey="327"/>
-													<entry name="StaffIdentificationCode" ns="1" inpkey="328" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="329"/>
-														<entry name="StaffIdentificationSystem" ns="1" inpkey="330" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="331"/>
-														</entry>
-														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="332"/>
-													</entry>
-													<entry name="Name" ns="1" inpkey="333" expanded="1">
-														<entry name="PersonalTitlePrefix" ns="1" inpkey="334"/>
-														<entry name="FirstName" ns="1" inpkey="335"/>
-														<entry name="MiddleName" ns="1" inpkey="336"/>
-														<entry name="LastSurname" ns="1" inpkey="337"/>
-														<entry name="GenerationCodeSuffix" ns="1" inpkey="338"/>
-														<entry name="MaidenName" ns="1" inpkey="339"/>
-														<entry name="PersonalIdentificationDocument" ns="1" inpkey="524" expanded="1">
-															<entry name="DocumentTitle" ns="1" inpkey="525"/>
-															<entry name="PersonalInformationVerification" ns="1" inpkey="641"/>
-															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="527"/>
-															<entry name="IssuerName" ns="1" inpkey="528"/>
-															<entry name="IssuerCountry" ns="1" inpkey="529" expanded="1">
-																<entry name="CodeValue" ns="1" inpkey="542"/>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="OtherName" ns="1" inpkey="340">
-														<entry name="PersonalTitlePrefix" ns="1" inpkey="341"/>
-														<entry name="FirstName" ns="1" inpkey="342"/>
-														<entry name="MiddleName" ns="1" inpkey="343"/>
-														<entry name="LastSurname" ns="1" inpkey="344"/>
-														<entry name="GenerationCodeSuffix" ns="1" inpkey="345"/>
-														<entry name="OtherNameType" ns="1" inpkey="346"/>
-													</entry>
-													<entry name="Sex" ns="1" inpkey="347"/>
-													<entry name="BirthDate" ns="1" inpkey="348"/>
-													<entry name="Telephone" ns="1" inpkey="349">
-														<entry name="TelephoneNumber" ns="1" inpkey="350"/>
-														<entry name="TelephoneNumberType" ns="1" inpkey="351"/>
-														<entry name="OrderOfPriority" ns="1" inpkey="352"/>
-														<entry name="TextMessageCapabilityIndicator" ns="1" inpkey="353"/>
-													</entry>
-													<entry name="ElectronicMail" ns="1" inpkey="354">
-														<entry name="ElectronicMailAddress" ns="1" inpkey="642"/>
-														<entry name="ElectronicMailType" ns="1" inpkey="643"/>
-														<entry name="PrimaryEmailAddressIndicator" ns="1" inpkey="355"/>
-													</entry>
-													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="356"/>
-													<entry name="Race" ns="1" inpkey="357"/>
-												</entry>
-											</entry>
-											<entry name="CohortReference" ns="1" inpkey="119" expanded="1">
-												<entry name="id" type="attribute" inpkey="120"/>
-												<entry name="ref" type="attribute" inpkey="121"/>
-												<entry name="CohortIdentity" ns="1" inpkey="122" expanded="1">
-													<entry name="CohortIdentifier" ns="1" inpkey="123"/>
-													<entry name="EducationOrganizationReference" ns="1" inpkey="124" expanded="1">
-														<entry name="id" type="attribute" inpkey="125"/>
-														<entry name="ref" type="attribute" inpkey="126"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="127" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="220"/>
-														</entry>
-														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="358"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="359" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="360"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="361" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="362"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="BeginDate" ns="1" inpkey="128"/>
-											<entry name="EndDate" ns="1" inpkey="129"/>
-											<entry name="StudentRecordAccess" ns="1" inpkey="130"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\Schemas\Interchange-StudentCohort.xsd" outputinstance="SampleData\StudentCohort.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentCohort"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="Interchange-StudentCohort" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="91" lty="226" rbx="400" rby="819"/>
 					<data>
-						<root scrollposition="1442">
+						<root scrollposition="822">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -640,6 +295,351 @@
 							</entry>
 						</root>
 						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentCohort.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeStudentCohort"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="Interchange-StudentCohort" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="963" lty="226" rbx="1268" rby="819"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentCohort" ns="1" inpkey="66" expanded="1">
+										<entry name="Cohort" ns="1" inpkey="67">
+											<entry name="id" type="attribute" inpkey="68"/>
+											<entry name="CohortIdentifier" ns="1" inpkey="69"/>
+											<entry name="CohortDescription" ns="1" inpkey="70"/>
+											<entry name="CohortType" ns="1" inpkey="71"/>
+											<entry name="CohortScope" ns="1" inpkey="72"/>
+											<entry name="AcademicSubject" ns="1" inpkey="73">
+												<entry name="id" type="attribute" inpkey="74"/>
+												<entry name="ref" type="attribute" inpkey="75"/>
+												<entry name="CodeValue" ns="1" inpkey="76"/>
+												<entry name="Namespace" ns="1" inpkey="272"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" inpkey="77">
+												<entry name="id" type="attribute" inpkey="78"/>
+												<entry name="ref" type="attribute" inpkey="79"/>
+												<entry name="EducationOrganizationIdentity" ns="1" inpkey="80" expanded="1">
+													<entry name="EducationOrganizationId" ns="1" inpkey="204"/>
+												</entry>
+												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="273" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="274"/>
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="275" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="276"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ProgramReference" ns="1" inpkey="81">
+												<entry name="id" type="attribute" inpkey="82"/>
+												<entry name="ref" type="attribute" inpkey="83"/>
+												<entry name="ProgramIdentity" ns="1" inpkey="84" expanded="1">
+													<entry name="ProgramType" ns="1" inpkey="85"/>
+													<entry name="ProgramName" ns="1" inpkey="86"/>
+													<entry name="EducationOrganizationReference" ns="1" inpkey="87" expanded="1">
+														<entry name="id" type="attribute" inpkey="88"/>
+														<entry name="ref" type="attribute" inpkey="89"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="90" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="205"/>
+														</entry>
+														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="277"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="278" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="279"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="280" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="281"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+												<entry name="ProgramLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationReference" ns="1" inpkey="282" expanded="1">
+														<entry name="id" type="attribute" inpkey="283"/>
+														<entry name="ref" type="attribute" inpkey="284"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="285" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="286"/>
+														</entry>
+														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="287"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="288" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="289"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="290" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="291"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="ProgramId" ns="1" inpkey="292"/>
+													<entry name="ProgramName" ns="1" inpkey="293"/>
+													<entry name="ProgramType" ns="1" inpkey="294"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCohortAssociation" ns="1" inpkey="91" expanded="1">
+											<entry name="StudentReference" ns="1" inpkey="92">
+												<entry name="id" type="attribute" inpkey="93"/>
+												<entry name="ref" type="attribute" inpkey="94"/>
+												<entry name="StudentIdentity" ns="1" inpkey="95" expanded="1">
+													<entry name="StudentUniqueId" ns="1" inpkey="262"/>
+												</entry>
+												<entry name="StudentLookup" ns="1" expanded="1">
+													<entry name="StudentUniqueId" ns="1" inpkey="295"/>
+													<entry name="StudentIdentificationCode" ns="1" inpkey="296" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="297"/>
+														<entry name="StudentIdentificationSystem" ns="1" inpkey="298" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="299"/>
+														</entry>
+														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="300"/>
+													</entry>
+													<entry name="Name" ns="1" inpkey="301" expanded="1">
+														<entry name="PersonalTitlePrefix" ns="1" inpkey="302"/>
+														<entry name="FirstName" ns="1" inpkey="303"/>
+														<entry name="MiddleName" ns="1" inpkey="304"/>
+														<entry name="LastSurname" ns="1" inpkey="305"/>
+														<entry name="GenerationCodeSuffix" ns="1" inpkey="306"/>
+														<entry name="MaidenName" ns="1" inpkey="307"/>
+														<entry name="PersonalIdentificationDocument" ns="1" inpkey="545" expanded="1">
+															<entry name="DocumentTitle" ns="1" inpkey="546"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="626"/>
+															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="547"/>
+															<entry name="IssuerName" ns="1" inpkey="548"/>
+															<entry name="IssuerCountry" ns="1" inpkey="549" expanded="1">
+																<entry name="CodeValue" ns="1" inpkey="550"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="OtherName" ns="1" inpkey="308">
+														<entry name="PersonalTitlePrefix" ns="1" inpkey="309"/>
+														<entry name="FirstName" ns="1" inpkey="310"/>
+														<entry name="MiddleName" ns="1" inpkey="311"/>
+														<entry name="LastSurname" ns="1" inpkey="312"/>
+														<entry name="GenerationCodeSuffix" ns="1" inpkey="313"/>
+														<entry name="OtherNameType" ns="1" inpkey="314"/>
+													</entry>
+													<entry name="Sex" ns="1" inpkey="315"/>
+													<entry name="BirthData" ns="1" inpkey="316">
+														<entry name="BirthDate" ns="1" inpkey="317"/>
+														<entry name="BirthCity" ns="1" inpkey="562"/>
+														<entry name="BirthStateAbbreviation" ns="1" inpkey="563"/>
+														<entry name="BirthInternationalProvince" ns="1" inpkey="564"/>
+														<entry name="BirthCountry" ns="1" inpkey="565" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="566"/>
+														</entry>
+														<entry name="DateEnteredUS" ns="1" inpkey="318"/>
+														<entry name="MultipleBirthStatus" ns="1" inpkey="319"/>
+													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="320"/>
+													<entry name="Race" ns="1" inpkey="321"/>
+												</entry>
+											</entry>
+											<entry name="CohortReference" ns="1" inpkey="97">
+												<entry name="id" type="attribute" inpkey="98"/>
+												<entry name="ref" type="attribute" inpkey="99"/>
+												<entry name="CohortIdentity" ns="1" inpkey="100" expanded="1">
+													<entry name="CohortIdentifier" ns="1" inpkey="101"/>
+													<entry name="EducationOrganizationReference" ns="1" inpkey="102" expanded="1">
+														<entry name="id" type="attribute" inpkey="103"/>
+														<entry name="ref" type="attribute" inpkey="104"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="105" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="212"/>
+														</entry>
+														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="322"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="323" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="324"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="325" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="326"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="106"/>
+											<entry name="EndDate" ns="1" inpkey="107"/>
+											<entry name="SectionReference" ns="1" inpkey="108" expanded="1">
+												<entry name="id" type="attribute" inpkey="109"/>
+												<entry name="ref" type="attribute" inpkey="110"/>
+												<entry name="SectionIdentity" ns="1" inpkey="111" expanded="1">
+													<entry name="LocationReference" ns="1" expanded="1">
+														<entry name="LocationIdentity" ns="1" expanded="1">
+															<entry name="ClassroomIdentificationCode" ns="1" inpkey="213"/>
+															<entry name="SchoolReference" ns="1" expanded="1">
+																<entry name="SchoolIdentity" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="214"/>
+																</entry>
+																<entry name="SchoolLookup" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="583"/>
+																	<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="584" expanded="1">
+																		<entry name="IdentificationCode" ns="1" inpkey="585"/>
+																		<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="586" expanded="1">
+																			<entry name="CodeValue" ns="1" inpkey="587"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="ClassPeriodReference" ns="1">
+														<entry name="ClassPeriodIdentity" ns="1" expanded="1">
+															<entry name="ClassPeriodName" ns="1" inpkey="250"/>
+															<entry name="SchoolReference" ns="1" expanded="1">
+																<entry name="SchoolIdentity" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="251"/>
+																</entry>
+																<entry name="SchoolLookup" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="588"/>
+																	<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="622" expanded="1">
+																		<entry name="IdentificationCode" ns="1" inpkey="589"/>
+																		<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="590" expanded="1">
+																			<entry name="CodeValue" ns="1" inpkey="592"/>
+																		</entry>
+																	</entry>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="CourseOfferingReference" ns="1">
+														<entry name="CourseOfferingIdentity" ns="1" expanded="1">
+															<entry name="LocalCourseCode" ns="1" inpkey="252"/>
+															<entry name="SessionReference" ns="1" expanded="1">
+																<entry name="SessionIdentity" ns="1" expanded="1">
+																	<entry name="SchoolReference" ns="1" expanded="1">
+																		<entry name="SchoolIdentity" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="629"/>
+																		</entry>
+																		<entry name="SchoolLookup" ns="1" expanded="1">
+																			<entry name="SchoolId" ns="1" inpkey="630"/>
+																			<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="631" expanded="1">
+																				<entry name="IdentificationCode" ns="1" inpkey="632"/>
+																				<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="633" expanded="1">
+																					<entry name="CodeValue" ns="1" inpkey="634"/>
+																				</entry>
+																			</entry>
+																		</entry>
+																	</entry>
+																	<entry name="SchoolYear" ns="1" inpkey="266"/>
+																	<entry name="Term" ns="1" inpkey="267" expanded="1">
+																		<entry name="CodeValue" ns="1" inpkey="268"/>
+																	</entry>
+																</entry>
+															</entry>
+															<entry name="SchoolReference" ns="1">
+																<entry name="SchoolIdentity" ns="1" expanded="1">
+																	<entry name="SchoolId" ns="1" inpkey="255"/>
+																</entry>
+																<entry name="SchoolLookup" ns="1" expanded="1">
+																	<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="UniqueSectionCode" ns="1" inpkey="606"/>
+													<entry name="SequenceOfCourse" ns="1" inpkey="607"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StaffCohortAssociation" ns="1" inpkey="113">
+											<entry name="StaffReference" ns="1" inpkey="114" expanded="1">
+												<entry name="id" type="attribute" inpkey="115"/>
+												<entry name="ref" type="attribute" inpkey="116"/>
+												<entry name="StaffIdentity" ns="1" inpkey="117" expanded="1">
+													<entry name="StaffUniqueId" ns="1" inpkey="263"/>
+												</entry>
+												<entry name="StaffLookup" ns="1" expanded="1">
+													<entry name="StaffUniqueId" ns="1" inpkey="327"/>
+													<entry name="StaffIdentificationCode" ns="1" inpkey="328" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="329"/>
+														<entry name="StaffIdentificationSystem" ns="1" inpkey="330" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="331"/>
+														</entry>
+														<entry name="AssigningOrganizationIdentificationCode" ns="1" inpkey="332"/>
+													</entry>
+													<entry name="Name" ns="1" inpkey="333" expanded="1">
+														<entry name="PersonalTitlePrefix" ns="1" inpkey="334"/>
+														<entry name="FirstName" ns="1" inpkey="335"/>
+														<entry name="MiddleName" ns="1" inpkey="336"/>
+														<entry name="LastSurname" ns="1" inpkey="337"/>
+														<entry name="GenerationCodeSuffix" ns="1" inpkey="338"/>
+														<entry name="MaidenName" ns="1" inpkey="339"/>
+														<entry name="PersonalIdentificationDocument" ns="1" inpkey="524" expanded="1">
+															<entry name="DocumentTitle" ns="1" inpkey="525"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="641"/>
+															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="527"/>
+															<entry name="IssuerName" ns="1" inpkey="528"/>
+															<entry name="IssuerCountry" ns="1" inpkey="529" expanded="1">
+																<entry name="CodeValue" ns="1" inpkey="542"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="OtherName" ns="1" inpkey="340">
+														<entry name="PersonalTitlePrefix" ns="1" inpkey="341"/>
+														<entry name="FirstName" ns="1" inpkey="342"/>
+														<entry name="MiddleName" ns="1" inpkey="343"/>
+														<entry name="LastSurname" ns="1" inpkey="344"/>
+														<entry name="GenerationCodeSuffix" ns="1" inpkey="345"/>
+														<entry name="OtherNameType" ns="1" inpkey="346"/>
+													</entry>
+													<entry name="Sex" ns="1" inpkey="347"/>
+													<entry name="BirthDate" ns="1" inpkey="348"/>
+													<entry name="Telephone" ns="1" inpkey="349">
+														<entry name="TelephoneNumber" ns="1" inpkey="350"/>
+														<entry name="TelephoneNumberType" ns="1" inpkey="351"/>
+														<entry name="OrderOfPriority" ns="1" inpkey="352"/>
+														<entry name="TextMessageCapabilityIndicator" ns="1" inpkey="353"/>
+													</entry>
+													<entry name="ElectronicMail" ns="1" inpkey="354">
+														<entry name="ElectronicMailAddress" ns="1" inpkey="642"/>
+														<entry name="ElectronicMailType" ns="1" inpkey="643"/>
+														<entry name="PrimaryEmailAddressIndicator" ns="1" inpkey="355"/>
+													</entry>
+													<entry name="HispanicLatinoEthnicity" ns="1" inpkey="356"/>
+													<entry name="Race" ns="1" inpkey="357"/>
+												</entry>
+											</entry>
+											<entry name="CohortReference" ns="1" inpkey="119" expanded="1">
+												<entry name="id" type="attribute" inpkey="120"/>
+												<entry name="ref" type="attribute" inpkey="121"/>
+												<entry name="CohortIdentity" ns="1" inpkey="122" expanded="1">
+													<entry name="CohortIdentifier" ns="1" inpkey="123"/>
+													<entry name="EducationOrganizationReference" ns="1" inpkey="124" expanded="1">
+														<entry name="id" type="attribute" inpkey="125"/>
+														<entry name="ref" type="attribute" inpkey="126"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="127" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="220"/>
+														</entry>
+														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="358"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="359" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="360"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="361" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="362"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="128"/>
+											<entry name="EndDate" ns="1" inpkey="129"/>
+											<entry name="StudentRecordAccess" ns="1" inpkey="130"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-StudentCohort.xsd" outputinstance="SampleData\StudentCohort.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentCohort"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -1012,6 +1012,7 @@
 							<edge vertexkey="588" edgekey="597"/>
 							<edge vertexkey="629" edgekey="635"/>
 							<edge vertexkey="630" edgekey="636"/>
+							<edge vertexkey="650" edgekey="651"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="223">
@@ -1730,7 +1731,6 @@
 	</component>
 	<component name="Lookup" library="user" blackbox="0" uid="21" editable="1" inline="1">
 		<properties/>
-		<description/>
 		<structure>
 			<children>
 				<component name="UniqueSectionCode" library="core" uid="23" kind="7">
@@ -1885,11 +1885,78 @@
 						<parameter usageKind="input" name="LocalCourseCode"/>
 					</data>
 				</component>
+				<component name="SchoolYear" library="core" uid="36" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="16"/>
+					</targets>
+					<view ltx="640" lty="276" rbx="746" rby="315"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolYear"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="37" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="17"/>
+						<datapoint pos="1" key="39"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="26"/>
+					</targets>
+					<view ltx="829" lty="287" rbx="882" rby="343"/>
+				</component>
+				<component name="SchoolId" library="core" uid="42" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="690" lty="686" rbx="780" rby="725"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolId"/>
+					</data>
+				</component>
+				<component name="logical-and" library="core" uid="38" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="8"/>
+						<datapoint pos="1" key="27"/>
+						<datapoint pos="2" key="33"/>
+						<datapoint pos="3" key="31"/>
+						<datapoint pos="4" key="6"/>
+						<datapoint pos="5" key="68"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="9"/>
+					</targets>
+					<view ltx="972" lty="352" rbx="1057" rby="482"/>
+				</component>
+				<component name="equal" library="core" uid="41" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="65"/>
+						<datapoint pos="1" key="66"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="840" lty="686" rbx="893" rby="742"/>
+				</component>
 				<component name="Interchange-MasterSchedule" library="xml" uid="35" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="154" lty="165" rbx="590" rby="679"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="52">
 							<header>
 								<namespaces>
 									<namespace uid="http://ed-fi.org/0120"/>
@@ -1919,8 +1986,10 @@
 													<entry name="SchoolYear" outkey="38"/>
 												</entry>
 											</entry>
-											<entry name="SchoolReference">
-												<entry name="EducationOrganizationIdentity" expanded="1"/>
+											<entry name="SchoolReference" expanded="1">
+												<entry name="EducationOrganizationIdentity" expanded="1">
+													<entry name="StateOrganizationId" outkey="69"/>
+												</entry>
 											</entry>
 											<entry name="LocationReference" expanded="1">
 												<entry name="LocationIdentity" expanded="1">
@@ -1940,46 +2009,6 @@
 						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\MasterSchedule\Sample XML 1.2\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
 						<wsdl/>
 					</data>
-				</component>
-				<component name="SchoolYear" library="core" uid="36" kind="6">
-					<properties/>
-					<sources>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="16"/>
-					</targets>
-					<view ltx="640" lty="276" rbx="746" rby="315"/>
-					<data>
-						<input datatype="string"/>
-						<wsdl/>
-						<parameter usageKind="input" name="SchoolYear"/>
-					</data>
-				</component>
-				<component name="equal" library="core" uid="37" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="17"/>
-						<datapoint pos="1" key="39"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="26"/>
-					</targets>
-					<view ltx="829" lty="287" rbx="882" rby="343"/>
-				</component>
-				<component name="logical-and" library="core" uid="38" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="8"/>
-						<datapoint pos="1" key="27"/>
-						<datapoint pos="2" key="33"/>
-						<datapoint pos="3" key="31"/>
-						<datapoint pos="4" key="6"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="9"/>
-					</targets>
-					<view ltx="972" lty="352" rbx="1057" rby="464"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -2084,6 +2113,21 @@
 					<vertex vertexkey="40">
 						<edges>
 							<edge vertexkey="41" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="63">
+						<edges>
+							<edge vertexkey="68" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="65" edgekey="67"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="66" edgekey="71"/>
 						</edges>
 					</vertex>
 				</vertices>
