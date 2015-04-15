@@ -124,7 +124,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="317" rby="643"/>
 					<data>
-						<root scrollposition="2888">
+						<root scrollposition="1107">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -135,14 +135,14 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentDiscipline" ns="1" outkey="63" expanded="1">
-										<entry name="DisciplineIncident" ns="1" outkey="64" expanded="1">
+										<entry name="DisciplineIncident" ns="1" outkey="64">
 											<entry name="id" type="attribute" outkey="65"/>
 											<entry name="IncidentIdentifier" ns="1" outkey="66"/>
 											<entry name="IncidentDate" ns="1" outkey="67"/>
 											<entry name="IncidentTime" ns="1" outkey="68"/>
 											<entry name="IncidentLocation" ns="1" outkey="69"/>
 											<entry name="IncidentDescription" ns="1" outkey="70"/>
-											<entry name="ReporterDescription" ns="1" outkey="71">
+											<entry name="ReporterDescription" ns="1" outkey="71" expanded="1">
 												<entry name="id" type="attribute" outkey="72"/>
 												<entry name="ref" type="attribute" outkey="73"/>
 												<entry name="namespace" type="attribute" outkey="356"/>
@@ -171,7 +171,7 @@
 											<entry name="ReportedToLawEnforcement" ns="1" outkey="76"/>
 											<entry name="CaseNumber" ns="1" outkey="77"/>
 											<entry name="IncidentCost" ns="1" outkey="78"/>
-											<entry name="EducationOrganizationReference" ns="1" outkey="233">
+											<entry name="EducationOrganizationReference" ns="1" outkey="233" expanded="1">
 												<entry name="id" type="attribute" outkey="234"/>
 												<entry name="ref" type="attribute" outkey="235"/>
 												<entry name="EducationOrganizationIdentity" ns="1" outkey="236" expanded="1">
@@ -200,6 +200,7 @@
 														<entry name="MaidenName" ns="1" outkey="394"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="395" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="396"/>
+															<entry name="DocumentCategory" ns="1" outkey="882"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="398"/>
 															<entry name="IssuerName" ns="1" outkey="399"/>
 															<entry name="IssuerCountry" ns="1" outkey="400"/>
@@ -233,7 +234,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentDisciplineIncidentAssociation" ns="1" outkey="84" expanded="1">
+										<entry name="StudentDisciplineIncidentAssociation" ns="1" outkey="84">
 											<entry name="StudentReference" ns="1" outkey="85" expanded="1">
 												<entry name="id" type="attribute" outkey="86"/>
 												<entry name="ref" type="attribute" outkey="87"/>
@@ -253,6 +254,7 @@
 														<entry name="MaidenName" ns="1" outkey="525"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="797" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="798"/>
+															<entry name="DocumentCategory" ns="1" outkey="883"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="799"/>
 															<entry name="IssuerName" ns="1" outkey="800"/>
 															<entry name="IssuerCountry" ns="1" outkey="801"/>
@@ -412,6 +414,7 @@
 														<entry name="MaidenName" ns="1" outkey="687"/>
 														<entry name="PersonalInformationVerification" ns="1" outkey="807" expanded="1">
 															<entry name="DocumentTitle" ns="1" outkey="808"/>
+															<entry name="DocumentCategory" ns="1" outkey="884"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" outkey="809"/>
 															<entry name="IssuerName" ns="1" outkey="810"/>
 															<entry name="IssuerCountry" ns="1" outkey="811"/>
@@ -477,7 +480,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="986" lty="-57" rbx="1299" rby="586"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="2129">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -488,7 +491,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentDiscipline" ns="1" inpkey="1" expanded="1">
-										<entry name="DisciplineIncident" ns="1" inpkey="2" expanded="1">
+										<entry name="DisciplineIncident" ns="1" inpkey="2">
 											<entry name="id" type="attribute" inpkey="3"/>
 											<entry name="IncidentIdentifier" ns="1" inpkey="4"/>
 											<entry name="IncidentDate" ns="1" inpkey="5"/>
@@ -558,6 +561,7 @@
 														<entry name="MaidenName" ns="1" inpkey="429"/>
 														<entry name="PersonalIdentificationDocument" ns="1" inpkey="430" expanded="1">
 															<entry name="DocumentTitle" ns="1" inpkey="431"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="885"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="433"/>
 															<entry name="IssuerName" ns="1" inpkey="434"/>
 															<entry name="IssuerCountry" ns="1" inpkey="435" expanded="1">
@@ -594,7 +598,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentDisciplineIncidentAssociation" ns="1" inpkey="22" expanded="1">
+										<entry name="StudentDisciplineIncidentAssociation" ns="1" inpkey="22">
 											<entry name="StudentReference" ns="1" inpkey="23" expanded="1">
 												<entry name="id" type="attribute" inpkey="24"/>
 												<entry name="ref" type="attribute" inpkey="25"/>
@@ -619,6 +623,7 @@
 														<entry name="MaidenName" ns="1" inpkey="502"/>
 														<entry name="PersonalIdentificationDocument" ns="1" inpkey="812" expanded="1">
 															<entry name="DocumentTitle" ns="1" inpkey="813"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="886"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="814"/>
 															<entry name="IssuerName" ns="1" inpkey="815"/>
 															<entry name="IssuerCountry" ns="1" inpkey="816" expanded="1">
@@ -800,6 +805,7 @@
 														<entry name="MaidenName" ns="1" inpkey="658"/>
 														<entry name="PersonalIdentificationDocument" ns="1" inpkey="824" expanded="1">
 															<entry name="DocumentTitle" ns="1" inpkey="825"/>
+															<entry name="PersonalInformationVerification" ns="1" inpkey="887"/>
 															<entry name="IssuerDocumentIdentificationCode" ns="1" inpkey="826"/>
 															<entry name="IssuerName" ns="1" inpkey="827"/>
 															<entry name="IssuerCountry" ns="1" inpkey="828" expanded="1">
@@ -2253,6 +2259,21 @@
 						<edges>
 							<edge vertexkey="868" edgekey="880"/>
 							<edge vertexkey="869" edgekey="881"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="882">
+						<edges>
+							<edge vertexkey="885" edgekey="888"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="883">
+						<edges>
+							<edge vertexkey="886" edgekey="889"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="884">
+						<edges>
+							<edge vertexkey="887" edgekey="890"/>
 						</edges>
 					</vertex>
 				</vertices>
