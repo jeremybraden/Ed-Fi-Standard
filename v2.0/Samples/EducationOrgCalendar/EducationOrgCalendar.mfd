@@ -97,11 +97,265 @@
 					</targets>
 					<view ltx="917" lty="563" rbx="1010" rby="639"/>
 				</component>
+				<component name="EdOrgFromCalendarDate" library="user" blackbox="0" uid="38" kind="19" visible="0">
+					<view ltx="198" lty="668" rbx="799" rby="807"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="file" inpkey="826" componentid="24"/>
+							<entry name="CalendarDateId" inpkey="827" componentid="30"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="Result2" componentid="33" expanded="1">
+								<entry name="SchoolReference" ns="1" outkey="875" expanded="1">
+									<entry name="id" type="attribute" outkey="876"/>
+									<entry name="ref" type="attribute" outkey="877"/>
+									<entry name="SchoolIdentity" ns="1" outkey="828" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="881"/>
+									</entry>
+									<entry name="SchoolLookup" ns="1" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="933"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="EdOrgFromGradingPeriod" library="user" blackbox="0" uid="19" kind="19" visible="0">
+					<view ltx="437" lty="-151" rbx="900" rby="-12"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="GradingPeriodId" inpkey="789" componentid="7"/>
+							<entry name="file" inpkey="788" componentid="13"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="Result2" componentid="11" expanded="1">
+								<entry name="SchoolReference" ns="1" outkey="798" expanded="1">
+									<entry name="id" type="attribute" outkey="799"/>
+									<entry name="ref" type="attribute" outkey="800"/>
+									<entry name="SchoolIdentity" ns="1" outkey="801" expanded="1"/>
+									<entry name="SchoolLookup" ns="1" outkey="802" expanded="1">
+										<entry name="SchoolId" ns="1" outkey="803"/>
+										<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
+											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1">
+												<entry name="id" type="attribute" outkey="804"/>
+												<entry name="ref" type="attribute" outkey="805"/>
+												<entry name="Namespace" ns="1" outkey="806"/>
+											</entry>
+										</entry>
+										<entry name="NameOfInstitution" ns="1" outkey="807"/>
+										<entry name="EducationOrganizationCategory" ns="1" outkey="808"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="Interchange-EducationOrgCalendar" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="917" lty="10" rbx="1563" rby="522"/>
+					<data>
+						<root scrollposition="154">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeEducationOrgCalendar" ns="1" inpkey="403" expanded="1">
+										<entry name="Session" ns="1" inpkey="404" expanded="1">
+											<entry name="id" type="attribute" inpkey="405"/>
+											<entry name="SessionName" ns="1" inpkey="406"/>
+											<entry name="SchoolYear" ns="1" inpkey="407"/>
+											<entry name="Term" ns="1" inpkey="408">
+												<entry name="CodeValue" ns="1" inpkey="669"/>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="409"/>
+											<entry name="EndDate" ns="1" inpkey="410"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="411"/>
+											<entry name="SchoolReference" ns="1" inpkey="670">
+												<entry name="id" type="attribute" inpkey="671"/>
+												<entry name="ref" type="attribute" inpkey="672"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="673" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="674"/>
+												</entry>
+												<entry name="SchoolLookup" ns="1" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="675"/>
+													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="676" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="677"/>
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="678" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="679"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" inpkey="420">
+												<entry name="id" type="attribute" inpkey="421"/>
+												<entry name="ref" type="attribute" inpkey="422"/>
+												<entry name="GradingPeriodIdentity" ns="1" inpkey="423" expanded="1">
+													<entry name="GradingPeriod" ns="1" inpkey="424" expanded="1">
+														<entry name="id" type="attribute" inpkey="425"/>
+														<entry name="ref" type="attribute" inpkey="426"/>
+														<entry name="CodeValue" ns="1" inpkey="429"/>
+														<entry name="Namespace" ns="1" inpkey="680"/>
+													</entry>
+													<entry name="BeginDate" ns="1" inpkey="433"/>
+													<entry name="SchoolReference" ns="1" inpkey="734" expanded="1">
+														<entry name="id" type="attribute" inpkey="735"/>
+														<entry name="ref" type="attribute" inpkey="736"/>
+														<entry name="SchoolIdentity" ns="1" inpkey="737" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="738"/>
+														</entry>
+														<entry name="SchoolLookup" ns="1" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="931"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="739" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="740"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="741" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="742"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="AcademicWeekReference" ns="1" inpkey="456" expanded="1">
+												<entry name="id" type="attribute" inpkey="457"/>
+												<entry name="ref" type="attribute" inpkey="458"/>
+												<entry name="AcademicWeekIdentity" ns="1" inpkey="459" expanded="1">
+													<entry name="SchoolReference" ns="1" inpkey="936" expanded="1">
+														<entry name="id" type="attribute" inpkey="937"/>
+														<entry name="ref" type="attribute" inpkey="938"/>
+														<entry name="SchoolIdentity" ns="1" inpkey="939" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="940"/>
+														</entry>
+														<entry name="SchoolLookup" ns="1" expanded="1">
+															<entry name="SchoolId" ns="1" inpkey="941"/>
+															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="942" expanded="1">
+																<entry name="IdentificationCode" ns="1" inpkey="943"/>
+																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="944" expanded="1">
+																	<entry name="CodeValue" ns="1" inpkey="945"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="WeekIdentifier" ns="1" inpkey="468"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="GradingPeriod" ns="1" inpkey="471" expanded="1">
+											<entry name="id" type="attribute" inpkey="472"/>
+											<entry name="SchoolReference" ns="1" inpkey="743" expanded="1">
+												<entry name="id" type="attribute" inpkey="744"/>
+												<entry name="ref" type="attribute" inpkey="745"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="771" expanded="1"/>
+												<entry name="SchoolLookup" ns="1" inpkey="792" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="772"/>
+													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="773" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="774"/>
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="775" expanded="1">
+															<entry name="id" type="attribute" inpkey="793"/>
+															<entry name="ref" type="attribute" inpkey="794"/>
+															<entry name="CodeValue" ns="1" inpkey="776"/>
+															<entry name="Namespace" ns="1" inpkey="795"/>
+														</entry>
+													</entry>
+													<entry name="NameOfInstitution" ns="1" inpkey="796"/>
+													<entry name="EducationOrganizationCategory" ns="1" inpkey="797"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriod" ns="1" inpkey="473">
+												<entry name="id" type="attribute" inpkey="474"/>
+												<entry name="ref" type="attribute" inpkey="475"/>
+												<entry name="CodeValue" ns="1" inpkey="478"/>
+												<entry name="Namespace" ns="1" inpkey="688"/>
+											</entry>
+											<entry name="BeginDate" ns="1" inpkey="481"/>
+											<entry name="EndDate" ns="1" inpkey="482"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="483"/>
+											<entry name="PeriodSequence" ns="1" inpkey="484"/>
+										</entry>
+										<entry name="CalendarDate" ns="1" inpkey="498" expanded="1">
+											<entry name="id" type="attribute" inpkey="499"/>
+											<entry name="Date" ns="1" inpkey="500"/>
+											<entry name="SchoolReference" ns="1" inpkey="747" expanded="1">
+												<entry name="id" type="attribute" inpkey="748"/>
+												<entry name="ref" type="attribute" inpkey="749"/>
+												<entry name="SchoolIdentity" ns="1" inpkey="824" expanded="1">
+													<entry name="SchoolId" ns="1" inpkey="750"/>
+												</entry>
+												<entry name="SchoolLookup" ns="1">
+													<entry name="SchoolId" ns="1" inpkey="932"/>
+												</entry>
+											</entry>
+											<entry name="CalendarEvent" ns="1" inpkey="822">
+												<entry name="CalendarEvent" ns="1" inpkey="690" expanded="1">
+													<entry name="id" type="attribute" inpkey="691"/>
+													<entry name="ref" type="attribute" inpkey="692"/>
+													<entry name="CodeValue" ns="1" inpkey="693"/>
+													<entry name="Namespace" ns="1" inpkey="694"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="AcademicWeek" ns="1" inpkey="517">
+											<entry name="id" type="attribute" inpkey="518"/>
+											<entry name="WeekIdentifier" ns="1" inpkey="519"/>
+											<entry name="BeginDate" ns="1" inpkey="520"/>
+											<entry name="EndDate" ns="1" inpkey="521"/>
+											<entry name="TotalInstructionalDays" ns="1" inpkey="522"/>
+											<entry name="EducationOrganizationReference" ns="1" inpkey="695" expanded="1">
+												<entry name="id" type="attribute" inpkey="696"/>
+												<entry name="ref" type="attribute" inpkey="697"/>
+												<entry name="EducationOrganizationIdentity" ns="1" inpkey="698" expanded="1">
+													<entry name="EducationOrganizationId" ns="1" inpkey="699"/>
+												</entry>
+												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
+													<entry name="EducationOrganizationId" ns="1" inpkey="918"/>
+													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="919" expanded="1">
+														<entry name="IdentificationCode" ns="1" inpkey="920"/>
+														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="921" expanded="1">
+															<entry name="CodeValue" ns="1" inpkey="922"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" outputinstance="Sample XML 2.0\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<wsdl/>
+					</data>
+				</component>
 				<component name="Interchange-EducationOrgCalendar" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="-46" lty="10" rbx="491" rby="596"/>
 					<data>
-						<root scrollposition="291">
+						<root scrollposition="579">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -112,7 +366,7 @@
 							<entry name="FileInstance" ns="2" outkey="787" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeEducationOrgCalendar" ns="1" outkey="2" expanded="1">
-										<entry name="Session" ns="1" outkey="3">
+										<entry name="Session" ns="1" outkey="3" expanded="1">
 											<entry name="id" type="attribute" outkey="4"/>
 											<entry name="SessionName" ns="1" outkey="5"/>
 											<entry name="SchoolYear" ns="1" outkey="6"/>
@@ -257,260 +511,6 @@
 						</root>
 						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="Sample XML 1.2\EducationOrgCalendar.xml" outputinstance="Sample XML 1.2\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
 						<wsdl/>
-					</data>
-				</component>
-				<component name="EdOrgFromCalendarDate" library="user" blackbox="0" uid="38" kind="19" visible="0">
-					<view ltx="198" lty="668" rbx="799" rby="807"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="file" inpkey="826" componentid="24"/>
-							<entry name="CalendarDateId" inpkey="827" componentid="30"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-								</namespaces>
-							</header>
-							<entry name="Result2" componentid="33" expanded="1">
-								<entry name="SchoolReference" ns="1" outkey="875" expanded="1">
-									<entry name="id" type="attribute" outkey="876"/>
-									<entry name="ref" type="attribute" outkey="877"/>
-									<entry name="SchoolIdentity" ns="1" outkey="828" expanded="1">
-										<entry name="SchoolId" ns="1" outkey="881"/>
-									</entry>
-									<entry name="SchoolLookup" ns="1" expanded="1">
-										<entry name="SchoolId" ns="1" outkey="933"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-					</data>
-				</component>
-				<component name="Interchange-EducationOrgCalendar" library="xml" uid="4" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="917" lty="10" rbx="1563" rby="522"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeEducationOrgCalendar" ns="1" inpkey="403" expanded="1">
-										<entry name="Session" ns="1" inpkey="404">
-											<entry name="id" type="attribute" inpkey="405"/>
-											<entry name="SessionName" ns="1" inpkey="406"/>
-											<entry name="SchoolYear" ns="1" inpkey="407"/>
-											<entry name="Term" ns="1" inpkey="408">
-												<entry name="CodeValue" ns="1" inpkey="669"/>
-											</entry>
-											<entry name="BeginDate" ns="1" inpkey="409"/>
-											<entry name="EndDate" ns="1" inpkey="410"/>
-											<entry name="TotalInstructionalDays" ns="1" inpkey="411"/>
-											<entry name="SchoolReference" ns="1" inpkey="670">
-												<entry name="id" type="attribute" inpkey="671"/>
-												<entry name="ref" type="attribute" inpkey="672"/>
-												<entry name="SchoolIdentity" ns="1" inpkey="673" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="674"/>
-												</entry>
-												<entry name="SchoolLookup" ns="1" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="675"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="676" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="677"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="678" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="679"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="GradingPeriodReference" ns="1" inpkey="420">
-												<entry name="id" type="attribute" inpkey="421"/>
-												<entry name="ref" type="attribute" inpkey="422"/>
-												<entry name="GradingPeriodIdentity" ns="1" inpkey="423" expanded="1">
-													<entry name="GradingPeriod" ns="1" inpkey="424" expanded="1">
-														<entry name="id" type="attribute" inpkey="425"/>
-														<entry name="ref" type="attribute" inpkey="426"/>
-														<entry name="CodeValue" ns="1" inpkey="429"/>
-														<entry name="Namespace" ns="1" inpkey="680"/>
-													</entry>
-													<entry name="BeginDate" ns="1" inpkey="433"/>
-													<entry name="SchoolReference" ns="1" inpkey="734" expanded="1">
-														<entry name="id" type="attribute" inpkey="735"/>
-														<entry name="ref" type="attribute" inpkey="736"/>
-														<entry name="SchoolIdentity" ns="1" inpkey="737" expanded="1">
-															<entry name="SchoolId" ns="1" inpkey="738"/>
-														</entry>
-														<entry name="SchoolLookup" ns="1" expanded="1">
-															<entry name="SchoolId" ns="1" inpkey="931"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="739" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="740"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="741" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="742"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="AcademicWeekReference" ns="1" inpkey="456" expanded="1">
-												<entry name="id" type="attribute" inpkey="457"/>
-												<entry name="ref" type="attribute" inpkey="458"/>
-												<entry name="AcademicWeekIdentity" ns="1" inpkey="459" expanded="1">
-													<entry name="EducationOrganizationReference" ns="1" inpkey="460" expanded="1">
-														<entry name="id" type="attribute" inpkey="461"/>
-														<entry name="ref" type="attribute" inpkey="462"/>
-														<entry name="EducationOrganizationIdentity" ns="1" inpkey="463" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="682"/>
-														</entry>
-														<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-															<entry name="EducationOrganizationId" ns="1" inpkey="907"/>
-															<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="908" expanded="1">
-																<entry name="IdentificationCode" ns="1" inpkey="915"/>
-																<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="909" expanded="1">
-																	<entry name="CodeValue" ns="1" inpkey="910"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="WeekIdentifier" ns="1" inpkey="468"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="GradingPeriod" ns="1" inpkey="471" expanded="1">
-											<entry name="id" type="attribute" inpkey="472"/>
-											<entry name="SchoolReference" ns="1" inpkey="743" expanded="1">
-												<entry name="id" type="attribute" inpkey="744"/>
-												<entry name="ref" type="attribute" inpkey="745"/>
-												<entry name="SchoolIdentity" ns="1" inpkey="771" expanded="1"/>
-												<entry name="SchoolLookup" ns="1" inpkey="792" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="772"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="773" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="774"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="775" expanded="1">
-															<entry name="id" type="attribute" inpkey="793"/>
-															<entry name="ref" type="attribute" inpkey="794"/>
-															<entry name="CodeValue" ns="1" inpkey="776"/>
-															<entry name="Namespace" ns="1" inpkey="795"/>
-														</entry>
-													</entry>
-													<entry name="NameOfInstitution" ns="1" inpkey="796"/>
-													<entry name="EducationOrganizationCategory" ns="1" inpkey="797"/>
-												</entry>
-											</entry>
-											<entry name="GradingPeriod" ns="1" inpkey="473">
-												<entry name="id" type="attribute" inpkey="474"/>
-												<entry name="ref" type="attribute" inpkey="475"/>
-												<entry name="CodeValue" ns="1" inpkey="478"/>
-												<entry name="Namespace" ns="1" inpkey="688"/>
-											</entry>
-											<entry name="BeginDate" ns="1" inpkey="481"/>
-											<entry name="EndDate" ns="1" inpkey="482"/>
-											<entry name="TotalInstructionalDays" ns="1" inpkey="483"/>
-											<entry name="PeriodSequence" ns="1" inpkey="484"/>
-										</entry>
-										<entry name="CalendarDate" ns="1" inpkey="498" expanded="1">
-											<entry name="id" type="attribute" inpkey="499"/>
-											<entry name="Date" ns="1" inpkey="500"/>
-											<entry name="SchoolReference" ns="1" inpkey="747" expanded="1">
-												<entry name="id" type="attribute" inpkey="748"/>
-												<entry name="ref" type="attribute" inpkey="749"/>
-												<entry name="SchoolIdentity" ns="1" inpkey="824" expanded="1">
-													<entry name="SchoolId" ns="1" inpkey="750"/>
-												</entry>
-												<entry name="SchoolLookup" ns="1">
-													<entry name="SchoolId" ns="1" inpkey="932"/>
-												</entry>
-											</entry>
-											<entry name="CalendarEvent" ns="1" inpkey="822">
-												<entry name="CalendarEvent" ns="1" inpkey="690" expanded="1">
-													<entry name="id" type="attribute" inpkey="691"/>
-													<entry name="ref" type="attribute" inpkey="692"/>
-													<entry name="CodeValue" ns="1" inpkey="693"/>
-													<entry name="Namespace" ns="1" inpkey="694"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="AcademicWeek" ns="1" inpkey="517">
-											<entry name="id" type="attribute" inpkey="518"/>
-											<entry name="EducationOrganizationReference" ns="1" inpkey="695" expanded="1">
-												<entry name="id" type="attribute" inpkey="696"/>
-												<entry name="ref" type="attribute" inpkey="697"/>
-												<entry name="EducationOrganizationIdentity" ns="1" inpkey="698" expanded="1">
-													<entry name="EducationOrganizationId" ns="1" inpkey="699"/>
-												</entry>
-												<entry name="EducationOrganizationLookup" ns="1" expanded="1">
-													<entry name="EducationOrganizationId" ns="1" inpkey="918"/>
-													<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="919" expanded="1">
-														<entry name="IdentificationCode" ns="1" inpkey="920"/>
-														<entry name="EducationOrganizationIdentificationSystem" ns="1" inpkey="921" expanded="1">
-															<entry name="CodeValue" ns="1" inpkey="922"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="WeekIdentifier" ns="1" inpkey="519"/>
-											<entry name="BeginDate" ns="1" inpkey="520"/>
-											<entry name="EndDate" ns="1" inpkey="521"/>
-											<entry name="TotalInstructionalDays" ns="1" inpkey="522"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" outputinstance="Sample XML 2.0\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="EdOrgFromGradingPeriod" library="user" blackbox="0" uid="19" kind="19" visible="0">
-					<view ltx="437" lty="-151" rbx="900" rby="-12"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="GradingPeriodId" inpkey="789" componentid="7"/>
-							<entry name="file" inpkey="788" componentid="13"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-								</namespaces>
-							</header>
-							<entry name="Result2" componentid="11" expanded="1">
-								<entry name="SchoolReference" ns="1" outkey="798" expanded="1">
-									<entry name="id" type="attribute" outkey="799"/>
-									<entry name="ref" type="attribute" outkey="800"/>
-									<entry name="SchoolIdentity" ns="1" outkey="801" expanded="1"/>
-									<entry name="SchoolLookup" ns="1" outkey="802" expanded="1">
-										<entry name="SchoolId" ns="1" outkey="803"/>
-										<entry name="EducationOrganizationIdentificationCode" ns="1" expanded="1">
-											<entry name="EducationOrganizationIdentificationSystem" ns="1" expanded="1">
-												<entry name="id" type="attribute" outkey="804"/>
-												<entry name="ref" type="attribute" outkey="805"/>
-												<entry name="Namespace" ns="1" outkey="806"/>
-											</entry>
-										</entry>
-										<entry name="NameOfInstitution" ns="1" outkey="807"/>
-										<entry name="EducationOrganizationCategory" ns="1" outkey="808"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
 					</data>
 				</component>
 			</children>
@@ -709,28 +709,28 @@
 					</vertex>
 					<vertex vertexkey="59">
 						<edges>
-							<edge vertexkey="460" edgekey="593"/>
+							<edge vertexkey="936" edgekey="946"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="60">
 						<edges>
-							<edge vertexkey="461" edgekey="594"/>
+							<edge vertexkey="937" edgekey="947"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="61">
 						<edges>
-							<edge vertexkey="462" edgekey="595"/>
+							<edge vertexkey="938" edgekey="948"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="62">
 						<edges>
-							<edge vertexkey="463" edgekey="596"/>
+							<edge vertexkey="939" edgekey="949"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="63">
 						<edges>
-							<edge vertexkey="682" edgekey="713"/>
-							<edge vertexkey="907" edgekey="911"/>
+							<edge vertexkey="940" edgekey="950"/>
+							<edge vertexkey="941" edgekey="951"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="67">
@@ -1064,18 +1064,18 @@
 					</vertex>
 					<vertex vertexkey="905">
 						<edges>
-							<edge vertexkey="908" edgekey="912"/>
+							<edge vertexkey="942" edgekey="952"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="906">
 						<edges>
-							<edge vertexkey="909" edgekey="913"/>
-							<edge vertexkey="910" edgekey="914"/>
+							<edge vertexkey="944" edgekey="953"/>
+							<edge vertexkey="945" edgekey="954"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="916">
 						<edges>
-							<edge vertexkey="915" edgekey="917"/>
+							<edge vertexkey="943" edgekey="955"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="923">
