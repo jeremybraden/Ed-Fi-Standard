@@ -44,11 +44,11 @@
 		<xs:complexContent>
 			<xs:extension base="ComplexObjectType">
 				<xs:sequence>
-					<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+					<xs:element name="SchoolReference" type="SchoolReferenceType">
 						<xs:annotation>
-							<xs:documentation>Relates the academic week to an existing Educational Organization.</xs:documentation>
+							<xs:documentation>Relates the academic week to an existing School.</xs:documentation>
 							<xs:appinfo>
-								<ann:EdFiId>1201</ann:EdFiId>
+								<ann:EdFiId>2435</ann:EdFiId>
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
@@ -275,7 +275,7 @@
 							</xs:appinfo>
 						</xs:annotation>
 					</xs:element>
-					<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptor" minOccurs="0">
+					<xs:element name="AssessmentCategory" type="AssessmentCategoryDescriptorReferenceType" minOccurs="0">
 						<xs:annotation>
 							<xs:documentation>The category of an assessment based on format and content. For example:
 Achievement test
@@ -8052,11 +8052,11 @@ Local Neglected Program.</xs:documentation>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:sequence>
-			<xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+			<xs:element name="SchoolReference" type="SchoolReferenceType">
 				<xs:annotation>
-					<xs:documentation>Provide user information to lookup and link to an existing educational organization record in the receiving system.</xs:documentation>
+					<xs:documentation>Provide user information to lookup and link to an existing school record in the receiving system.</xs:documentation>
 					<xs:appinfo>
-						<ann:EdFiId>2000</ann:EdFiId>
+						<ann:EdFiId>2436</ann:EdFiId>
 					</xs:appinfo>
 				</xs:annotation>
 			</xs:element>
@@ -11449,6 +11449,18 @@ Volunteer/no contract
 			<xs:appinfo>
 				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
 				<ann:EdFiId>354</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="DescriptorReferenceType"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AssessmentCategoryDescriptorReferenceType">
+		<xs:annotation>
+			<xs:documentation>Provides references for assessment category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+				<ann:EdFiId>2431</ann:EdFiId>
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:complexContent>
@@ -25834,7 +25846,7 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 	</xs:simpleType>
 	<xs:simpleType name="Author">
 		<xs:annotation>
-			<xs:documentation/>
+			<xs:documentation>The person or organization chiefly responsible for intellectual content.</xs:documentation>
 			<xs:appinfo>
 				<ann:TypeGroup>Simple</ann:TypeGroup>
 				<ann:EdFiId>12</ann:EdFiId>
@@ -26025,6 +26037,19 @@ A weapon designed or redesigned, made or remade, and intended to be fired from t
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="65"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ContentStandardTitle">
+		<xs:annotation>
+			<xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
+			<xs:appinfo>
+				<ann:TypeGroup>Simple</ann:TypeGroup>
+				<ann:EdFiId>111</ann:EdFiId>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="75"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="ContentStandardVersion">
@@ -26857,19 +26882,6 @@ The Federal Information Processing Standards (FIPS) numeric code for the county 
 			</xs:appinfo>
 		</xs:annotation>
 		<xs:restriction base="xs:duration"/>
-	</xs:simpleType>
-	<xs:simpleType name="ContentStandardTitle">
-		<xs:annotation>
-			<xs:documentation>The name of the content standard, for example Common Core.</xs:documentation>
-			<xs:appinfo>
-				<ann:TypeGroup>Simple</ann:TypeGroup>
-				<ann:EdFiId>111</ann:EdFiId>
-			</xs:appinfo>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="75"/>
-		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="UniqueId">
 		<xs:annotation>

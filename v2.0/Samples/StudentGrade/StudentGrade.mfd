@@ -50,29 +50,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="CoalesceCode" library="user" blackbox="0" uid="17" kind="19" visible="0">
-					<view ltx="411" lty="27" rbx="583" rby="78"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="350" componentid="10"/>
-							<entry name="replacewith" inpkey="351" componentid="11"/>
-							<entry name="replacewith2" inpkey="352" componentid="14"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="353" componentid="6"/>
-						</root>
-					</data>
-				</component>
 				<component name="CoalesceCode" library="user" blackbox="0" uid="165" kind="19" visible="0">
 					<view ltx="633" lty="194" rbx="805" rby="245"/>
 					<data>
@@ -244,11 +221,34 @@
 						</root>
 					</data>
 				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="17" kind="19" visible="0">
+					<view ltx="411" lty="27" rbx="583" rby="78"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="350" componentid="10"/>
+							<entry name="replacewith" inpkey="351" componentid="11"/>
+							<entry name="replacewith2" inpkey="352" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="353" componentid="6"/>
+						</root>
+					</data>
+				</component>
 				<component name="Interchange-StudentGrade" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1191" lty="254" rbx="1520" rby="834"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="103">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -266,7 +266,7 @@
 												<entry name="ref" type="attribute" inpkey="822"/>
 												<entry name="GradeIdentity" ns="1" inpkey="823" expanded="1">
 													<entry name="StudentSectionAssociationReference" ns="1" expanded="1">
-														<entry name="StudentSectionAssociationIdentity" ns="1">
+														<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
 															<entry name="StudentReference" ns="1" inpkey="824">
 																<entry name="id" type="attribute" inpkey="825"/>
 																<entry name="ref" type="attribute" inpkey="826"/>
@@ -304,10 +304,10 @@
 																	<entry name="Race" ns="1" inpkey="1060"/>
 																</entry>
 															</entry>
-															<entry name="SectionReference" ns="1" inpkey="829" expanded="1">
+															<entry name="SectionReference" ns="1" inpkey="829">
 																<entry name="id" type="attribute" inpkey="830"/>
 																<entry name="ref" type="attribute" inpkey="831"/>
-																<entry name="SectionIdentity" ns="1" inpkey="832">
+																<entry name="SectionIdentity" ns="1" inpkey="832" expanded="1">
 																	<entry name="LocationReference" ns="1" expanded="1">
 																		<entry name="LocationIdentity" ns="1" expanded="1">
 																			<entry name="ClassroomIdentificationCode" ns="1" inpkey="1722"/>
@@ -343,6 +343,13 @@
 																					</entry>
 																				</entry>
 																			</entry>
+																			<entry name="SchoolReference" ns="1" inpkey="1860" expanded="1">
+																				<entry name="id" type="attribute" inpkey="1861"/>
+																				<entry name="ref" type="attribute" inpkey="1862"/>
+																				<entry name="SchoolIdentity" ns="1" expanded="1">
+																					<entry name="SchoolId" ns="1" inpkey="1863"/>
+																				</entry>
+																			</entry>
 																		</entry>
 																	</entry>
 																	<entry name="UniqueSectionCode" ns="1" inpkey="833"/>
@@ -350,7 +357,7 @@
 															</entry>
 														</entry>
 													</entry>
-													<entry name="GradingPeriodReference" ns="1" inpkey="834">
+													<entry name="GradingPeriodReference" ns="1" inpkey="834" expanded="1">
 														<entry name="id" type="attribute" inpkey="835"/>
 														<entry name="ref" type="attribute" inpkey="836"/>
 														<entry name="GradingPeriodIdentity" ns="1" inpkey="837" expanded="1">
@@ -393,7 +400,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="Grade" ns="1" inpkey="862">
+										<entry name="Grade" ns="1" inpkey="862" expanded="1">
 											<entry name="id" type="attribute" inpkey="863"/>
 											<entry name="LetterGradeEarned" ns="1" inpkey="864"/>
 											<entry name="NumericGradeEarned" ns="1" inpkey="865"/>
@@ -498,6 +505,8 @@
 																	</entry>
 																</entry>
 															</entry>
+															<entry name="UniqueSectionCode" ns="1" inpkey="1885"/>
+															<entry name="SequenceOfCourse" ns="1" inpkey="1886"/>
 														</entry>
 														<entry name="SectionLookup" ns="1" expanded="1">
 															<entry name="CourseOfferingReference" ns="1">
@@ -719,16 +728,16 @@
 												<entry name="ref" type="attribute" inpkey="1566"/>
 												<entry name="StudentIdentity" ns="1" inpkey="1567"/>
 											</entry>
-											<entry name="StudentSectionAssociationReference" ns="1" inpkey="1766">
+											<entry name="StudentSectionAssociationReference" ns="1" inpkey="1766" expanded="1">
 												<entry name="id" type="attribute" inpkey="1767"/>
 												<entry name="ref" type="attribute" inpkey="1768"/>
-												<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
+												<entry name="StudentSectionAssociationIdentity" ns="1">
 													<entry name="StudentReference" ns="1" inpkey="1769" expanded="1">
 														<entry name="id" type="attribute" inpkey="1770"/>
 														<entry name="ref" type="attribute" inpkey="1771"/>
 														<entry name="StudentIdentity" ns="1" inpkey="1772" expanded="1"/>
 													</entry>
-													<entry name="SectionReference" ns="1">
+													<entry name="SectionReference" ns="1" expanded="1">
 														<entry name="SectionIdentity" ns="1" inpkey="1773" expanded="1">
 															<entry name="LocationReference" ns="1">
 																<entry name="LocationIdentity" ns="1" expanded="1">
@@ -786,6 +795,13 @@
 															<entry name="StudentUniqueId" ns="1" inpkey="1816"/>
 														</entry>
 													</entry>
+													<entry name="EducationOrganizationReference" ns="1" inpkey="1872" expanded="1">
+														<entry name="id" type="attribute" inpkey="1873"/>
+														<entry name="ref" type="attribute" inpkey="1874"/>
+														<entry name="EducationOrganizationIdentity" ns="1" inpkey="1875" expanded="1">
+															<entry name="EducationOrganizationId" ns="1" inpkey="1876"/>
+														</entry>
+													</entry>
 													<entry name="ProgramReference" ns="1" inpkey="1817">
 														<entry name="id" type="attribute" inpkey="1818"/>
 														<entry name="ref" type="attribute" inpkey="1819"/>
@@ -801,6 +817,7 @@
 															</entry>
 														</entry>
 													</entry>
+													<entry name="BeginDate" ns="1" inpkey="1877"/>
 												</entry>
 											</entry>
 										</entry>
@@ -836,7 +853,7 @@
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="164" lty="158" rbx="467" rby="707"/>
 					<data>
-						<root scrollposition="443">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -847,7 +864,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentGrade" ns="1" outkey="118" expanded="1">
-										<entry name="ReportCard" ns="1" outkey="119" expanded="1">
+										<entry name="ReportCard" ns="1" outkey="119">
 											<entry name="id" type="attribute" outkey="120"/>
 											<entry name="GradeReference" ns="1" outkey="121" expanded="1">
 												<entry name="id" type="attribute" outkey="122"/>
@@ -890,7 +907,7 @@
 															</entry>
 														</entry>
 													</entry>
-													<entry name="SectionReference" ns="1" outkey="130" expanded="1">
+													<entry name="SectionReference" ns="1" outkey="130">
 														<entry name="id" type="attribute" outkey="131"/>
 														<entry name="ref" type="attribute" outkey="132"/>
 														<entry name="SectionIdentity" ns="1" outkey="133" expanded="1">
@@ -902,7 +919,7 @@
 															<entry name="Location" ns="1" outkey="1735"/>
 														</entry>
 													</entry>
-													<entry name="GradingPeriodReference" ns="1" outkey="140">
+													<entry name="GradingPeriodReference" ns="1" outkey="140" expanded="1">
 														<entry name="id" type="attribute" outkey="141"/>
 														<entry name="ref" type="attribute" outkey="142"/>
 														<entry name="GradingPeriodIdentity" ns="1" outkey="143" expanded="1">
@@ -917,12 +934,24 @@
 														</entry>
 													</entry>
 													<entry name="GradeType" ns="1" outkey="153"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1864" expanded="1">
+														<entry name="id" type="attribute" outkey="1865"/>
+														<entry name="ref" type="attribute" outkey="1866"/>
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1867"/>
+														</entry>
+													</entry>
 												</entry>
 											</entry>
 											<entry name="StudentCompetencyReference" ns="1" expanded="1">
 												<entry name="StudentCompetencyIdentity" ns="1" expanded="1">
 													<entry name="LearningObjectiveReference" ns="1" expanded="1">
 														<entry name="ref" type="attribute" outkey="1547"/>
+														<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
+															<entry name="ContentStandard" ns="1" expanded="1">
+																<entry name="BeginDate" ns="1" outkey="1878"/>
+															</entry>
+														</entry>
 													</entry>
 													<entry name="StudentReference" ns="1" outkey="1828">
 														<entry name="id" type="attribute" outkey="1829"/>
@@ -931,7 +960,7 @@
 															<entry name="StudentUniqueStateId" ns="1" outkey="1832"/>
 														</entry>
 													</entry>
-													<entry name="ProgramReference" ns="1" outkey="1833">
+													<entry name="ProgramReference" ns="1" outkey="1833" expanded="1">
 														<entry name="id" type="attribute" outkey="1834"/>
 														<entry name="ref" type="attribute" outkey="1835"/>
 														<entry name="ProgramIdentity" ns="1" outkey="1836" expanded="1">
@@ -958,7 +987,7 @@
 												<entry name="ref" type="attribute" outkey="161"/>
 												<entry name="StudentIdentity" ns="1" outkey="162" expanded="1"/>
 											</entry>
-											<entry name="GradingPeriodReference" ns="1" outkey="164" expanded="1">
+											<entry name="GradingPeriodReference" ns="1" outkey="164">
 												<entry name="id" type="attribute" outkey="165"/>
 												<entry name="ref" type="attribute" outkey="166"/>
 												<entry name="GradingPeriodIdentity" ns="1" outkey="167" expanded="1">
@@ -971,7 +1000,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="Grade" ns="1" outkey="177">
+										<entry name="Grade" ns="1" outkey="177" expanded="1">
 											<entry name="id" type="attribute" outkey="178"/>
 											<entry name="LetterGradeEarned" ns="1" outkey="179"/>
 											<entry name="NumericGradeEarned" ns="1" outkey="180"/>
@@ -1066,11 +1095,13 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentCompetency" ns="1" outkey="1548">
+										<entry name="StudentCompetency" ns="1" outkey="1548" expanded="1">
 											<entry name="id" type="attribute" outkey="1549"/>
-											<entry name="LearningObjectiveReference" ns="1">
+											<entry name="LearningObjectiveReference" ns="1" expanded="1">
 												<entry name="ref" type="attribute" outkey="1527"/>
-												<entry name="LearningObjectiveIdentity" ns="1" expanded="1"/>
+												<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
+													<entry name="ContentStandard" ns="1" expanded="1"/>
+												</entry>
 											</entry>
 											<entry name="StudentCompetencyObjectiveReference" ns="1">
 												<entry name="StudentCompetencyObjectiveIdentity" ns="1" expanded="1"/>
@@ -1207,6 +1238,33 @@
 						</root>
 						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentGrade.xsd" inputinstance="Sample XML 1.2\StudentGrade.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentGrade"/>
 						<wsdl/>
+					</data>
+				</component>
+				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
+					<view ltx="334" lty="765" rbx="583" rby="867"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
+							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
+							<entry name="Term" inpkey="1889" componentid="188"/>
+							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
+							<entry name="Location" inpkey="1891" componentid="190"/>
+							<entry name="SchoolId" inpkey="1892" componentid="198"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
+							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
+						</root>
 					</data>
 				</component>
 			</children>
@@ -1724,6 +1782,7 @@
 							<edge vertexkey="784" edgekey="794"/>
 							<edge vertexkey="1648" edgekey="1661"/>
 							<edge vertexkey="1690" edgekey="1694"/>
+							<edge vertexkey="1888" edgekey="1895"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="424">
@@ -1733,6 +1792,7 @@
 							<edge vertexkey="1650" edgekey="1663"/>
 							<edge vertexkey="1691" edgekey="1695"/>
 							<edge vertexkey="1692" edgekey="1696"/>
+							<edge vertexkey="1889" edgekey="1896"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="443">
@@ -2089,24 +2149,28 @@
 							<edge vertexkey="1687" edgekey="1698"/>
 							<edge vertexkey="1689" edgekey="1699"/>
 							<edge vertexkey="1693" edgekey="1700"/>
+							<edge vertexkey="1892" edgekey="1897"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1231">
 						<edges>
 							<edge vertexkey="1646" edgekey="1669"/>
 							<edge vertexkey="1688" edgekey="1701"/>
+							<edge vertexkey="1887" edgekey="1898"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1232">
 						<edges>
 							<edge vertexkey="1659" edgekey="1670"/>
 							<edge vertexkey="1686" edgekey="1702"/>
+							<edge vertexkey="1890" edgekey="1899"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1233">
 						<edges>
 							<edge vertexkey="1657" edgekey="1671"/>
 							<edge vertexkey="1684" edgekey="1703"/>
+							<edge vertexkey="1891" edgekey="1900"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1234">
@@ -2685,26 +2749,66 @@
 					<vertex vertexkey="1839">
 						<edges>
 							<edge vertexkey="1823" edgekey="1855"/>
+							<edge vertexkey="1872" edgekey="1879"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1840">
 						<edges>
 							<edge vertexkey="1824" edgekey="1856"/>
+							<edge vertexkey="1873" edgekey="1880"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1841">
 						<edges>
 							<edge vertexkey="1825" edgekey="1857"/>
+							<edge vertexkey="1874" edgekey="1881"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1842">
 						<edges>
 							<edge vertexkey="1826" edgekey="1858"/>
+							<edge vertexkey="1875" edgekey="1882"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1843">
 						<edges>
 							<edge vertexkey="1827" edgekey="1859"/>
+							<edge vertexkey="1876" edgekey="1883"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1864">
+						<edges>
+							<edge vertexkey="1860" edgekey="1868"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1865">
+						<edges>
+							<edge vertexkey="1861" edgekey="1869"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1866">
+						<edges>
+							<edge vertexkey="1862" edgekey="1870"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1867">
+						<edges>
+							<edge vertexkey="1863" edgekey="1871"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1878">
+						<edges>
+							<edge vertexkey="1877" edgekey="1884"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1893">
+						<edges>
+							<edge vertexkey="1886" edgekey="1901"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1894">
+						<edges>
+							<edge vertexkey="1885" edgekey="1902"/>
 						</edges>
 					</vertex>
 				</vertices>
