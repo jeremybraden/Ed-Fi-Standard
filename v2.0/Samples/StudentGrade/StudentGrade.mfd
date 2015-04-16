@@ -177,28 +177,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="97" kind="19" visible="0">
-					<view ltx="1096" lty="-150" rbx="1335" rby="-116"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="GradingPeriodDescription" inpkey="789" componentid="73"/>
-							<entry name="SchoolYear" inpkey="790" componentid="72"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="BeginDate" outkey="791" componentid="71"/>
-						</root>
-					</data>
-				</component>
 				<component name="substitute-missing" library="core" uid="99" kind="5">
 					<properties/>
 					<sources>
@@ -209,55 +187,6 @@
 						<datapoint pos="0" key="788"/>
 					</targets>
 					<view ltx="1208" lty="-31" rbx="1322" rby="25"/>
-				</component>
-				<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="95" kind="19" visible="0">
-					<view ltx="1176" lty="44" rbx="1335" rby="78"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="Term" inpkey="783" componentid="55"/>
-							<entry name="SchoolYear" inpkey="784" componentid="56"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="BeginDate" outkey="785" componentid="42"/>
-						</root>
-					</data>
-				</component>
-				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
-					<view ltx="334" lty="765" rbx="583" rby="867"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
-							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
-							<entry name="Term" inpkey="1889" componentid="188"/>
-							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
-							<entry name="Location" inpkey="1891" componentid="190"/>
-							<entry name="SchoolId" inpkey="1892" componentid="198"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
-							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
-						</root>
-					</data>
 				</component>
 				<component name="GradingPeriodReference" library="core" uid="172" kind="3">
 					<properties/>
@@ -1158,6 +1087,77 @@
 						</root>
 						<document schema="..\..\Schemas\Interchange-StudentGrade.xsd" outputinstance="Sample XML 2.0" instanceroot="{http://ed-fi.org/0200}InterchangeStudentGrade"/>
 						<wsdl/>
+					</data>
+				</component>
+				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
+					<view ltx="334" lty="765" rbx="583" rby="867"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
+							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
+							<entry name="Term" inpkey="1889" componentid="188"/>
+							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
+							<entry name="Location" inpkey="1891" componentid="190"/>
+							<entry name="SchoolId" inpkey="1892" componentid="198"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
+							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="97" kind="19" visible="0">
+					<view ltx="1096" lty="-150" rbx="1335" rby="-116"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="GradingPeriodDescription" inpkey="789" componentid="73"/>
+							<entry name="SchoolYear" inpkey="790" componentid="72"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="791" componentid="71"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="95" kind="19" visible="0">
+					<view ltx="1176" lty="44" rbx="1335" rby="78"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Term" inpkey="783" componentid="55"/>
+							<entry name="SchoolYear" inpkey="784" componentid="56"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="785" componentid="42"/>
+						</root>
 					</data>
 				</component>
 			</children>
@@ -2629,18 +2629,6 @@
 					</targets>
 					<view ltx="688" lty="539" rbx="767" rby="597"/>
 				</component>
-				<component name="BeginDate" library="core" uid="105" kind="3">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="55"/>
-						<datapoint pos="1" key="56"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="57"/>
-						<datapoint/>
-					</targets>
-					<view ltx="774" lty="404" rbx="877" rby="460"/>
-				</component>
 				<component name="if-else" library="core" uid="50" kind="4">
 					<properties/>
 					<sources>
@@ -2681,16 +2669,17 @@
 						<parameter usageKind="input" name="SchoolYear"/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="104" kind="5">
+				<component name="BeginDate" library="core" uid="105" kind="3">
 					<properties/>
 					<sources>
-						<datapoint pos="0" key="54"/>
-						<datapoint pos="1" key="52"/>
+						<datapoint pos="0" key="55"/>
+						<datapoint pos="1" key="56"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="53"/>
+						<datapoint pos="0" key="57"/>
+						<datapoint/>
 					</targets>
-					<view ltx="567" lty="553" rbx="620" rby="609"/>
+					<view ltx="774" lty="404" rbx="877" rby="460"/>
 				</component>
 				<component name="equal" library="core" uid="103" kind="5">
 					<properties/>
@@ -2703,6 +2692,17 @@
 					</targets>
 					<view ltx="567" lty="437" rbx="620" rby="493"/>
 				</component>
+				<component name="equal" library="core" uid="104" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="54"/>
+						<datapoint pos="1" key="52"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="53"/>
+					</targets>
+					<view ltx="567" lty="553" rbx="620" rby="609"/>
+				</component>
 				<component name="Interchange-EducationOrgCalendar" library="xml" uid="100" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="8" lty="384" rbx="299" rby="839"/>
@@ -2710,7 +2710,7 @@
 						<root scrollposition="1">
 							<header>
 								<namespaces>
-									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://ed-fi.org/0120"/>
 									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
@@ -2718,17 +2718,15 @@
 								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeEducationOrgCalendar" expanded="1">
 										<entry name="Session" expanded="1">
-											<entry name="SchoolYear" outkey="82"/>
-											<entry name="Term" expanded="1">
-												<entry name="CodeValue" outkey="88"/>
-											</entry>
-											<entry name="BeginDate" outkey="84"/>
+											<entry name="SchoolYear" outkey="91"/>
+											<entry name="Term" outkey="92"/>
+											<entry name="BeginDate" outkey="93"/>
 										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -2841,19 +2839,19 @@
 							<edge vertexkey="61" edgekey="81"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="82">
+					<vertex vertexkey="91">
 						<edges>
-							<edge vertexkey="52" edgekey="89"/>
+							<edge vertexkey="52" edgekey="94"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="84">
+					<vertex vertexkey="92">
 						<edges>
-							<edge vertexkey="55" edgekey="87"/>
+							<edge vertexkey="49" edgekey="95"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="88">
+					<vertex vertexkey="93">
 						<edges>
-							<edge vertexkey="49" edgekey="90"/>
+							<edge vertexkey="55" edgekey="96"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -3290,17 +3288,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="109" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="152"/>
-						<datapoint pos="1" key="136"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="148"/>
-					</targets>
-					<view ltx="620" lty="696" rbx="673" rby="752"/>
-				</component>
 				<component name="BeginDate" library="core" uid="108" kind="3">
 					<properties/>
 					<sources>
@@ -3313,14 +3300,25 @@
 					</targets>
 					<view ltx="850" lty="730" rbx="953" rby="786"/>
 				</component>
+				<component name="equal" library="core" uid="109" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="152"/>
+						<datapoint pos="1" key="136"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="148"/>
+					</targets>
+					<view ltx="620" lty="696" rbx="673" rby="752"/>
+				</component>
 				<component name="Interchange-EducationOrgCalendar" library="xml" uid="113" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="77" lty="714" rbx="377" rby="914"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="21">
 							<header>
 								<namespaces>
-									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://ed-fi.org/0120"/>
 									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
@@ -3329,15 +3327,15 @@
 									<entry name="InterchangeEducationOrgCalendar" expanded="1">
 										<entry name="GradingPeriod" expanded="1">
 											<entry name="GradingPeriod" expanded="1">
-												<entry name="CodeValue" outkey="165"/>
+												<entry name="CodeValue" outkey="169"/>
 											</entry>
-											<entry name="BeginDate" outkey="166"/>
+											<entry name="BeginDate" outkey="170"/>
 										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0200}InterchangeEducationOrgCalendar"/>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-EducationOrgCalendar.xsd" inputinstance="..\..\..\..\..\..\Saxon\EducationOrgCalendar.xml" instanceroot="{http://ed-fi.org/0120}InterchangeEducationOrgCalendar"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -3551,14 +3549,14 @@
 							<edge vertexkey="143" edgekey="162"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="165">
+					<vertex vertexkey="169">
 						<edges>
-							<edge vertexkey="136" edgekey="167"/>
+							<edge vertexkey="136" edgekey="171"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="166">
+					<vertex vertexkey="170">
 						<edges>
-							<edge vertexkey="147" edgekey="168"/>
+							<edge vertexkey="147" edgekey="172"/>
 						</edges>
 					</vertex>
 				</vertices>
