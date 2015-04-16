@@ -5,44 +5,6 @@
 		<properties SelectedLanguage="xslt2"/>
 		<structure>
 			<children>
-				<component name="remove-folder" library="core" uid="56" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="537"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="538"/>
-					</targets>
-					<view ltx="1160" lty="-55" rbx="1256" rby="-16"/>
-				</component>
-				<component name="constant" library="core" uid="54" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="536"/>
-					</targets>
-					<view ltx="1297" lty="-55" rbx="1420" rby="-37"/>
-					<data>
-						<constant value="\Sample XML 2.0\" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="get-folder" library="core" uid="58" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="534"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="535"/>
-					</targets>
-					<view ltx="1325" lty="-107" rbx="1405" rby="-68"/>
-				</component>
-				<component name="main-mfd-filepath" library="core" uid="51" kind="5">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="529"/>
-					</targets>
-					<view ltx="1160" lty="-107" rbx="1270" rby="-68"/>
-				</component>
 				<component name="CoalesceCode" library="user" blackbox="0" uid="21" kind="19" visible="0">
 					<view ltx="443" lty="-190" rbx="637" rby="-139"/>
 					<data>
@@ -65,18 +27,6 @@
 							<entry name="CodeValue" outkey="184" componentid="6"/>
 						</root>
 					</data>
-				</component>
-				<component name="concat" library="core" uid="53" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="530"/>
-						<datapoint pos="1" key="531"/>
-						<datapoint pos="2" key="532"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="533"/>
-					</targets>
-					<view ltx="1490" lty="-107" rbx="1575" rby="-31"/>
 				</component>
 				<component name="CoalesceCode" library="user" blackbox="0" uid="17" kind="19" visible="0">
 					<view ltx="204" lty="-77" rbx="398" rby="-26"/>
@@ -193,6 +143,183 @@
 						</root>
 					</data>
 				</component>
+				<component name="LookupAssessmentData" library="user" blackbox="0" uid="190" kind="19" visible="0">
+					<view ltx="528" lty="493" rbx="828" rby="693"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="filename" inpkey="1807" componentid="61"/>
+							<entry name="AssessmentRef" inpkey="1808" componentid="34"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="AssessmentReferenceType" componentid="37" expanded="1">
+								<entry name="AssessmentReferenceType" ns="1" outkey="1811" expanded="1">
+									<entry name="ref" type="attribute" outkey="1812"/>
+									<entry name="AssessmentIdentity" ns="1" outkey="1813" expanded="1"/>
+									<entry name="AssessmentLookup" ns="1" outkey="1814"/>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
+				<component name="Interchange-StudentAssessment" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="24" lty="115" rbx="341" rby="767"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" outkey="1820" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentAssessment" ns="1" outkey="1821" expanded="1">
+										<entry name="AssessmentReference" ns="1" outkey="1822">
+											<entry name="id" type="attribute" outkey="1823"/>
+											<entry name="ref" type="attribute" outkey="1824"/>
+											<entry name="AssessmentIdentity" ns="1" outkey="1825" expanded="1">
+												<entry name="AssessmentTitle" ns="1" outkey="1826"/>
+												<entry name="AcademicSubject" ns="1" outkey="1827" expanded="1">
+													<entry name="id" type="attribute" outkey="1828"/>
+													<entry name="ref" type="attribute" outkey="1829"/>
+													<entry name="namespace" type="attribute" outkey="1830"/>
+													<entry name="CodeValue" ns="1" outkey="1831"/>
+													<entry name="ShortDescription" ns="1" outkey="1832"/>
+													<entry name="Description" ns="1" outkey="1833"/>
+												</entry>
+												<entry name="GradeLevelAssessed" ns="1" outkey="1834" expanded="1">
+													<entry name="id" type="attribute" outkey="1835"/>
+													<entry name="ref" type="attribute" outkey="1836"/>
+													<entry name="namespace" type="attribute" outkey="1837"/>
+													<entry name="CodeValue" ns="1" outkey="1838"/>
+													<entry name="ShortDescription" ns="1" outkey="1839"/>
+													<entry name="Description" ns="1" outkey="1840"/>
+												</entry>
+												<entry name="Version" ns="1" outkey="1841"/>
+											</entry>
+										</entry>
+										<entry name="StudentAssessment" ns="1" outkey="1842" expanded="1">
+											<entry name="id" type="attribute" outkey="1843"/>
+											<entry name="AdministrationDate" ns="1" outkey="1844"/>
+											<entry name="AdministrationEndDate" ns="1" outkey="1845"/>
+											<entry name="SerialNumber" ns="1" outkey="1846"/>
+											<entry name="AdministrationLanguage" ns="1" outkey="1847">
+												<entry name="id" type="attribute" outkey="1848"/>
+												<entry name="ref" type="attribute" outkey="1849"/>
+												<entry name="namespace" type="attribute" outkey="1850"/>
+												<entry name="CodeValue" ns="1" outkey="1851"/>
+												<entry name="ShortDescription" ns="1" outkey="1852"/>
+												<entry name="Description" ns="1" outkey="1853"/>
+											</entry>
+											<entry name="AdministrationEnvironment" ns="1" outkey="1854"/>
+											<entry name="Accommodation" ns="1" outkey="1855">
+												<entry name="id" type="attribute" outkey="1856"/>
+												<entry name="ref" type="attribute" outkey="1857"/>
+												<entry name="namespace" type="attribute" outkey="1858"/>
+												<entry name="CodeValue" ns="1" outkey="1859"/>
+												<entry name="ShortDescription" ns="1" outkey="1860"/>
+												<entry name="Description" ns="1" outkey="1861"/>
+											</entry>
+											<entry name="RetestIndicator" ns="1" outkey="1862"/>
+											<entry name="ReasonNotTested" ns="1" outkey="1863"/>
+											<entry name="ScoreResults" ns="1" outkey="1864">
+												<entry name="AssessmentReportingMethod" type="attribute" outkey="1865"/>
+												<entry name="Result" ns="1" outkey="1866"/>
+												<entry name="ResultDatatype" ns="1" outkey="1867"/>
+											</entry>
+											<entry name="GradeLevelWhenAssessed" ns="1" outkey="1868">
+												<entry name="id" type="attribute" outkey="1869"/>
+												<entry name="ref" type="attribute" outkey="1870"/>
+												<entry name="namespace" type="attribute" outkey="1871"/>
+												<entry name="CodeValue" ns="1" outkey="1872"/>
+												<entry name="ShortDescription" ns="1" outkey="1873"/>
+												<entry name="Description" ns="1" outkey="1874"/>
+											</entry>
+											<entry name="PerformanceLevels" ns="1" outkey="1875">
+												<entry name="id" type="attribute" outkey="1876"/>
+												<entry name="ref" type="attribute" outkey="1877"/>
+												<entry name="namespace" type="attribute" outkey="1878"/>
+												<entry name="CodeValue" ns="1" outkey="1879"/>
+												<entry name="ShortDescription" ns="1" outkey="1880"/>
+												<entry name="Description" ns="1" outkey="1881"/>
+												<entry name="PerformanceLevelMet" ns="1" outkey="1882"/>
+											</entry>
+											<entry name="EventCircumstance" ns="1" outkey="1883"/>
+											<entry name="EventDescription" ns="1" outkey="1884"/>
+											<entry name="StudentReference" ns="1" outkey="1885">
+												<entry name="StudentIdentity" ns="1" outkey="1886" expanded="1">
+													<entry name="StudentUniqueStateId" ns="1" outkey="1887"/>
+												</entry>
+											</entry>
+											<entry name="AssessmentReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="1888"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" inputinstance="Sample XML 1.2\StudentAssessment-LearningStandardsMastery.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="LookupObjectiveAssessment" library="user" blackbox="0" uid="167" kind="19" visible="0">
+					<view ltx="464" lty="325" rbx="911" rby="445"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="filename" inpkey="1618" componentid="88"/>
+							<entry name="StudentAssessmentId" inpkey="1619" componentid="83"/>
+							<entry name="AssessmentRef" inpkey="1620" componentid="84"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="StudentObjectiveAssessment" ns="1" componentid="85" expanded="1">
+								<entry name="StudentObjectiveAssessment" outkey="1621" expanded="1">
+									<entry name="ScoreResult" outkey="1635">
+										<entry name="Result" outkey="1636"/>
+										<entry name="ResultDatatypeType" outkey="1637"/>
+										<entry name="AssessmentReportingMethod" outkey="1638"/>
+									</entry>
+									<entry name="PerformanceLevel" outkey="1639"/>
+									<entry name="ObjectiveAssessmentReference" outkey="1640">
+										<entry name="id" ns="1" type="attribute" outkey="1641"/>
+										<entry name="ref" ns="1" type="attribute" outkey="1642"/>
+										<entry name="ObjectiveAssessmentIdentity" outkey="1705">
+											<entry name="AssessmentReference" outkey="1643">
+												<entry name="ref" ns="1" type="attribute" outkey="1645"/>
+												<entry name="AssessmentIdentity" outkey="1646"/>
+											</entry>
+											<entry name="IdentificationCode" outkey="1647"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+					</data>
+				</component>
 				<component name="Lookup AssessmentItem" library="user" blackbox="0" uid="154" kind="19" visible="0">
 					<view ltx="640" lty="729" rbx="940" rby="929"/>
 					<data>
@@ -253,84 +380,11 @@
 						</root>
 					</data>
 				</component>
-				<component name="LookupAssessmentData" library="user" blackbox="0" uid="190" kind="19" visible="0">
-					<view ltx="528" lty="493" rbx="828" rby="693"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="filename" inpkey="1807" componentid="61"/>
-							<entry name="AssessmentRef" inpkey="1808" componentid="34"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-								</namespaces>
-							</header>
-							<entry name="AssessmentReferenceType" componentid="37" expanded="1">
-								<entry name="AssessmentReferenceType" ns="1" outkey="1811" expanded="1">
-									<entry name="ref" type="attribute" outkey="1812"/>
-									<entry name="AssessmentIdentity" ns="1" outkey="1813" expanded="1"/>
-									<entry name="AssessmentLookup" ns="1" outkey="1814"/>
-								</entry>
-							</entry>
-						</root>
-					</data>
-				</component>
-				<component name="LookupObjectiveAssessment" library="user" blackbox="0" uid="167" kind="19" visible="0">
-					<view ltx="464" lty="325" rbx="911" rby="445"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="filename" inpkey="1618" componentid="88"/>
-							<entry name="StudentAssessmentId" inpkey="1619" componentid="83"/>
-							<entry name="AssessmentRef" inpkey="1620" componentid="84"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="StudentObjectiveAssessment" ns="1" componentid="85" expanded="1">
-								<entry name="StudentObjectiveAssessment" outkey="1621" expanded="1">
-									<entry name="ScoreResult" outkey="1635">
-										<entry name="Result" outkey="1636"/>
-										<entry name="ResultDatatypeType" outkey="1637"/>
-										<entry name="AssessmentReportingMethod" outkey="1638"/>
-									</entry>
-									<entry name="PerformanceLevel" outkey="1639"/>
-									<entry name="ObjectiveAssessmentReference" outkey="1640">
-										<entry name="id" ns="1" type="attribute" outkey="1641"/>
-										<entry name="ref" ns="1" type="attribute" outkey="1642"/>
-										<entry name="ObjectiveAssessmentIdentity" outkey="1705">
-											<entry name="AssessmentReference" outkey="1643">
-												<entry name="ref" ns="1" type="attribute" outkey="1645"/>
-												<entry name="AssessmentIdentity" outkey="1646"/>
-											</entry>
-											<entry name="IdentificationCode" outkey="1647"/>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-					</data>
-				</component>
 				<component name="Interchange-StudentAssessment" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="1073" lty="86" rbx="1385" rby="738"/>
 					<data>
-						<root scrollposition="133">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -338,7 +392,7 @@
 									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
-							<entry name="FileInstance" ns="2" inpkey="380" expanded="1">
+							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentAssessment" ns="1" inpkey="1" expanded="1">
 										<entry name="AssessmentReference" ns="1" inpkey="746">
@@ -359,51 +413,6 @@
 													<entry name="Namespace" ns="1" inpkey="803"/>
 												</entry>
 												<entry name="Version" ns="1" inpkey="755"/>
-											</entry>
-											<entry name="AssessmentLookup" ns="1" expanded="1">
-												<entry name="AssessmentIdentificationCode" ns="1" expanded="1">
-													<entry name="AssessmentIdentificationSystem" ns="1" expanded="1"/>
-												</entry>
-												<entry name="AssessmentCategory" ns="1" expanded="1"/>
-												<entry name="AcademicSubject" ns="1" expanded="1"/>
-												<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-												<entry name="AssessmentFamilyReference" ns="1">
-													<entry name="AssessmentFamilyIdentity" ns="1" expanded="1"/>
-													<entry name="AssessmentFamilyLookup" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="AssessmentItemReference" ns="1">
-											<entry name="AssessmentItemIdentity" ns="1" expanded="1">
-												<entry name="AssessmentReference" ns="1" expanded="1">
-													<entry name="AssessmentIdentity" ns="1" expanded="1">
-														<entry name="AcademicSubject" ns="1" expanded="1"/>
-														<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-													</entry>
-													<entry name="AssessmentLookup" ns="1">
-														<entry name="AssessmentIdentificationCode" ns="1" expanded="1">
-															<entry name="AssessmentIdentificationSystem" ns="1" expanded="1"/>
-														</entry>
-														<entry name="AssessmentCategory" ns="1" expanded="1"/>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="ObjectiveAssessmentReference" ns="1">
-											<entry name="ObjectiveAssessmentIdentity" ns="1" expanded="1">
-												<entry name="AssessmentReference" ns="1" expanded="1">
-													<entry name="AssessmentIdentity" ns="1" expanded="1">
-														<entry name="AcademicSubject" ns="1" expanded="1"/>
-														<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-													</entry>
-													<entry name="AssessmentLookup" ns="1">
-														<entry name="AssessmentIdentificationCode" ns="1" expanded="1">
-															<entry name="AssessmentIdentificationSystem" ns="1" expanded="1"/>
-														</entry>
-														<entry name="AcademicSubject" ns="1" expanded="1"/>
-														<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-													</entry>
-												</entry>
 											</entry>
 										</entry>
 										<entry name="StudentAssessment" ns="1" inpkey="2" expanded="1">
@@ -452,26 +461,11 @@
 												<entry name="StudentIdentity" ns="1" inpkey="23" expanded="1">
 													<entry name="StudentUniqueId" ns="1" inpkey="638"/>
 												</entry>
-												<entry name="StudentLookup" ns="1">
-													<entry name="StudentIdentificationCode" ns="1">
-														<entry name="StudentIdentificationSystem" ns="1" expanded="1"/>
-													</entry>
-												</entry>
 											</entry>
 											<entry name="AssessmentReference" ns="1" inpkey="907" expanded="1">
 												<entry name="ref" type="attribute" inpkey="909"/>
-												<entry name="AssessmentIdentity" ns="1" inpkey="910" expanded="1">
-													<entry name="AcademicSubject" ns="1" expanded="1"/>
-													<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-												</entry>
-												<entry name="AssessmentLookup" ns="1" inpkey="1815">
-													<entry name="AssessmentIdentificationCode" ns="1" expanded="1">
-														<entry name="AssessmentIdentificationSystem" ns="1" expanded="1"/>
-													</entry>
-													<entry name="AssessmentCategory" ns="1" expanded="1"/>
-													<entry name="AcademicSubject" ns="1" expanded="1"/>
-													<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-												</entry>
+												<entry name="AssessmentIdentity" ns="1" inpkey="910" expanded="1"/>
+												<entry name="AssessmentLookup" ns="1" inpkey="1815"/>
 											</entry>
 											<entry name="StudentAssessmentItem" ns="1" inpkey="917">
 												<entry name="AssessmentResponse" ns="1" inpkey="918"/>
@@ -508,25 +502,20 @@
 													</entry>
 												</entry>
 											</entry>
-											<entry name="StudentObjectiveAssessment" ns="1" inpkey="933">
+											<entry name="StudentObjectiveAssessment" ns="1" inpkey="933" expanded="1">
 												<entry name="ScoreResult" ns="1" inpkey="934" expanded="1">
 													<entry name="Result" ns="1" inpkey="935"/>
 													<entry name="ResultDatatypeType" ns="1" inpkey="1456"/>
 													<entry name="AssessmentReportingMethod" ns="1" inpkey="936"/>
 												</entry>
-												<entry name="PerformanceLevel" ns="1" inpkey="1160" expanded="1">
-													<entry name="PerformanceLevel" ns="1" expanded="1"/>
-												</entry>
+												<entry name="PerformanceLevel" ns="1" inpkey="1160" expanded="1"/>
 												<entry name="ObjectiveAssessmentReference" ns="1" inpkey="942" expanded="1">
 													<entry name="id" type="attribute" inpkey="943"/>
 													<entry name="ref" type="attribute" inpkey="944"/>
 													<entry name="ObjectiveAssessmentIdentity" ns="1" inpkey="945" expanded="1">
 														<entry name="AssessmentReference" ns="1" inpkey="1457" expanded="1">
 															<entry name="ref" type="attribute" inpkey="1459"/>
-															<entry name="AssessmentIdentity" ns="1" inpkey="1460">
-																<entry name="AcademicSubject" ns="1" expanded="1"/>
-																<entry name="AssessedGradeLevel" ns="1" expanded="1"/>
-															</entry>
+															<entry name="AssessmentIdentity" ns="1" inpkey="1460"/>
 														</entry>
 														<entry name="IdentificationCode" ns="1" inpkey="1136"/>
 													</entry>
@@ -537,156 +526,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="Interchange-StudentAssessment" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="24" lty="115" rbx="341" rby="767"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" outkey="379" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentAssessment" ns="1" outkey="53" expanded="1">
-										<entry name="AssessmentReference" ns="1" outkey="760">
-											<entry name="id" type="attribute" outkey="761"/>
-											<entry name="ref" type="attribute" outkey="762"/>
-											<entry name="AssessmentIdentity" ns="1" outkey="763" expanded="1">
-												<entry name="AssessmentIdentificationCode" ns="1" expanded="1"/>
-												<entry name="AssessmentTitle" ns="1" outkey="764"/>
-												<entry name="AcademicSubject" ns="1" outkey="765" expanded="1">
-													<entry name="id" type="attribute" outkey="766"/>
-													<entry name="ref" type="attribute" outkey="767"/>
-													<entry name="namespace" type="attribute" outkey="792"/>
-													<entry name="CodeValue" ns="1" outkey="768"/>
-													<entry name="ShortDescription" ns="1" outkey="1199"/>
-													<entry name="Description" ns="1" outkey="1200"/>
-												</entry>
-												<entry name="GradeLevelAssessed" ns="1" outkey="793" expanded="1">
-													<entry name="id" type="attribute" outkey="794"/>
-													<entry name="ref" type="attribute" outkey="795"/>
-													<entry name="namespace" type="attribute" outkey="796"/>
-													<entry name="CodeValue" ns="1" outkey="797"/>
-													<entry name="ShortDescription" ns="1" outkey="1201"/>
-													<entry name="Description" ns="1" outkey="1202"/>
-												</entry>
-												<entry name="Version" ns="1" outkey="769"/>
-											</entry>
-										</entry>
-										<entry name="StudentAssessment" ns="1" outkey="54" expanded="1">
-											<entry name="id" type="attribute" outkey="55"/>
-											<entry name="AdministrationDate" ns="1" outkey="56"/>
-											<entry name="AdministrationEndDate" ns="1" outkey="57"/>
-											<entry name="SerialNumber" ns="1" outkey="58"/>
-											<entry name="AdministrationLanguage" ns="1" outkey="59">
-												<entry name="id" type="attribute" outkey="60"/>
-												<entry name="ref" type="attribute" outkey="61"/>
-												<entry name="namespace" type="attribute" outkey="946"/>
-												<entry name="CodeValue" ns="1" outkey="62"/>
-												<entry name="ShortDescription" ns="1" outkey="162"/>
-												<entry name="Description" ns="1" outkey="161"/>
-											</entry>
-											<entry name="AdministrationEnvironment" ns="1" outkey="63"/>
-											<entry name="Accommodation" ns="1" outkey="64">
-												<entry name="id" type="attribute" outkey="65"/>
-												<entry name="ref" type="attribute" outkey="66"/>
-												<entry name="namespace" type="attribute" outkey="947"/>
-												<entry name="CodeValue" ns="1" outkey="67"/>
-												<entry name="ShortDescription" ns="1" outkey="168"/>
-												<entry name="Description" ns="1" outkey="167"/>
-											</entry>
-											<entry name="RetestIndicator" ns="1" outkey="68"/>
-											<entry name="ReasonNotTested" ns="1" outkey="69"/>
-											<entry name="ScoreResults" ns="1" outkey="189">
-												<entry name="AssessmentReportingMethod" type="attribute" outkey="190"/>
-												<entry name="Result" ns="1" outkey="191"/>
-												<entry name="ResultDatatype" ns="1" outkey="192"/>
-											</entry>
-											<entry name="GradeLevelWhenAssessed" ns="1" outkey="193">
-												<entry name="id" type="attribute" outkey="194"/>
-												<entry name="ref" type="attribute" outkey="195"/>
-												<entry name="namespace" type="attribute" outkey="948"/>
-												<entry name="CodeValue" ns="1" outkey="175"/>
-												<entry name="ShortDescription" ns="1" outkey="174"/>
-												<entry name="Description" ns="1" outkey="173"/>
-											</entry>
-											<entry name="PerformanceLevels" ns="1" outkey="196">
-												<entry name="id" type="attribute" outkey="197"/>
-												<entry name="ref" type="attribute" outkey="198"/>
-												<entry name="namespace" type="attribute" outkey="949"/>
-												<entry name="CodeValue" ns="1" outkey="199"/>
-												<entry name="ShortDescription" ns="1" outkey="200"/>
-												<entry name="Description" ns="1" outkey="201"/>
-												<entry name="PerformanceLevelMet" ns="1" outkey="202"/>
-											</entry>
-											<entry name="EventCircumstance" ns="1" outkey="70"/>
-											<entry name="EventDescription" ns="1" outkey="71"/>
-											<entry name="StudentReference" ns="1" outkey="72">
-												<entry name="StudentIdentity" ns="1" outkey="950" expanded="1">
-													<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
-													<entry name="StudentUniqueStateId" ns="1" outkey="1709"/>
-													<entry name="Name" ns="1" expanded="1"/>
-													<entry name="OtherName" ns="1" expanded="1"/>
-													<entry name="BirthData" ns="1" expanded="1"/>
-													<entry name="Race" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-											<entry name="AssessmentReference" ns="1" expanded="1">
-												<entry name="ref" type="attribute" outkey="977"/>
-												<entry name="AssessmentIdentity" ns="1" expanded="1">
-													<entry name="AssessmentIdentificationCode" ns="1" expanded="1"/>
-													<entry name="AcademicSubject" ns="1" expanded="1"/>
-													<entry name="GradeLevelAssessed" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentObjectiveAssessment" ns="1" expanded="1">
-											<entry name="id" type="attribute" outkey="1765"/>
-											<entry name="ScoreResults" ns="1" expanded="1"/>
-											<entry name="StudentAssessmentReference" ns="1" expanded="1">
-												<entry name="StudentAssessmentIdentity" ns="1" expanded="1">
-													<entry name="AssessmentReference" ns="1">
-														<entry name="AssessmentIdentity" ns="1">
-															<entry name="AssessmentIdentificationCode" ns="1" expanded="1"/>
-															<entry name="AcademicSubject" ns="1" expanded="1"/>
-															<entry name="GradeLevelAssessed" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ObjectiveAssessmentReference" ns="1" expanded="1">
-												<entry name="ObjectiveAssessmentIdentity" ns="1" expanded="1"/>
-											</entry>
-										</entry>
-										<entry name="StudentAssessmentItem" ns="1">
-											<entry name="StudentAssessmentReference" ns="1" expanded="1">
-												<entry name="StudentAssessmentIdentity" ns="1" expanded="1">
-													<entry name="AssessmentReference" ns="1" expanded="1">
-														<entry name="AssessmentIdentity" ns="1" expanded="1">
-															<entry name="AssessmentIdentificationCode" ns="1" expanded="1"/>
-															<entry name="AcademicSubject" ns="1" expanded="1"/>
-															<entry name="GradeLevelAssessed" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="AssessmentItemReference" ns="1" expanded="1">
-												<entry name="AssessmentItemIdentity" ns="1" expanded="1"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" inputinstance="Sample XML 1.2\New folder\StudentAssessment-LearningStandardsMastery.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
+						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" outputinstance="Sample XML 2.0\StudentAssessment-LearningStandardsMastery.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -720,120 +560,9 @@
 					</edge>
 				</edges>
 				<vertices>
-					<vertex vertexkey="53">
-						<edges>
-							<edge vertexkey="1" edgekey="494"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="54">
-						<edges>
-							<edge vertexkey="2" edgekey="495"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="55">
-						<edges>
-							<edge vertexkey="3" edgekey="496"/>
-							<edge vertexkey="1542" edgekey="1572"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="56">
-						<edges>
-							<edge vertexkey="4" edgekey="497"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="57">
-						<edges>
-							<edge vertexkey="5" edgekey="498"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="58">
-						<edges>
-							<edge vertexkey="6" edgekey="499"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="59">
-						<edges>
-							<edge vertexkey="7" edgekey="500"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="60">
-						<edges>
-							<edge vertexkey="8" edgekey="501"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="61">
-						<edges>
-							<edge vertexkey="9" edgekey="502"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="62">
-						<edges>
-							<edge vertexkey="157" edgekey="228"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="63">
-						<edges>
-							<edge vertexkey="11" edgekey="503"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="64">
-						<edges>
-							<edge vertexkey="12" edgekey="504"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="65">
-						<edges>
-							<edge vertexkey="13" edgekey="505"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="66">
-						<edges>
-							<edge vertexkey="14" edgekey="506"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="67">
-						<edges>
-							<edge vertexkey="164" edgekey="229"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="68">
-						<edges>
-							<edge vertexkey="16" edgekey="507"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="69">
-						<edges>
-							<edge vertexkey="17" edgekey="508"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="70">
-						<edges>
-							<edge vertexkey="18" edgekey="509"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="71">
-						<edges>
-							<edge vertexkey="19" edgekey="510"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="72">
-						<edges>
-							<edge vertexkey="20" edgekey="1029"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="160">
 						<edges>
 							<edge vertexkey="10" edgekey="525"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="161">
-						<edges>
-							<edge vertexkey="159" edgekey="232"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="162">
-						<edges>
-							<edge vertexkey="158" edgekey="233"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="166">
@@ -841,255 +570,14 @@
 							<edge vertexkey="15" edgekey="526"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="167">
-						<edges>
-							<edge vertexkey="163" edgekey="235"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="168">
-						<edges>
-							<edge vertexkey="165" edgekey="236"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="169">
 						<edges>
 							<edge vertexkey="176" edgekey="237"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="173">
-						<edges>
-							<edge vertexkey="170" edgekey="238"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="174">
-						<edges>
-							<edge vertexkey="171" edgekey="239"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="175">
-						<edges>
-							<edge vertexkey="172" edgekey="240"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="184">
 						<edges>
 							<edge vertexkey="223" edgekey="242"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="189">
-						<edges>
-							<edge vertexkey="211" edgekey="244"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="190">
-						<edges>
-							<edge vertexkey="214" edgekey="245"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="191">
-						<edges>
-							<edge vertexkey="212" edgekey="246"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="192">
-						<edges>
-							<edge vertexkey="213" edgekey="247"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="193">
-						<edges>
-							<edge vertexkey="215" edgekey="248"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="194">
-						<edges>
-							<edge vertexkey="216" edgekey="249"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="195">
-						<edges>
-							<edge vertexkey="217" edgekey="250"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="196">
-						<edges>
-							<edge vertexkey="218" edgekey="251"/>
-							<edge vertexkey="220" edgekey="252"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="197">
-						<edges>
-							<edge vertexkey="221" edgekey="253"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="198">
-						<edges>
-							<edge vertexkey="222" edgekey="254"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="199">
-						<edges>
-							<edge vertexkey="183" edgekey="255"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="200">
-						<edges>
-							<edge vertexkey="182" edgekey="256"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="201">
-						<edges>
-							<edge vertexkey="181" edgekey="257"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="202">
-						<edges>
-							<edge vertexkey="219" edgekey="258"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="379">
-						<edges>
-							<edge vertexkey="537" edgekey="575"/>
-							<edge vertexkey="1541" edgekey="1573"/>
-							<edge vertexkey="1618" edgekey="1624"/>
-							<edge vertexkey="1807" edgekey="1809"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="529">
-						<edges>
-							<edge vertexkey="534" edgekey="556"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="533">
-						<edges>
-							<edge vertexkey="380" edgekey="557"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="535">
-						<edges>
-							<edge vertexkey="530" edgekey="558"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="536">
-						<edges>
-							<edge vertexkey="531" edgekey="559"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="538">
-						<edges>
-							<edge vertexkey="532" edgekey="560"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="760">
-						<edges>
-							<edge vertexkey="746" edgekey="1517"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="761">
-						<edges>
-							<edge vertexkey="747" edgekey="1520"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="762">
-						<edges>
-							<edge vertexkey="748" edgekey="776"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="763">
-						<edges>
-							<edge vertexkey="749" edgekey="777"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="764">
-						<edges>
-							<edge vertexkey="750" edgekey="778"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="765">
-						<edges>
-							<edge vertexkey="751" edgekey="779"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="766">
-						<edges>
-							<edge vertexkey="752" edgekey="780"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="767">
-						<edges>
-							<edge vertexkey="753" edgekey="781"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="768">
-						<edges>
-							<edge vertexkey="1191" edgekey="1241"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="769">
-						<edges>
-							<edge vertexkey="755" edgekey="783"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="792">
-						<edges>
-							<edge vertexkey="798" edgekey="830"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="793">
-						<edges>
-							<edge vertexkey="799" edgekey="831"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="794">
-						<edges>
-							<edge vertexkey="800" edgekey="833"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="795">
-						<edges>
-							<edge vertexkey="801" edgekey="835"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="796">
-						<edges>
-							<edge vertexkey="803" edgekey="837"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="797">
-						<edges>
-							<edge vertexkey="1195" edgekey="1204"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="946">
-						<edges>
-							<edge vertexkey="878" edgekey="1035"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="947">
-						<edges>
-							<edge vertexkey="879" edgekey="1036"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="948">
-						<edges>
-							<edge vertexkey="880" edgekey="1037"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="949">
-						<edges>
-							<edge vertexkey="881" edgekey="1038"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="950">
-						<edges>
-							<edge vertexkey="23" edgekey="1039"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="977">
-						<edges>
-							<edge vertexkey="1543" edgekey="1574"/>
-							<edge vertexkey="1620" edgekey="1625"/>
-							<edge vertexkey="1808" edgekey="1810"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1194">
@@ -1100,26 +588,6 @@
 					<vertex vertexkey="1198">
 						<edges>
 							<edge vertexkey="802" edgekey="1206"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1199">
-						<edges>
-							<edge vertexkey="1192" edgekey="1207"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1200">
-						<edges>
-							<edge vertexkey="1193" edgekey="1208"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1201">
-						<edges>
-							<edge vertexkey="1196" edgekey="1209"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1202">
-						<edges>
-							<edge vertexkey="1197" edgekey="1210"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1544">
@@ -1332,16 +800,6 @@
 							<edge vertexkey="945" edgekey="1708"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="1709">
-						<edges>
-							<edge vertexkey="638" edgekey="1710"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="1765">
-						<edges>
-							<edge vertexkey="1619" edgekey="1771"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="1811">
 						<edges>
 							<edge vertexkey="907" edgekey="1818"/>
@@ -1360,6 +818,358 @@
 					<vertex vertexkey="1814">
 						<edges>
 							<edge vertexkey="1815" edgekey="1816"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1820">
+						<edges>
+							<edge vertexkey="1807" edgekey="1890"/>
+							<edge vertexkey="1618" edgekey="1891"/>
+							<edge vertexkey="1541" edgekey="1892"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1821">
+						<edges>
+							<edge vertexkey="1" edgekey="1893"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1822">
+						<edges>
+							<edge vertexkey="746" edgekey="1894"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1823">
+						<edges>
+							<edge vertexkey="747" edgekey="1895"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1824">
+						<edges>
+							<edge vertexkey="748" edgekey="1896"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1825">
+						<edges>
+							<edge vertexkey="749" edgekey="1897"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1826">
+						<edges>
+							<edge vertexkey="750" edgekey="1898"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1827">
+						<edges>
+							<edge vertexkey="751" edgekey="1899"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1828">
+						<edges>
+							<edge vertexkey="752" edgekey="1900"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1829">
+						<edges>
+							<edge vertexkey="753" edgekey="1901"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1830">
+						<edges>
+							<edge vertexkey="798" edgekey="1902"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1831">
+						<edges>
+							<edge vertexkey="1191" edgekey="1903"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1832">
+						<edges>
+							<edge vertexkey="1192" edgekey="1904"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1833">
+						<edges>
+							<edge vertexkey="1193" edgekey="1905"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1834">
+						<edges>
+							<edge vertexkey="799" edgekey="1906"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1835">
+						<edges>
+							<edge vertexkey="800" edgekey="1907"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1836">
+						<edges>
+							<edge vertexkey="801" edgekey="1908"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1837">
+						<edges>
+							<edge vertexkey="803" edgekey="1909"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1838">
+						<edges>
+							<edge vertexkey="1195" edgekey="1910"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1839">
+						<edges>
+							<edge vertexkey="1196" edgekey="1911"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1840">
+						<edges>
+							<edge vertexkey="1197" edgekey="1912"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1841">
+						<edges>
+							<edge vertexkey="755" edgekey="1913"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1842">
+						<edges>
+							<edge vertexkey="2" edgekey="1914"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1843">
+						<edges>
+							<edge vertexkey="1542" edgekey="1915"/>
+							<edge vertexkey="3" edgekey="1916"/>
+							<edge vertexkey="1619" edgekey="1966"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1844">
+						<edges>
+							<edge vertexkey="4" edgekey="1917"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1845">
+						<edges>
+							<edge vertexkey="5" edgekey="1918"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1846">
+						<edges>
+							<edge vertexkey="6" edgekey="1919"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1847">
+						<edges>
+							<edge vertexkey="7" edgekey="1920"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1848">
+						<edges>
+							<edge vertexkey="8" edgekey="1921"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1849">
+						<edges>
+							<edge vertexkey="9" edgekey="1922"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1850">
+						<edges>
+							<edge vertexkey="878" edgekey="1923"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1851">
+						<edges>
+							<edge vertexkey="157" edgekey="1924"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1852">
+						<edges>
+							<edge vertexkey="158" edgekey="1925"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1853">
+						<edges>
+							<edge vertexkey="159" edgekey="1926"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1854">
+						<edges>
+							<edge vertexkey="11" edgekey="1927"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1855">
+						<edges>
+							<edge vertexkey="12" edgekey="1928"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1856">
+						<edges>
+							<edge vertexkey="13" edgekey="1929"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1857">
+						<edges>
+							<edge vertexkey="14" edgekey="1930"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1858">
+						<edges>
+							<edge vertexkey="879" edgekey="1931"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1859">
+						<edges>
+							<edge vertexkey="164" edgekey="1932"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1860">
+						<edges>
+							<edge vertexkey="165" edgekey="1933"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1861">
+						<edges>
+							<edge vertexkey="163" edgekey="1934"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1862">
+						<edges>
+							<edge vertexkey="16" edgekey="1935"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1863">
+						<edges>
+							<edge vertexkey="17" edgekey="1936"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1864">
+						<edges>
+							<edge vertexkey="211" edgekey="1937"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1865">
+						<edges>
+							<edge vertexkey="214" edgekey="1938"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1866">
+						<edges>
+							<edge vertexkey="212" edgekey="1939"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1867">
+						<edges>
+							<edge vertexkey="213" edgekey="1940"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1868">
+						<edges>
+							<edge vertexkey="215" edgekey="1941"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1869">
+						<edges>
+							<edge vertexkey="216" edgekey="1942"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1870">
+						<edges>
+							<edge vertexkey="217" edgekey="1943"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1871">
+						<edges>
+							<edge vertexkey="880" edgekey="1944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1872">
+						<edges>
+							<edge vertexkey="172" edgekey="1945"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1873">
+						<edges>
+							<edge vertexkey="171" edgekey="1946"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1874">
+						<edges>
+							<edge vertexkey="170" edgekey="1947"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1875">
+						<edges>
+							<edge vertexkey="220" edgekey="1948"/>
+							<edge vertexkey="218" edgekey="1949"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1876">
+						<edges>
+							<edge vertexkey="221" edgekey="1950"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1877">
+						<edges>
+							<edge vertexkey="222" edgekey="1951"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1878">
+						<edges>
+							<edge vertexkey="881" edgekey="1952"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1879">
+						<edges>
+							<edge vertexkey="183" edgekey="1953"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1880">
+						<edges>
+							<edge vertexkey="182" edgekey="1954"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1881">
+						<edges>
+							<edge vertexkey="181" edgekey="1955"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1882">
+						<edges>
+							<edge vertexkey="219" edgekey="1956"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1883">
+						<edges>
+							<edge vertexkey="18" edgekey="1957"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1884">
+						<edges>
+							<edge vertexkey="19" edgekey="1958"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1885">
+						<edges>
+							<edge vertexkey="20" edgekey="1959"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1886">
+						<edges>
+							<edge vertexkey="23" edgekey="1960"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1887">
+						<edges>
+							<edge vertexkey="638" edgekey="1961"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1888">
+						<edges>
+							<edge vertexkey="1808" edgekey="1962"/>
+							<edge vertexkey="1620" edgekey="1963"/>
+							<edge vertexkey="1543" edgekey="1964"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -1630,43 +1440,7 @@
 						<parameter usageKind="input" name="AssessmentRef"/>
 					</data>
 				</component>
-				<component name="document" library="xml" uid="37" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="953" lty="210" rbx="1258" rby="652"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0200"/>
-								</namespaces>
-							</header>
-							<entry name="AssessmentReferenceType" ns="1" inpkey="96" expanded="1">
-								<entry name="ref" type="attribute" inpkey="98"/>
-								<entry name="AssessmentIdentity" ns="1" inpkey="99" expanded="1">
-									<entry name="AssessmentTitle" ns="1" inpkey="100"/>
-									<entry name="AcademicSubject" ns="1" inpkey="101" expanded="1">
-										<entry name="id" type="attribute" inpkey="102"/>
-										<entry name="ref" type="attribute" inpkey="103"/>
-										<entry name="CodeValue" ns="1" inpkey="104"/>
-										<entry name="Namespace" ns="1" inpkey="142"/>
-									</entry>
-									<entry name="AssessedGradeLevel" ns="1" inpkey="105" expanded="1">
-										<entry name="id" type="attribute" inpkey="106"/>
-										<entry name="ref" type="attribute" inpkey="107"/>
-										<entry name="CodeValue" ns="1" inpkey="108"/>
-										<entry name="Namespace" ns="1" inpkey="143"/>
-									</entry>
-									<entry name="Version" ns="1" inpkey="109"/>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}AssessmentReferenceType"/>
-						<wsdl/>
-						<parameter usageKind="output" name="AssessmentReferenceType"/>
-					</data>
-				</component>
-				<component name="AssessmentReference" library="core" uid="38" kind="3">
+				<component name="{http://ed-fi.org/0120}As..." library="core" uid="38" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="29"/>
@@ -1676,7 +1450,18 @@
 						<datapoint pos="0" key="31"/>
 						<datapoint/>
 					</targets>
-					<view ltx="692" lty="129" rbx="831" rby="185"/>
+					<view ltx="692" lty="129" rbx="845" rby="185"/>
+				</component>
+				<component name="equal" library="core" uid="40" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="61"/>
+						<datapoint pos="1" key="62"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="63"/>
+					</targets>
+					<view ltx="466" lty="129" rbx="519" rby="185"/>
 				</component>
 				<component name="Interchange-StudentAssessment" library="xml" uid="35" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
@@ -1724,16 +1509,41 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="40" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="61"/>
-						<datapoint pos="1" key="62"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="63"/>
-					</targets>
-					<view ltx="466" lty="129" rbx="519" rby="185"/>
+				<component name="document" library="xml" uid="37" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="953" lty="210" rbx="1258" rby="652"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0200"/>
+								</namespaces>
+							</header>
+							<entry name="AssessmentReferenceType" ns="1" inpkey="96" expanded="1">
+								<entry name="ref" type="attribute" inpkey="98"/>
+								<entry name="AssessmentIdentity" ns="1" inpkey="99" expanded="1">
+									<entry name="AssessmentTitle" ns="1" inpkey="100"/>
+									<entry name="AcademicSubject" ns="1" inpkey="101" expanded="1">
+										<entry name="id" type="attribute" inpkey="102"/>
+										<entry name="ref" type="attribute" inpkey="103"/>
+										<entry name="CodeValue" ns="1" inpkey="104"/>
+										<entry name="Namespace" ns="1" inpkey="142"/>
+									</entry>
+									<entry name="AssessedGradeLevel" ns="1" inpkey="105" expanded="1">
+										<entry name="id" type="attribute" inpkey="106"/>
+										<entry name="ref" type="attribute" inpkey="107"/>
+										<entry name="CodeValue" ns="1" inpkey="108"/>
+										<entry name="Namespace" ns="1" inpkey="143"/>
+									</entry>
+									<entry name="Version" ns="1" inpkey="109"/>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}AssessmentReferenceType"/>
+						<wsdl/>
+						<parameter usageKind="output" name="AssessmentReferenceType"/>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
@@ -2065,7 +1875,7 @@
 								<entry name="id" ns="1" type="attribute" inpkey="128"/>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}StudentAssessmentItem"/>
+						<document schema="..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}StudentAssessmentItem"/>
 						<wsdl/>
 						<parameter usageKind="output" name="StudentAssessmentItem"/>
 					</data>
@@ -2238,18 +2048,6 @@
 						<parameter usageKind="input" name="filename"/>
 					</data>
 				</component>
-				<component name="StudentObjectiveAssessmen..." library="core" uid="81" kind="3">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="51"/>
-						<datapoint pos="1" key="57"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="38"/>
-						<datapoint/>
-					</targets>
-					<view ltx="874" lty="67" rbx="1050" rby="123"/>
-				</component>
 				<component name="CoalesceCode" library="user" blackbox="0" uid="92" kind="19" visible="0">
 					<view ltx="745" lty="381" rbx="939" rby="432"/>
 					<data>
@@ -2273,16 +2071,20 @@
 						</root>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="82" kind="5">
+				<component name="AssessmentRef" library="core" uid="84" kind="6">
 					<properties/>
 					<sources>
-						<datapoint pos="0" key="41"/>
-						<datapoint pos="1" key="24"/>
+						<datapoint/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="56"/>
+						<datapoint pos="0" key="13"/>
 					</targets>
-					<view ltx="726" lty="67" rbx="779" rby="123"/>
+					<view ltx="450" lty="612" rbx="578" rby="651"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="AssessmentRef"/>
+					</data>
 				</component>
 				<component name="StudentAssessmentId" library="core" uid="83" kind="6">
 					<properties/>
@@ -2299,20 +2101,28 @@
 						<parameter usageKind="input" name="StudentAssessmentId"/>
 					</data>
 				</component>
-				<component name="AssessmentRef" library="core" uid="84" kind="6">
+				<component name="{http://ed-fi.org/0120}St..." library="core" uid="81" kind="3">
 					<properties/>
 					<sources>
-						<datapoint/>
+						<datapoint pos="0" key="51"/>
+						<datapoint pos="1" key="57"/>
 					</sources>
 					<targets>
-						<datapoint pos="0" key="13"/>
+						<datapoint pos="0" key="38"/>
+						<datapoint/>
 					</targets>
-					<view ltx="450" lty="612" rbx="578" rby="651"/>
-					<data>
-						<input datatype="string"/>
-						<wsdl/>
-						<parameter usageKind="input" name="AssessmentRef"/>
-					</data>
+					<view ltx="874" lty="67" rbx="1023" rby="123"/>
+				</component>
+				<component name="equal" library="core" uid="82" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="41"/>
+						<datapoint pos="1" key="24"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="56"/>
+					</targets>
+					<view ltx="726" lty="67" rbx="779" rby="123"/>
 				</component>
 				<component name="Interchange-StudentAssessment" library="xml" uid="87" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
@@ -2732,7 +2542,7 @@
 						<parameter usageKind="output" name="StudentUniqueId"/>
 					</data>
 				</component>
-				<component name="StudentUniqueStateId" library="core" uid="100" kind="3">
+				<component name="{http://ed-fi.org/0120}St..." library="core" uid="100" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="2"/>
@@ -2769,7 +2579,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
+						<document schema="..\v1.2\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -2830,7 +2640,7 @@
 						<parameter usageKind="input" name="filename"/>
 					</data>
 				</component>
-				<component name="StudentAssessmentItem" library="core" uid="148" kind="3">
+				<component name="{http://ed-fi.org/0120}St..." library="core" uid="148" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="41"/>
@@ -2840,58 +2650,7 @@
 						<datapoint pos="0" key="1"/>
 						<datapoint/>
 					</targets>
-					<view ltx="837" lty="112" rbx="981" rby="168"/>
-				</component>
-				<component name="document" library="xml" uid="152" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="1050" lty="172" rbx="1353" rby="749"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="StudentAssessmentItem" inpkey="87" expanded="1">
-								<entry name="AssessmentResponse" inpkey="88"/>
-								<entry name="DescriptiveFeedback" inpkey="89"/>
-								<entry name="ResponseIndicator" inpkey="90"/>
-								<entry name="AssessmentItemResult" inpkey="91"/>
-								<entry name="RawScoreResult" inpkey="92"/>
-								<entry name="TimeAssessed" inpkey="93"/>
-								<entry name="AssessmentItemReference" inpkey="164" expanded="1">
-									<entry name="id" ns="1" type="attribute" inpkey="165"/>
-									<entry name="ref" ns="1" type="attribute" inpkey="166"/>
-									<entry name="AssessmentItemIdentity" inpkey="167" expanded="1">
-										<entry name="AssessmentReference" inpkey="94" expanded="1">
-											<entry name="ref" ns="1" type="attribute" inpkey="95"/>
-											<entry name="AssessmentIdentity" inpkey="96" expanded="1">
-												<entry name="AssessmentTitle" inpkey="97"/>
-												<entry name="AcademicSubject" inpkey="98" expanded="1">
-													<entry name="id" ns="1" type="attribute" inpkey="99"/>
-													<entry name="ref" ns="1" type="attribute" inpkey="100"/>
-													<entry name="CodeValue" inpkey="101"/>
-													<entry name="Namespace" inpkey="128"/>
-												</entry>
-												<entry name="AssessedGradeLevel" inpkey="102" expanded="1">
-													<entry name="id" ns="1" type="attribute" inpkey="103"/>
-													<entry name="ref" ns="1" type="attribute" inpkey="104"/>
-													<entry name="CodeValue" inpkey="105"/>
-													<entry name="Namespace" inpkey="129"/>
-												</entry>
-												<entry name="Version" inpkey="106"/>
-											</entry>
-										</entry>
-										<entry name="IdentificationCode" inpkey="130"/>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment/{http://ed-fi.org/0200}StudentAssessment/{http://ed-fi.org/0200}StudentAssessmentItem"/>
-						<wsdl/>
-						<parameter usageKind="output" name="StudentAssessmentItem"/>
-					</data>
+					<view ltx="837" lty="112" rbx="986" rby="168"/>
 				</component>
 				<component name="LookupAssessmentData" library="user" blackbox="0" uid="150" kind="19" visible="0">
 					<view ltx="579" lty="568" rbx="930" rby="749"/>
@@ -2951,6 +2710,32 @@
 						<parameter usageKind="input" name="AssessmentRef"/>
 					</data>
 				</component>
+				<component name="StudentAssessmentId" library="core" uid="145" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="5"/>
+					</targets>
+					<view ltx="465" lty="112" rbx="620" rby="151"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="StudentAssessmentId"/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="147" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="35"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="50"/>
+					</targets>
+					<view ltx="689" lty="112" rbx="742" rby="168"/>
+				</component>
 				<component name="Interchange-StudentAssessment" library="xml" uid="146" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="149" lty="172" rbx="451" rby="766"/>
@@ -2992,30 +2777,55 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="equal" library="core" uid="147" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="6"/>
-						<datapoint pos="1" key="35"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="50"/>
-					</targets>
-					<view ltx="689" lty="112" rbx="742" rby="168"/>
-				</component>
-				<component name="StudentAssessmentId" library="core" uid="145" kind="6">
-					<properties/>
-					<sources>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="5"/>
-					</targets>
-					<view ltx="465" lty="112" rbx="620" rby="151"/>
+				<component name="document" library="xml" uid="152" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="1046" lty="172" rbx="1349" rby="749"/>
 					<data>
-						<input datatype="string"/>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="StudentAssessmentItem" inpkey="87" expanded="1">
+								<entry name="AssessmentResponse" inpkey="88"/>
+								<entry name="DescriptiveFeedback" inpkey="89"/>
+								<entry name="ResponseIndicator" inpkey="90"/>
+								<entry name="AssessmentItemResult" inpkey="91"/>
+								<entry name="RawScoreResult" inpkey="92"/>
+								<entry name="TimeAssessed" inpkey="93"/>
+								<entry name="AssessmentItemReference" inpkey="164" expanded="1">
+									<entry name="id" ns="1" type="attribute" inpkey="165"/>
+									<entry name="ref" ns="1" type="attribute" inpkey="166"/>
+									<entry name="AssessmentItemIdentity" inpkey="167" expanded="1">
+										<entry name="AssessmentReference" inpkey="94" expanded="1">
+											<entry name="ref" ns="1" type="attribute" inpkey="95"/>
+											<entry name="AssessmentIdentity" inpkey="96" expanded="1">
+												<entry name="AssessmentTitle" inpkey="97"/>
+												<entry name="AcademicSubject" inpkey="98" expanded="1">
+													<entry name="id" ns="1" type="attribute" inpkey="99"/>
+													<entry name="ref" ns="1" type="attribute" inpkey="100"/>
+													<entry name="CodeValue" inpkey="101"/>
+													<entry name="Namespace" inpkey="128"/>
+												</entry>
+												<entry name="AssessedGradeLevel" inpkey="102" expanded="1">
+													<entry name="id" ns="1" type="attribute" inpkey="103"/>
+													<entry name="ref" ns="1" type="attribute" inpkey="104"/>
+													<entry name="CodeValue" inpkey="105"/>
+													<entry name="Namespace" inpkey="129"/>
+												</entry>
+												<entry name="Version" inpkey="106"/>
+											</entry>
+										</entry>
+										<entry name="IdentificationCode" inpkey="130"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment/{http://ed-fi.org/0200}StudentAssessment/{http://ed-fi.org/0200}StudentAssessmentItem"/>
 						<wsdl/>
-						<parameter usageKind="input" name="StudentAssessmentId"/>
+						<parameter usageKind="output" name="StudentAssessmentItem"/>
 					</data>
 				</component>
 			</children>
@@ -3401,7 +3211,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment"/>
+						<document schema="..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}InterchangeStudentAssessment"/>
 						<wsdl/>
 						<parameter usageKind="output" name="StudentObjectiveAssessment"/>
 					</data>
@@ -3703,7 +3513,7 @@
 						</root>
 					</data>
 				</component>
-				<component name="AssessmentReference" library="core" uid="177" kind="3">
+				<component name="{http://ed-fi.org/0120}As..." library="core" uid="177" kind="3">
 					<properties/>
 					<sources>
 						<datapoint pos="0" key="22"/>
@@ -3744,7 +3554,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}ObjectiveAssessmentReferenceType/{http://ed-fi.org/0200}ObjectiveAssessmentIdentity/{http://ed-fi.org/0200}AssessmentReference"/>
+						<document schema="..\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0200}ObjectiveAssessmentReferenceType/{http://ed-fi.org/0200}ObjectiveAssessmentIdentity/{http://ed-fi.org/0200}AssessmentReference"/>
 						<wsdl/>
 						<parameter usageKind="output" name="StudentObjectiveAssessment"/>
 					</data>
@@ -3800,26 +3610,11 @@
 												<entry name="Version" ns="1" outkey="203"/>
 											</entry>
 										</entry>
-										<entry name="StudentAssessment" ns="1" expanded="1">
-											<entry name="AssessmentReference" ns="1" expanded="1">
-												<entry name="AssessmentIdentity" ns="1" expanded="1">
-													<entry name="AcademicSubject" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentObjectiveAssessment" ns="1" expanded="1">
-											<entry name="ScoreResults" ns="1" expanded="1"/>
-											<entry name="PerformanceLevels" ns="1" expanded="1"/>
-											<entry name="StudentAssessmentReference" ns="1" expanded="1"/>
-											<entry name="ObjectiveAssessmentReference" ns="1" expanded="1">
-												<entry name="ObjectiveAssessmentIdentity" ns="1" expanded="1"/>
-											</entry>
-										</entry>
 									</entry>
 								</entry>
 							</entry>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
+						<document schema="..\v1.2\Schemas\Interchange-StudentAssessment.xsd" instanceroot="{http://ed-fi.org/0120}InterchangeStudentAssessment"/>
 						<wsdl/>
 					</data>
 				</component>

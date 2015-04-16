@@ -143,16 +143,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="distinct-values" library="core" uid="61" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="499"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="500"/>
-					</targets>
-					<view ltx="531" lty="-79" rbx="628" rby="-40"/>
-				</component>
 				<component name="document" library="xml" uid="57" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="358" lty="-79" rbx="480" rby="-33"/>
@@ -253,6 +243,221 @@
 						</root>
 					</data>
 				</component>
+				<component name="exists" library="core" uid="108" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1517"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1518"/>
+					</targets>
+					<view ltx="490" lty="224" rbx="557" rby="263"/>
+				</component>
+				<component name="exists" library="core" uid="111" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1519"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1520"/>
+					</targets>
+					<view ltx="490" lty="274" rbx="557" rby="313"/>
+				</component>
+				<component name="if-else" library="core" uid="109" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1521"/>
+						<datapoint pos="1" key="1522"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1523"/>
+					</targets>
+					<view ltx="662" lty="187" rbx="759" rby="263"/>
+				</component>
+				<component name="exists" library="core" uid="117" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1524"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1525"/>
+					</targets>
+					<view ltx="490" lty="413" rbx="557" rby="452"/>
+				</component>
+				<component name="exists" library="core" uid="114" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1526"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1527"/>
+					</targets>
+					<view ltx="490" lty="357" rbx="557" rby="396"/>
+				</component>
+				<component name="if-else" library="core" uid="112" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1532"/>
+						<datapoint pos="1" key="1533"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1534"/>
+					</targets>
+					<view ltx="662" lty="262" rbx="759" rby="338"/>
+				</component>
+				<component name="if-else" library="core" uid="115" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1535"/>
+						<datapoint pos="1" key="1536"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1537"/>
+					</targets>
+					<view ltx="662" lty="337" rbx="759" rby="413"/>
+				</component>
+				<component name="if-else" library="core" uid="118" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1538"/>
+						<datapoint pos="1" key="1539"/>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1540"/>
+					</targets>
+					<view ltx="662" lty="412" rbx="759" rby="488"/>
+				</component>
+				<component name="distinct-values" library="core" uid="61" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="499"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="500"/>
+					</targets>
+					<view ltx="531" lty="-79" rbx="628" rby="-40"/>
+				</component>
+				<component name="Interchange-MasterSchedule" library="xml" uid="83" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="-26" lty="284" rbx="364" rby="513"/>
+					<data>
+						<root scrollposition="397">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeMasterSchedule" ns="1" expanded="1">
+										<entry name="Section" ns="1" outkey="1408" expanded="1">
+											<entry name="id" type="attribute" outkey="1409"/>
+											<entry name="UniqueSectionCode" ns="1" outkey="1487"/>
+											<entry name="SequenceOfCourse" ns="1" outkey="1488"/>
+											<entry name="CourseOfferingReference" ns="1" outkey="1181">
+												<entry name="id" type="attribute" outkey="1182"/>
+												<entry name="ref" type="attribute" outkey="1183"/>
+												<entry name="CourseOfferingIdentity" ns="1" outkey="1184" expanded="1">
+													<entry name="LocalCourseCode" ns="1" outkey="1185"/>
+													<entry name="Term" ns="1" outkey="1469"/>
+													<entry name="SchoolYear" ns="1" outkey="1467"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1186" expanded="1">
+														<entry name="id" type="attribute" outkey="1187"/>
+														<entry name="ref" type="attribute" outkey="1188"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="1189" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1190"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" outkey="1191" expanded="1">
+																<entry name="IdentificationSystem" type="attribute" outkey="1192"/>
+																<entry name="ID" ns="1" outkey="1193"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SchoolReference" ns="1" outkey="1194" expanded="1">
+												<entry name="id" type="attribute" outkey="1195"/>
+												<entry name="ref" type="attribute" outkey="1196"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="1197" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1198"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" outkey="1199" expanded="1">
+														<entry name="IdentificationSystem" type="attribute" outkey="1200"/>
+														<entry name="ID" ns="1" outkey="1201"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="SessionReference" ns="1" outkey="1528" expanded="1">
+												<entry name="id" type="attribute" outkey="1529"/>
+												<entry name="ref" type="attribute" outkey="1530"/>
+												<entry name="SessionIdentity" ns="1" outkey="1531" expanded="1">
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="LocationReference" ns="1" outkey="1121">
+												<entry name="id" type="attribute" outkey="1122"/>
+												<entry name="ref" type="attribute" outkey="1123"/>
+												<entry name="LocationIdentity" ns="1" outkey="1124" expanded="1">
+													<entry name="ClassroomIdentificationCode" ns="1" outkey="1125"/>
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="ClassPeriodReference" ns="1" outkey="1134">
+												<entry name="id" type="attribute" outkey="1135"/>
+												<entry name="ref" type="attribute" outkey="1136"/>
+												<entry name="ClassPeriodIdentity" ns="1" outkey="1137" expanded="1">
+													<entry name="ClassPeriodName" ns="1" outkey="1138"/>
+													<entry name="EducationOrganizationReference" ns="1" expanded="1">
+														<entry name="EducationOrganizationIdentity" ns="1">
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\MasterSchedule\Sample XML 1.2\MasterSchedule.xml" outputinstance="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SectionExist" library="user" blackbox="0" uid="88" kind="19" visible="0">
+					<view ltx="506" lty="598" rbx="680" rby="717"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SchoolId" inpkey="1511" componentid="103"/>
+							<entry name="LocalCourseCode" inpkey="1496" componentid="98"/>
+							<entry name="FileName" inpkey="1497" componentid="99"/>
+							<entry name="SchoolYear" inpkey="1498" componentid="96"/>
+							<entry name="Term" inpkey="1499" componentid="94"/>
+							<entry name="ClassPeriodName" inpkey="1507" componentid="92"/>
+							<entry name="Location" inpkey="1508" componentid="93"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="result" outkey="1500" componentid="86"/>
+						</root>
+					</data>
+				</component>
 				<component name="Section" library="core" uid="84" kind="3">
 					<properties/>
 					<sources>
@@ -265,11 +470,38 @@
 					</targets>
 					<view ltx="490" lty="143" rbx="593" rby="199"/>
 				</component>
+				<component name="Lookup" library="user" blackbox="0" uid="81" kind="19" visible="0">
+					<view ltx="112" lty="622" rbx="361" rby="724"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SchoolId" inpkey="1557" componentid="119"/>
+							<entry name="LocalCourseCode" inpkey="859" componentid="76"/>
+							<entry name="SchoolYear" inpkey="860" componentid="78"/>
+							<entry name="Term" inpkey="861" componentid="74"/>
+							<entry name="ClassPeriodName" inpkey="862" componentid="72"/>
+							<entry name="Location" inpkey="863" componentid="73"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="864" componentid="71"/>
+							<entry name="UniqueSectionCode" outkey="865" componentid="64"/>
+						</root>
+					</data>
+				</component>
 				<component name="Interchange-StudentEnrollment" library="xml" uid="2" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view rbx="323" rby="219"/>
 					<data>
-						<root scrollposition="554">
+						<root scrollposition="480">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -621,7 +853,7 @@
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
 					<view ltx="861" lty="-11" rbx="1193" rby="669"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="3018">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -1131,7 +1363,7 @@
 																<entry name="SchoolIdentity" ns="1" expanded="1">
 																	<entry name="SchoolId" ns="1" inpkey="785"/>
 																</entry>
-																<entry name="SchoolLookup" ns="1">
+																<entry name="SchoolLookup" ns="1" expanded="1">
 																	<entry name="SchoolId" ns="1" inpkey="786"/>
 																	<entry name="EducationOrganizationIdentificationCode" ns="1" inpkey="787" expanded="1">
 																		<entry name="IdentificationCode" ns="1" inpkey="788"/>
@@ -1175,7 +1407,7 @@
 											<entry name="RepeatIdentifier" ns="1" inpkey="162"/>
 											<entry name="TeacherStudentDataLinkExclusion" ns="1" inpkey="163"/>
 										</entry>
-										<entry name="GraduationPlan" ns="1" inpkey="164">
+										<entry name="GraduationPlan" ns="1" inpkey="164" expanded="1">
 											<entry name="id" type="attribute" inpkey="165"/>
 											<entry name="GraduationPlanType" ns="1" inpkey="166" expanded="1">
 												<entry name="id" type="attribute" inpkey="167"/>
@@ -1334,237 +1566,6 @@
 						<document schema="..\..\Schemas\Interchange-StudentEnrollment.xsd" outputinstance="Sample XML 2.0\StudentEnrollment.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentEnrollment"/>
 						<wsdl/>
 					</data>
-				</component>
-				<component name="exists" library="core" uid="108" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1517"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1518"/>
-					</targets>
-					<view ltx="490" lty="224" rbx="557" rby="263"/>
-				</component>
-				<component name="exists" library="core" uid="111" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1519"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1520"/>
-					</targets>
-					<view ltx="490" lty="274" rbx="557" rby="313"/>
-				</component>
-				<component name="if-else" library="core" uid="109" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1521"/>
-						<datapoint pos="1" key="1522"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1523"/>
-					</targets>
-					<view ltx="662" lty="187" rbx="759" rby="263"/>
-				</component>
-				<component name="Lookup" library="user" blackbox="0" uid="81" kind="19" visible="0">
-					<view ltx="112" lty="622" rbx="361" rby="707"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="LocalCourseCode" inpkey="859" componentid="76"/>
-							<entry name="SchoolYear" inpkey="860" componentid="78"/>
-							<entry name="Term" inpkey="861" componentid="74"/>
-							<entry name="ClassPeriodName" inpkey="862" componentid="72"/>
-							<entry name="Location" inpkey="863" componentid="73"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="SequenceOfCourse" outkey="864" componentid="71"/>
-							<entry name="UniqueSectionCode" outkey="865" componentid="64"/>
-						</root>
-					</data>
-				</component>
-				<component name="SectionExist" library="user" blackbox="0" uid="88" kind="19" visible="0">
-					<view ltx="506" lty="598" rbx="680" rby="717"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="SchoolId" inpkey="1511" componentid="103"/>
-							<entry name="LocalCourseCode" inpkey="1496" componentid="98"/>
-							<entry name="FileName" inpkey="1497" componentid="99"/>
-							<entry name="SchoolYear" inpkey="1498" componentid="96"/>
-							<entry name="Term" inpkey="1499" componentid="94"/>
-							<entry name="ClassPeriodName" inpkey="1507" componentid="92"/>
-							<entry name="Location" inpkey="1508" componentid="93"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="result" outkey="1500" componentid="86"/>
-						</root>
-					</data>
-				</component>
-				<component name="exists" library="core" uid="117" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1524"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1525"/>
-					</targets>
-					<view ltx="490" lty="413" rbx="557" rby="452"/>
-				</component>
-				<component name="exists" library="core" uid="114" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1526"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1527"/>
-					</targets>
-					<view ltx="490" lty="357" rbx="557" rby="396"/>
-				</component>
-				<component name="Interchange-MasterSchedule" library="xml" uid="83" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="-26" lty="284" rbx="364" rby="513"/>
-					<data>
-						<root scrollposition="422">
-							<header>
-								<namespaces>
-									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeMasterSchedule" ns="1" expanded="1">
-										<entry name="Section" ns="1" outkey="1408" expanded="1">
-											<entry name="id" type="attribute" outkey="1409"/>
-											<entry name="UniqueSectionCode" ns="1" outkey="1487"/>
-											<entry name="SequenceOfCourse" ns="1" outkey="1488"/>
-											<entry name="CourseOfferingReference" ns="1" outkey="1181">
-												<entry name="id" type="attribute" outkey="1182"/>
-												<entry name="ref" type="attribute" outkey="1183"/>
-												<entry name="CourseOfferingIdentity" ns="1" outkey="1184" expanded="1">
-													<entry name="LocalCourseCode" ns="1" outkey="1185"/>
-													<entry name="Term" ns="1" outkey="1469"/>
-													<entry name="SchoolYear" ns="1" outkey="1467"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="1186" expanded="1">
-														<entry name="id" type="attribute" outkey="1187"/>
-														<entry name="ref" type="attribute" outkey="1188"/>
-														<entry name="EducationOrganizationIdentity" ns="1" outkey="1189" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="1190"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" outkey="1191" expanded="1">
-																<entry name="IdentificationSystem" type="attribute" outkey="1192"/>
-																<entry name="ID" ns="1" outkey="1193"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SchoolReference" ns="1" outkey="1194" expanded="1">
-												<entry name="id" type="attribute" outkey="1195"/>
-												<entry name="ref" type="attribute" outkey="1196"/>
-												<entry name="EducationOrganizationIdentity" ns="1" outkey="1197" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="1198"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" outkey="1199" expanded="1">
-														<entry name="IdentificationSystem" type="attribute" outkey="1200"/>
-														<entry name="ID" ns="1" outkey="1201"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="SessionReference" ns="1" outkey="1528" expanded="1">
-												<entry name="id" type="attribute" outkey="1529"/>
-												<entry name="ref" type="attribute" outkey="1530"/>
-												<entry name="SessionIdentity" ns="1" outkey="1531" expanded="1">
-													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-											<entry name="LocationReference" ns="1" outkey="1121">
-												<entry name="id" type="attribute" outkey="1122"/>
-												<entry name="ref" type="attribute" outkey="1123"/>
-												<entry name="LocationIdentity" ns="1" outkey="1124" expanded="1">
-													<entry name="ClassroomIdentificationCode" ns="1" outkey="1125"/>
-													<entry name="EducationOrganizationReference" ns="1" expanded="1">
-														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
-															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="ClassPeriodReference" ns="1" outkey="1134">
-												<entry name="id" type="attribute" outkey="1135"/>
-												<entry name="ref" type="attribute" outkey="1136"/>
-												<entry name="ClassPeriodIdentity" ns="1" outkey="1137" expanded="1">
-													<entry name="ClassPeriodName" ns="1" outkey="1138"/>
-													<entry name="EducationOrganizationReference" ns="1" expanded="1">
-														<entry name="EducationOrganizationIdentity" ns="1">
-															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\MasterSchedule\Sample XML 1.2\MasterSchedule.xml" outputinstance="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="if-else" library="core" uid="112" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1532"/>
-						<datapoint pos="1" key="1533"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1534"/>
-					</targets>
-					<view ltx="662" lty="262" rbx="759" rby="338"/>
-				</component>
-				<component name="if-else" library="core" uid="115" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1535"/>
-						<datapoint pos="1" key="1536"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1537"/>
-					</targets>
-					<view ltx="662" lty="337" rbx="759" rby="413"/>
-				</component>
-				<component name="if-else" library="core" uid="118" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1538"/>
-						<datapoint pos="1" key="1539"/>
-						<datapoint/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1540"/>
-					</targets>
-					<view ltx="662" lty="412" rbx="759" rby="488"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -2260,6 +2261,7 @@
 							<edge vertexkey="791" edgekey="891"/>
 							<edge vertexkey="785" edgekey="892"/>
 							<edge vertexkey="786" edgekey="893"/>
+							<edge vertexkey="1557" edgekey="1558"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="427">
@@ -3709,20 +3711,6 @@
 						<parameter usageKind="output" name="UniqueSectionCode"/>
 					</data>
 				</component>
-				<component name="logical-and" library="core" uid="68" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="39"/>
-						<datapoint pos="1" key="10"/>
-						<datapoint pos="2" key="31"/>
-						<datapoint pos="3" key="26"/>
-						<datapoint pos="4" key="16"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="11"/>
-					</targets>
-					<view ltx="1074" lty="285" rbx="1159" rby="397"/>
-				</component>
 				<component name="UniqueSectionCode" library="core" uid="69" kind="3">
 					<properties/>
 					<sources>
@@ -3889,6 +3877,21 @@
 					</targets>
 					<view ltx="931" lty="111" rbx="984" rby="167"/>
 				</component>
+				<component name="SchoolId" library="core" uid="119" kind="6">
+					<properties/>
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="64"/>
+					</targets>
+					<view ltx="707" lty="16" rbx="797" rby="55"/>
+					<data>
+						<input datatype="string"/>
+						<wsdl/>
+						<parameter usageKind="input" name="SchoolId"/>
+					</data>
+				</component>
 				<component name="Interchange-MasterSchedule" library="xml" uid="77" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="256" lty="98" rbx="692" rby="612"/>
@@ -3913,6 +3916,11 @@
 													<entry name="SchoolYear" outkey="21"/>
 												</entry>
 											</entry>
+											<entry name="SchoolReference" expanded="1">
+												<entry name="EducationOrganizationIdentity" expanded="1">
+													<entry name="StateOrganizationId" outkey="66"/>
+												</entry>
+											</entry>
 											<entry name="LocationReference">
 												<entry name="LocationIdentity" expanded="1">
 													<entry name="ClassroomIdentificationCode" outkey="5"/>
@@ -3931,6 +3939,32 @@
 						<document schema="..\..\..\v1.2\Schemas\Interchange-MasterSchedule.xsd" inputinstance="..\MasterSchedule\Sample XML 1.2\MasterSchedule.xml" instanceroot="{http://ed-fi.org/0120}InterchangeMasterSchedule"/>
 						<wsdl/>
 					</data>
+				</component>
+				<component name="logical-and" library="core" uid="68" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="67"/>
+						<datapoint pos="1" key="39"/>
+						<datapoint pos="2" key="10"/>
+						<datapoint pos="3" key="31"/>
+						<datapoint pos="4" key="26"/>
+						<datapoint pos="5" key="16"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="11"/>
+					</targets>
+					<view ltx="1074" lty="285" rbx="1159" rby="415"/>
+				</component>
+				<component name="equal" library="core" uid="121" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="63"/>
+						<datapoint pos="1" key="68"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="69"/>
+					</targets>
+					<view ltx="895" lty="16" rbx="948" rby="72"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -4035,6 +4069,21 @@
 					<vertex vertexkey="40">
 						<edges>
 							<edge vertexkey="41" edgekey="62"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="64">
+						<edges>
+							<edge vertexkey="63" edgekey="65"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="66">
+						<edges>
+							<edge vertexkey="68" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="69">
+						<edges>
+							<edge vertexkey="67" edgekey="71"/>
 						</edges>
 					</vertex>
 				</vertices>
@@ -4217,60 +4266,6 @@
 						<parameter usageKind="input" name="SchoolId"/>
 					</data>
 				</component>
-				<component name="Interchange-StudentEnrollment" library="xml" uid="100" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="38" lty="166" rbx="338" rby="366"/>
-					<data>
-						<root scrollposition="208">
-							<header>
-								<namespaces>
-									<namespace uid="http://ed-fi.org/0200"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" inpkey="27" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentEnrollment" expanded="1">
-										<entry name="SectionReference" expanded="1">
-											<entry name="SectionIdentity" expanded="1">
-												<entry name="LocationReference" expanded="1">
-													<entry name="LocationIdentity" expanded="1">
-														<entry name="ClassroomIdentificationCode" outkey="28"/>
-													</entry>
-												</entry>
-												<entry name="ClassPeriodReference">
-													<entry name="ClassPeriodIdentity" expanded="1">
-														<entry name="ClassPeriodName" outkey="29"/>
-													</entry>
-												</entry>
-												<entry name="CourseOfferingReference" expanded="1">
-													<entry name="CourseOfferingIdentity" expanded="1">
-														<entry name="LocalCourseCode" outkey="30"/>
-														<entry name="SessionReference">
-															<entry name="SessionIdentity" expanded="1">
-																<entry name="SchoolYear" outkey="31"/>
-																<entry name="Term" expanded="1">
-																	<entry name="CodeValue" outkey="32"/>
-																</entry>
-															</entry>
-														</entry>
-														<entry name="SchoolReference" expanded="1">
-															<entry name="SchoolIdentity" expanded="1">
-																<entry name="SchoolId" outkey="66"/>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="..\..\Schemas\Interchange-StudentEnrollment.xsd" outputinstance="..\..\Schemas\Interchange-StudentEnrollment.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentEnrollment"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="logical-and" library="core" uid="102" kind="5" growable="1" growablebasename="value">
 					<properties/>
 					<sources>
@@ -4296,6 +4291,60 @@
 						<datapoint pos="0" key="69"/>
 					</targets>
 					<view ltx="727" lty="-22" rbx="780" rby="34"/>
+				</component>
+				<component name="Interchange-StudentEnrollment" library="xml" uid="100" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="38" lty="166" rbx="338" rby="366"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://ed-fi.org/0200"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" inpkey="27" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentEnrollment" expanded="1">
+										<entry name="SectionReference" expanded="1">
+											<entry name="SectionIdentity" expanded="1">
+												<entry name="LocationReference">
+													<entry name="LocationIdentity" expanded="1">
+														<entry name="ClassroomIdentificationCode" outkey="28"/>
+													</entry>
+												</entry>
+												<entry name="ClassPeriodReference">
+													<entry name="ClassPeriodIdentity" expanded="1">
+														<entry name="ClassPeriodName" outkey="29"/>
+													</entry>
+												</entry>
+												<entry name="CourseOfferingReference" expanded="1">
+													<entry name="CourseOfferingIdentity" expanded="1">
+														<entry name="LocalCourseCode" outkey="30"/>
+														<entry name="SessionReference">
+															<entry name="SessionIdentity" expanded="1">
+																<entry name="SchoolYear" outkey="31"/>
+																<entry name="Term" expanded="1">
+																	<entry name="CodeValue" outkey="32"/>
+																</entry>
+															</entry>
+														</entry>
+														<entry name="SchoolReference">
+															<entry name="SchoolIdentity" expanded="1">
+																<entry name="SchoolId" outkey="66"/>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\..\Schemas\Interchange-StudentEnrollment.xsd" outputinstance="..\..\Schemas\Interchange-StudentEnrollment.xml" instanceroot="{http://ed-fi.org/0200}InterchangeStudentEnrollment"/>
+						<wsdl/>
+					</data>
 				</component>
 			</children>
 			<graph directed="1">
