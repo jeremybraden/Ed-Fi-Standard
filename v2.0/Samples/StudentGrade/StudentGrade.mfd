@@ -28,29 +28,6 @@
 						</root>
 					</data>
 				</component>
-				<component name="CoalesceCode" library="user" blackbox="0" uid="165" kind="19" visible="0">
-					<view ltx="633" lty="194" rbx="805" rby="245"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="node" inpkey="1482" componentid="10"/>
-							<entry name="replacewith" inpkey="1484" componentid="11"/>
-							<entry name="replacewith2" inpkey="1485" componentid="14"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="CodeValue" outkey="1483" componentid="6"/>
-						</root>
-					</data>
-				</component>
 				<component name="CoalesceCode" library="user" blackbox="0" uid="21" kind="19" visible="0">
 					<view ltx="411" lty="-62" rbx="583" rby="-11"/>
 					<data>
@@ -109,18 +86,6 @@
 					</targets>
 					<view ltx="1002" lty="784" rbx="1116" rby="840"/>
 				</component>
-				<component name="GradingPeriodReference" library="core" uid="166" kind="3">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1508"/>
-						<datapoint pos="1" key="1510"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1509"/>
-						<datapoint/>
-					</targets>
-					<view ltx="972" lty="586" rbx="1118" rby="642"/>
-				</component>
 				<component name="equal" library="core" uid="204" kind="5">
 					<properties/>
 					<sources>
@@ -131,17 +96,6 @@
 						<datapoint pos="0" key="1750"/>
 					</targets>
 					<view ltx="765" lty="801" rbx="818" rby="857"/>
-				</component>
-				<component name="equal" library="core" uid="205" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="1754"/>
-						<datapoint pos="1" key="1755"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="1756"/>
-					</targets>
-					<view ltx="750" lty="599" rbx="803" rby="655"/>
 				</component>
 				<component name="equal" library="core" uid="206" kind="5">
 					<properties/>
@@ -200,319 +154,151 @@
 					</targets>
 					<view ltx="972" lty="356" rbx="1118" rby="412"/>
 				</component>
-				<component name="Interchange-StudentGrade" library="xml" uid="2" kind="14">
-					<properties XSLTTargetEncoding="UTF-8"/>
-					<view ltx="164" lty="158" rbx="467" rby="707"/>
+				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
+					<view ltx="334" lty="765" rbx="583" rby="867"/>
 					<data>
-						<root scrollposition="4738">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
-									<namespace uid="http://ed-fi.org/0120"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
-							<entry name="FileInstance" ns="2" expanded="1">
-								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="InterchangeStudentGrade" ns="1" outkey="118" expanded="1">
-										<entry name="ReportCard" ns="1" outkey="119" expanded="1">
-											<entry name="id" type="attribute" outkey="120"/>
-											<entry name="GradeReference" ns="1" outkey="121" expanded="1">
-												<entry name="id" type="attribute" outkey="122"/>
-												<entry name="ref" type="attribute" outkey="123"/>
-												<entry name="GradeIdentity" ns="1" outkey="124" expanded="1">
-													<entry name="StudentReference" ns="1" outkey="125" expanded="1">
-														<entry name="id" type="attribute" outkey="126"/>
-														<entry name="ref" type="attribute" outkey="127"/>
-														<entry name="StudentIdentity" ns="1" outkey="128" expanded="1">
-															<entry name="PersonUniqueStateId" ns="1" outkey="914"/>
-															<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
-															<entry name="Name" ns="1" expanded="1"/>
-															<entry name="OtherName" ns="1" expanded="1"/>
-															<entry name="BirthData" ns="1" expanded="1"/>
-															<entry name="Race" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-													<entry name="SectionReference" ns="1" outkey="130">
-														<entry name="id" type="attribute" outkey="131"/>
-														<entry name="ref" type="attribute" outkey="132"/>
-														<entry name="SectionIdentity" ns="1" outkey="133" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="1731"/>
-															<entry name="UniqueSectionCode" ns="1" outkey="915"/>
-															<entry name="SchoolYear" ns="1" outkey="1732"/>
-															<entry name="Term" ns="1" outkey="1733"/>
-															<entry name="ClassPeriodName" ns="1" outkey="1734"/>
-															<entry name="Location" ns="1" outkey="1735"/>
-														</entry>
-													</entry>
-													<entry name="GradingPeriodReference" ns="1" outkey="140" expanded="1">
-														<entry name="id" type="attribute" outkey="141"/>
-														<entry name="ref" type="attribute" outkey="142"/>
-														<entry name="GradingPeriodIdentity" ns="1" outkey="143" expanded="1">
-															<entry name="GradingPeriod" ns="1" outkey="144" expanded="1">
-																<entry name="id" type="attribute" outkey="145"/>
-																<entry name="ref" type="attribute" outkey="146"/>
-																<entry name="CodeValue" ns="1" outkey="147"/>
-																<entry name="ShortDescription" ns="1" outkey="355"/>
-																<entry name="Description" ns="1" outkey="356"/>
-															</entry>
-															<entry name="BeginDate" ns="1" outkey="148"/>
-														</entry>
-													</entry>
-													<entry name="GradeType" ns="1" outkey="153"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="1864" expanded="1">
-														<entry name="id" type="attribute" outkey="1865"/>
-														<entry name="ref" type="attribute" outkey="1866"/>
-														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="1867"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="StudentCompetencyReference" ns="1" expanded="1">
-												<entry name="StudentCompetencyIdentity" ns="1" expanded="1">
-													<entry name="LearningObjectiveReference" ns="1" expanded="1">
-														<entry name="ref" type="attribute" outkey="1547"/>
-														<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
-															<entry name="ContentStandard" ns="1" expanded="1">
-																<entry name="BeginDate" ns="1" outkey="1878"/>
-															</entry>
-														</entry>
-													</entry>
-													<entry name="StudentReference" ns="1" outkey="1828">
-														<entry name="id" type="attribute" outkey="1829"/>
-														<entry name="ref" type="attribute" outkey="1830"/>
-														<entry name="StudentIdentity" ns="1" outkey="1831" expanded="1">
-															<entry name="StudentUniqueStateId" ns="1" outkey="1832"/>
-														</entry>
-													</entry>
-													<entry name="ProgramReference" ns="1" outkey="1833" expanded="1">
-														<entry name="id" type="attribute" outkey="1834"/>
-														<entry name="ref" type="attribute" outkey="1835"/>
-														<entry name="ProgramIdentity" ns="1" outkey="1836" expanded="1">
-															<entry name="ProgramType" ns="1" outkey="1837"/>
-															<entry name="ProgramName" ns="1" outkey="1838"/>
-															<entry name="EducationOrganizationReference" ns="1" outkey="1839" expanded="1">
-																<entry name="id" type="attribute" outkey="1840"/>
-																<entry name="ref" type="attribute" outkey="1841"/>
-																<entry name="EducationOrganizationIdentity" ns="1" outkey="1842" expanded="1">
-																	<entry name="StateOrganizationId" ns="1" outkey="1843"/>
-																</entry>
-															</entry>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="GPAGivenGradingPeriod" ns="1" outkey="154"/>
-											<entry name="GPACumulative" ns="1" outkey="155"/>
-											<entry name="NumberOfDaysAbsent" ns="1" outkey="156"/>
-											<entry name="NumberOfDaysInAttendance" ns="1" outkey="157"/>
-											<entry name="NumberOfDaysTardy" ns="1" outkey="158"/>
-											<entry name="StudentReference" ns="1" outkey="159">
-												<entry name="id" type="attribute" outkey="160"/>
-												<entry name="ref" type="attribute" outkey="161"/>
-												<entry name="StudentIdentity" ns="1" outkey="162" expanded="1"/>
-											</entry>
-											<entry name="GradingPeriodReference" ns="1" outkey="164">
-												<entry name="id" type="attribute" outkey="165"/>
-												<entry name="ref" type="attribute" outkey="166"/>
-												<entry name="GradingPeriodIdentity" ns="1" outkey="167" expanded="1">
-													<entry name="GradingPeriod" ns="1" outkey="168" expanded="1">
-														<entry name="id" type="attribute" outkey="169"/>
-														<entry name="ref" type="attribute" outkey="170"/>
-														<entry name="CodeValue" ns="1" outkey="171"/>
-													</entry>
-													<entry name="BeginDate" ns="1" outkey="172"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="Grade" ns="1" outkey="177" expanded="1">
-											<entry name="id" type="attribute" outkey="178"/>
-											<entry name="LetterGradeEarned" ns="1" outkey="179"/>
-											<entry name="NumericGradeEarned" ns="1" outkey="180"/>
-											<entry name="DiagnosticStatement" ns="1" outkey="181"/>
-											<entry name="GradeType" ns="1" outkey="182"/>
-											<entry name="PerformanceBaseConversion" ns="1" outkey="183"/>
-											<entry name="SectionReference" ns="1" outkey="1225" expanded="1">
-												<entry name="id" type="attribute" outkey="1226"/>
-												<entry name="ref" type="attribute" outkey="1227"/>
-												<entry name="SectionIdentity" ns="1" outkey="1639" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="1229"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-													<entry name="LocalCourseCode" ns="1" outkey="1231"/>
-													<entry name="SchoolYear" ns="1" outkey="423"/>
-													<entry name="Term" ns="1" outkey="424"/>
-													<entry name="ClassPeriodName" ns="1" outkey="1232"/>
-													<entry name="Location" ns="1" outkey="1233"/>
-												</entry>
-											</entry>
-											<entry name="StudentReference" ns="1" outkey="1234" expanded="1">
-												<entry name="id" type="attribute" outkey="1235"/>
-												<entry name="ref" type="attribute" outkey="1236"/>
-												<entry name="StudentIdentity" ns="1" outkey="1237" expanded="1">
-													<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
-													<entry name="StudentUniqueStateId" ns="1" outkey="1242"/>
-													<entry name="Name" ns="1" expanded="1">
-														<entry name="PersonalInformationVerification" ns="1" expanded="1"/>
-													</entry>
-													<entry name="OtherName" ns="1" expanded="1"/>
-													<entry name="BirthData" ns="1" expanded="1"/>
-													<entry name="Race" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-											<entry name="GradingPeriodReference" ns="1" outkey="184" expanded="1">
-												<entry name="id" type="attribute" outkey="185"/>
-												<entry name="ref" type="attribute" outkey="186"/>
-												<entry name="GradingPeriodIdentity" ns="1" outkey="187" expanded="1">
-													<entry name="GradingPeriod" ns="1" outkey="188" expanded="1">
-														<entry name="id" type="attribute" outkey="189"/>
-														<entry name="ref" type="attribute" outkey="190"/>
-														<entry name="namespace" type="attribute" outkey="1269"/>
-														<entry name="CodeValue" ns="1" outkey="191"/>
-														<entry name="ShortDescription" ns="1" outkey="553"/>
-														<entry name="Description" ns="1" outkey="552"/>
-													</entry>
-													<entry name="SchoolYear" ns="1" outkey="792"/>
-													<entry name="BeginDate" ns="1" outkey="192"/>
-													<entry name="EducationOrganizationReference" ns="1" outkey="1389" expanded="1">
-														<entry name="id" type="attribute" outkey="1390"/>
-														<entry name="ref" type="attribute" outkey="1391"/>
-														<entry name="EducationOrganizationIdentity" ns="1" outkey="1392" expanded="1">
-															<entry name="StateOrganizationId" ns="1" outkey="1393"/>
-															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-														</entry>
-													</entry>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="StudentCompetency" ns="1" outkey="1548" expanded="1">
-											<entry name="id" type="attribute" outkey="1549"/>
-											<entry name="LearningObjectiveReference" ns="1" expanded="1">
-												<entry name="ref" type="attribute" outkey="1527"/>
-												<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
-													<entry name="ContentStandard" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-											<entry name="StudentCompetencyObjectiveReference" ns="1">
-												<entry name="StudentCompetencyObjectiveIdentity" ns="1" expanded="1"/>
-											</entry>
-											<entry name="CompetencyLevel" ns="1" outkey="1550">
-												<entry name="id" type="attribute" outkey="1551"/>
-												<entry name="ref" type="attribute" outkey="1552"/>
-												<entry name="namespace" type="attribute" outkey="1553"/>
-												<entry name="CodeValue" ns="1" outkey="443"/>
-											</entry>
-											<entry name="DiagnosticStatement" ns="1" outkey="1554"/>
-											<entry name="StudentReference" ns="1" outkey="1555" expanded="1">
-												<entry name="id" type="attribute" outkey="1556"/>
-												<entry name="ref" type="attribute" outkey="1557"/>
-												<entry name="StudentIdentity" ns="1" outkey="1558"/>
-											</entry>
-											<entry name="SectionReference" ns="1" outkey="1784" expanded="1">
-												<entry name="id" type="attribute" outkey="1785"/>
-												<entry name="ref" type="attribute" outkey="1786"/>
-												<entry name="SectionIdentity" ns="1" outkey="1787" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="1788"/>
-													<entry name="UniqueSectionCode" ns="1" outkey="1789"/>
-													<entry name="SchoolYear" ns="1" outkey="1790"/>
-													<entry name="Term" ns="1" outkey="1791"/>
-													<entry name="ClassPeriodName" ns="1" outkey="1792"/>
-													<entry name="Location" ns="1" outkey="1793"/>
-												</entry>
-											</entry>
-										</entry>
-										<entry name="LearningObjective" ns="1" outkey="197" expanded="1">
-											<entry name="id" type="attribute" outkey="198"/>
-											<entry name="LearningObjectiveId" ns="1" outkey="199"/>
-											<entry name="ContentStandard" ns="1" outkey="200" expanded="1">
-												<entry name="Title" ns="1" outkey="201"/>
-												<entry name="Author" ns="1" outkey="202"/>
-												<entry name="Version" ns="1" outkey="203"/>
-												<entry name="URI" ns="1" outkey="204"/>
-												<entry name="PublicationDate" ns="1" outkey="205"/>
-												<entry name="PublicationYear" ns="1" outkey="206"/>
-												<entry name="PublicationStatus" ns="1" outkey="207"/>
-												<entry name="MandatingEducationOrganizationReference" ns="1" outkey="208" expanded="1">
-													<entry name="id" type="attribute" outkey="209"/>
-													<entry name="ref" type="attribute" outkey="210"/>
-													<entry name="EducationOrganizationIdentity" ns="1" outkey="211" expanded="1">
-														<entry name="StateOrganizationId" ns="1" outkey="578"/>
-														<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-													</entry>
-												</entry>
-												<entry name="BeginDate" ns="1" outkey="212"/>
-												<entry name="EndDate" ns="1" outkey="213"/>
-											</entry>
-											<entry name="Objective" ns="1" outkey="214"/>
-											<entry name="Description" ns="1" outkey="215"/>
-											<entry name="AcademicSubject" ns="1" outkey="216" expanded="1">
-												<entry name="id" type="attribute" outkey="217"/>
-												<entry name="ref" type="attribute" outkey="218"/>
-												<entry name="namespace" type="attribute" outkey="1088"/>
-												<entry name="CodeValue" ns="1" outkey="219"/>
-												<entry name="ShortDescription" ns="1" outkey="579"/>
-												<entry name="Description" ns="1" outkey="580"/>
-											</entry>
-											<entry name="ObjectiveGradeLevel" ns="1" outkey="220" expanded="1">
-												<entry name="id" type="attribute" outkey="221"/>
-												<entry name="ref" type="attribute" outkey="222"/>
-												<entry name="namespace" type="attribute" outkey="1089"/>
-												<entry name="CodeValue" ns="1" outkey="223"/>
-												<entry name="ShortDescription" ns="1" outkey="581"/>
-												<entry name="Description" ns="1" outkey="582"/>
-											</entry>
-											<entry name="Nomenclature" ns="1" outkey="224"/>
-											<entry name="SuccessCriteria" ns="1" outkey="225"/>
-											<entry name="LearningStandardReference" ns="1" outkey="226" expanded="1">
-												<entry name="id" type="attribute" outkey="227"/>
-												<entry name="ref" type="attribute" outkey="228"/>
-												<entry name="LearningStandardIdentity" ns="1" outkey="229" expanded="1">
-													<entry name="LearningStandardId" ns="1" outkey="230"/>
-													<entry name="LearningStandardIdentificationCode" ns="1" expanded="1"/>
-													<entry name="ContentStandard" ns="1" expanded="1">
-														<entry name="MandatingEducationOrganizationReference" ns="1" expanded="1"/>
-													</entry>
-												</entry>
-											</entry>
-											<entry name="LearningObjectiveReference" ns="1" expanded="1">
-												<entry name="LearningObjectiveIdentity" ns="1" expanded="1"/>
-											</entry>
-										</entry>
-										<entry name="StudentCompetencyObjective" ns="1" outkey="231" expanded="1">
-											<entry name="id" type="attribute" outkey="232"/>
-											<entry name="StudentCompetencyObjectiveId" ns="1" outkey="1460"/>
-											<entry name="Objective" ns="1" outkey="1461"/>
-											<entry name="Description" ns="1" outkey="1462"/>
-											<entry name="ObjectiveGradeLevel" ns="1" outkey="1270" expanded="1">
-												<entry name="id" type="attribute" outkey="1463"/>
-												<entry name="ref" type="attribute" outkey="1464"/>
-												<entry name="namespace" type="attribute" outkey="1271"/>
-												<entry name="CodeValue" ns="1" outkey="592"/>
-												<entry name="ShortDescription" ns="1" outkey="630"/>
-												<entry name="Description" ns="1" outkey="631"/>
-											</entry>
-											<entry name="EducationOrganizationReference" ns="1" outkey="1465" expanded="1">
-												<entry name="id" type="attribute" outkey="1466"/>
-												<entry name="ref" type="attribute" outkey="1467"/>
-												<entry name="EducationOrganizationIdentity" ns="1" outkey="1468" expanded="1">
-													<entry name="StateOrganizationId" ns="1" outkey="1486"/>
-													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
-												</entry>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
+							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
+							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
+							<entry name="Term" inpkey="1889" componentid="188"/>
+							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
+							<entry name="Location" inpkey="1891" componentid="190"/>
+							<entry name="SchoolId" inpkey="1892" componentid="198"/>
 						</root>
-						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentGrade.xsd" inputinstance="Sample XML 1.2\StudentGrade.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentGrade"/>
-						<wsdl/>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
+							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="97" kind="19" visible="0">
+					<view ltx="1096" lty="-150" rbx="1335" rby="-116"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="GradingPeriodDescription" inpkey="789" componentid="73"/>
+							<entry name="SchoolYear" inpkey="790" componentid="72"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="791" componentid="71"/>
+						</root>
+					</data>
+				</component>
+				<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="95" kind="19" visible="0">
+					<view ltx="1176" lty="44" rbx="1335" rby="78"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="Term" inpkey="783" componentid="55"/>
+							<entry name="SchoolYear" inpkey="784" componentid="56"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="BeginDate" outkey="785" componentid="42"/>
+						</root>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="205" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1754"/>
+						<datapoint pos="1" key="1755"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1756"/>
+					</targets>
+					<view ltx="633" lty="553" rbx="686" rby="609"/>
+				</component>
+				<component name="GradingPeriodReference" library="core" uid="166" kind="3">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="1508"/>
+						<datapoint pos="1" key="1510"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="1509"/>
+						<datapoint/>
+					</targets>
+					<view ltx="1069" lty="500" rbx="1215" rby="556"/>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="165" kind="19" visible="0">
+					<view ltx="530" lty="195" rbx="702" rby="246"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="1482" componentid="10"/>
+							<entry name="replacewith" inpkey="1484" componentid="11"/>
+							<entry name="replacewith2" inpkey="1485" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="1483" componentid="6"/>
+						</root>
+					</data>
+				</component>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="212" kind="19" visible="0">
+					<view ltx="501" lty="356" rbx="673" rby="407"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="node" inpkey="1908" componentid="10"/>
+							<entry name="replacewith" inpkey="1909" componentid="11"/>
+							<entry name="replacewith2" inpkey="1910" componentid="14"/>
+						</root>
+						<root rootindex="1">
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="CodeValue" outkey="1907" componentid="6"/>
+						</root>
 					</data>
 				</component>
 				<component name="Interchange-StudentGrade" library="xml" uid="3" kind="14">
 					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="1191" lty="254" rbx="1520" rby="834"/>
+					<view ltx="715" lty="158" rbx="1044" rby="738"/>
 					<data>
-						<root scrollposition="290">
+						<root scrollposition="1">
 							<header>
 								<namespaces>
 									<namespace/>
@@ -523,7 +309,7 @@
 							<entry name="FileInstance" ns="2" expanded="1">
 								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
 									<entry name="InterchangeStudentGrade" ns="1" inpkey="817" expanded="1">
-										<entry name="ReportCard" ns="1" inpkey="818" expanded="1">
+										<entry name="ReportCard" ns="1" inpkey="818">
 											<entry name="id" type="attribute" inpkey="819"/>
 											<entry name="GradeReference" ns="1" inpkey="820" expanded="1">
 												<entry name="id" type="attribute" inpkey="821"/>
@@ -531,7 +317,7 @@
 												<entry name="GradeIdentity" ns="1" inpkey="823" expanded="1">
 													<entry name="StudentSectionAssociationReference" ns="1" expanded="1">
 														<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
-															<entry name="StudentReference" ns="1" inpkey="824" expanded="1">
+															<entry name="StudentReference" ns="1" inpkey="824">
 																<entry name="id" type="attribute" inpkey="825"/>
 																<entry name="ref" type="attribute" inpkey="826"/>
 																<entry name="StudentIdentity" ns="1" inpkey="827" expanded="1">
@@ -544,7 +330,7 @@
 																	<entry name="BirthData" ns="1" expanded="1"/>
 																</entry>
 															</entry>
-															<entry name="SectionReference" ns="1" inpkey="829" expanded="1">
+															<entry name="SectionReference" ns="1" inpkey="829">
 																<entry name="id" type="attribute" inpkey="830"/>
 																<entry name="ref" type="attribute" inpkey="831"/>
 																<entry name="SectionIdentity" ns="1" inpkey="832" expanded="1">
@@ -656,7 +442,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="Grade" ns="1" inpkey="862" expanded="1">
+										<entry name="Grade" ns="1" inpkey="862">
 											<entry name="id" type="attribute" inpkey="863"/>
 											<entry name="LetterGradeEarned" ns="1" inpkey="864"/>
 											<entry name="NumericGradeEarned" ns="1" inpkey="865"/>
@@ -804,7 +590,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="CompetencyObjective" ns="1" inpkey="1447" expanded="1">
+										<entry name="CompetencyObjective" ns="1" inpkey="1447">
 											<entry name="id" type="attribute" inpkey="1448"/>
 											<entry name="CompetencyObjectiveId" ns="1" inpkey="1449"/>
 											<entry name="Objective" ns="1" inpkey="1450"/>
@@ -831,7 +617,7 @@
 										<entry name="LearningObjective" ns="1" inpkey="878" expanded="1">
 											<entry name="id" type="attribute" inpkey="879"/>
 											<entry name="LearningObjectiveId" ns="1" inpkey="880"/>
-											<entry name="ContentStandard" ns="1" inpkey="881" expanded="1">
+											<entry name="ContentStandard" ns="1" inpkey="881">
 												<entry name="Title" ns="1" inpkey="882"/>
 												<entry name="Author" ns="1" inpkey="883"/>
 												<entry name="Version" ns="1" inpkey="884"/>
@@ -856,13 +642,13 @@
 											</entry>
 											<entry name="Objective" ns="1" inpkey="895"/>
 											<entry name="Description" ns="1" inpkey="896"/>
-											<entry name="AcademicSubject" ns="1" inpkey="897" expanded="1">
+											<entry name="AcademicSubject" ns="1" inpkey="897">
 												<entry name="id" type="attribute" inpkey="898"/>
 												<entry name="ref" type="attribute" inpkey="899"/>
 												<entry name="CodeValue" ns="1" inpkey="900"/>
 												<entry name="Namespace" ns="1" inpkey="1113"/>
 											</entry>
-											<entry name="ObjectiveGradeLevel" ns="1" inpkey="901" expanded="1">
+											<entry name="ObjectiveGradeLevel" ns="1" inpkey="901">
 												<entry name="id" type="attribute" inpkey="902"/>
 												<entry name="ref" type="attribute" inpkey="903"/>
 												<entry name="CodeValue" ns="1" inpkey="904"/>
@@ -870,7 +656,7 @@
 											</entry>
 											<entry name="Nomenclature" ns="1" inpkey="905"/>
 											<entry name="SuccessCriteria" ns="1" inpkey="906"/>
-											<entry name="LearningStandardReference" ns="1" inpkey="907" expanded="1">
+											<entry name="LearningStandardReference" ns="1" inpkey="907">
 												<entry name="id" type="attribute" inpkey="908"/>
 												<entry name="ref" type="attribute" inpkey="909"/>
 												<entry name="LearningStandardIdentity" ns="1" inpkey="910" expanded="1">
@@ -882,28 +668,43 @@
 													</entry>
 												</entry>
 											</entry>
+											<entry name="ParentLearningObjectiveReference" ns="1" inpkey="1911" expanded="1">
+												<entry name="id" type="attribute" inpkey="1912"/>
+												<entry name="ref" type="attribute" inpkey="1913"/>
+												<entry name="LearningObjectiveIdentity" ns="1" inpkey="1914" expanded="1">
+													<entry name="Objective" ns="1" inpkey="1915"/>
+													<entry name="AcademicSubject" ns="1">
+														<entry name="CodeValue" ns="1" inpkey="1916"/>
+														<entry name="Namespace" ns="1" inpkey="1917"/>
+													</entry>
+													<entry name="ObjectiveGradeLevel" ns="1" expanded="1">
+														<entry name="CodeValue" ns="1" inpkey="1918"/>
+														<entry name="Namespace" ns="1" inpkey="1919"/>
+													</entry>
+												</entry>
+											</entry>
 										</entry>
-										<entry name="StudentCompetencyObjective" ns="1" inpkey="912" expanded="1">
+										<entry name="StudentCompetencyObjective" ns="1" inpkey="912">
 											<entry name="id" type="attribute" inpkey="913"/>
-											<entry name="CompetencyObjectiveReference" ns="1" expanded="1">
+											<entry name="CompetencyObjectiveReference" ns="1">
 												<entry name="CompetencyObjectiveIdentity" ns="1" expanded="1">
 													<entry name="ObjectiveGradeLevel" ns="1" expanded="1"/>
 													<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
 												</entry>
 											</entry>
-											<entry name="CompetencyLevel" ns="1" inpkey="1559" expanded="1">
+											<entry name="CompetencyLevel" ns="1" inpkey="1559">
 												<entry name="id" type="attribute" inpkey="1560"/>
 												<entry name="ref" type="attribute" inpkey="1561"/>
 												<entry name="CodeValue" ns="1" inpkey="1335"/>
 												<entry name="Namespace" ns="1" inpkey="1562"/>
 											</entry>
 											<entry name="DiagnosticStatement" ns="1" inpkey="1563"/>
-											<entry name="GradingPeriodReference" ns="1" inpkey="1341" expanded="1">
+											<entry name="GradingPeriodReference" ns="1" inpkey="1341">
 												<entry name="GradingPeriodIdentity" ns="1" expanded="1">
 													<entry name="SchoolReference" ns="1" expanded="1"/>
 												</entry>
 											</entry>
-											<entry name="StudentReference" ns="1" inpkey="1564" expanded="1">
+											<entry name="StudentReference" ns="1" inpkey="1564">
 												<entry name="id" type="attribute" inpkey="1565"/>
 												<entry name="ref" type="attribute" inpkey="1566"/>
 												<entry name="StudentIdentity" ns="1" inpkey="1567"/>
@@ -915,7 +716,7 @@
 												<entry name="id" type="attribute" inpkey="1767"/>
 												<entry name="ref" type="attribute" inpkey="1768"/>
 												<entry name="StudentSectionAssociationIdentity" ns="1" expanded="1">
-													<entry name="StudentReference" ns="1" inpkey="1769" expanded="1">
+													<entry name="StudentReference" ns="1" inpkey="1769">
 														<entry name="id" type="attribute" inpkey="1770"/>
 														<entry name="ref" type="attribute" inpkey="1771"/>
 														<entry name="StudentIdentity" ns="1" inpkey="1772" expanded="1"/>
@@ -923,7 +724,9 @@
 															<entry name="EducationOrganizationReference" ns="1" expanded="1"/>
 														</entry>
 													</entry>
-													<entry name="SectionReference" ns="1" expanded="1">
+													<entry name="SectionReference" ns="1" inpkey="1920" expanded="1">
+														<entry name="id" type="attribute" inpkey="1921"/>
+														<entry name="ref" type="attribute" inpkey="1922"/>
 														<entry name="SectionIdentity" ns="1" inpkey="1773" expanded="1">
 															<entry name="LocationReference" ns="1" expanded="1">
 																<entry name="LocationIdentity" ns="1" expanded="1">
@@ -1015,7 +818,7 @@
 												</entry>
 											</entry>
 										</entry>
-										<entry name="StudentLearningObjective" ns="1" inpkey="1426" expanded="1">
+										<entry name="StudentLearningObjective" ns="1" inpkey="1426">
 											<entry name="LearningObjectiveReference" ns="1" expanded="1">
 												<entry name="LearningObjectiveIdentity" ns="1" inpkey="1135" expanded="1">
 													<entry name="Objective" ns="1" inpkey="1136"/>
@@ -1089,8 +892,8 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="SectionLookup" library="user" blackbox="0" uid="210" kind="19" visible="0">
-					<view ltx="334" lty="765" rbx="583" rby="867"/>
+				<component name="CoalesceCode" library="user" blackbox="0" uid="211" kind="19" visible="0">
+					<view ltx="501" lty="442" rbx="673" rby="493"/>
 					<data>
 						<root scrollposition="1">
 							<header>
@@ -1098,12 +901,9 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="LocalCourseCode" inpkey="1887" componentid="192"/>
-							<entry name="SchoolYear" inpkey="1888" componentid="191"/>
-							<entry name="Term" inpkey="1889" componentid="188"/>
-							<entry name="ClassPeriodName" inpkey="1890" componentid="184"/>
-							<entry name="Location" inpkey="1891" componentid="190"/>
-							<entry name="SchoolId" inpkey="1892" componentid="198"/>
+							<entry name="node" inpkey="1904" componentid="10"/>
+							<entry name="replacewith" inpkey="1905" componentid="11"/>
+							<entry name="replacewith2" inpkey="1906" componentid="14"/>
 						</root>
 						<root rootindex="1">
 							<header>
@@ -1111,53 +911,321 @@
 									<namespace/>
 								</namespaces>
 							</header>
-							<entry name="SequenceOfCourse" outkey="1893" componentid="187"/>
-							<entry name="UniqueSectionCode" outkey="1894" componentid="183"/>
+							<entry name="CodeValue" outkey="1903" componentid="6"/>
 						</root>
 					</data>
 				</component>
-				<component name="FakeGradingBeginDate" library="user" blackbox="0" uid="97" kind="19" visible="0">
-					<view ltx="1096" lty="-150" rbx="1335" rby="-116"/>
+				<component name="Interchange-StudentGrade" library="xml" uid="2" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="164" lty="158" rbx="467" rby="707"/>
 					<data>
-						<root scrollposition="1">
+						<root scrollposition="2785">
 							<header>
 								<namespaces>
 									<namespace/>
+									<namespace uid="http://ed-fi.org/0120"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
 								</namespaces>
 							</header>
-							<entry name="GradingPeriodDescription" inpkey="789" componentid="73"/>
-							<entry name="SchoolYear" inpkey="790" componentid="72"/>
+							<entry name="FileInstance" ns="2" expanded="1">
+								<entry name="document" ns="2" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="InterchangeStudentGrade" ns="1" outkey="118" expanded="1">
+										<entry name="ReportCard" ns="1" outkey="119" expanded="1">
+											<entry name="id" type="attribute" outkey="120"/>
+											<entry name="GradeReference" ns="1" outkey="121" expanded="1">
+												<entry name="id" type="attribute" outkey="122"/>
+												<entry name="ref" type="attribute" outkey="123"/>
+												<entry name="GradeIdentity" ns="1" outkey="124" expanded="1">
+													<entry name="StudentReference" ns="1" outkey="125">
+														<entry name="id" type="attribute" outkey="126"/>
+														<entry name="ref" type="attribute" outkey="127"/>
+														<entry name="StudentIdentity" ns="1" outkey="128" expanded="1">
+															<entry name="PersonUniqueStateId" ns="1" outkey="914"/>
+															<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
+															<entry name="Name" ns="1" expanded="1"/>
+															<entry name="OtherName" ns="1" expanded="1"/>
+															<entry name="BirthData" ns="1" expanded="1"/>
+															<entry name="Race" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+													<entry name="SectionReference" ns="1" outkey="130" expanded="1">
+														<entry name="id" type="attribute" outkey="131"/>
+														<entry name="ref" type="attribute" outkey="132"/>
+														<entry name="SectionIdentity" ns="1" outkey="133" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1731"/>
+															<entry name="UniqueSectionCode" ns="1" outkey="915"/>
+															<entry name="SchoolYear" ns="1" outkey="1732"/>
+															<entry name="Term" ns="1" outkey="1733"/>
+															<entry name="ClassPeriodName" ns="1" outkey="1734"/>
+															<entry name="Location" ns="1" outkey="1735"/>
+														</entry>
+													</entry>
+													<entry name="GradingPeriodReference" ns="1" outkey="140">
+														<entry name="id" type="attribute" outkey="141"/>
+														<entry name="ref" type="attribute" outkey="142"/>
+														<entry name="GradingPeriodIdentity" ns="1" outkey="143" expanded="1">
+															<entry name="GradingPeriod" ns="1" outkey="144" expanded="1">
+																<entry name="id" type="attribute" outkey="145"/>
+																<entry name="ref" type="attribute" outkey="146"/>
+																<entry name="CodeValue" ns="1" outkey="147"/>
+																<entry name="ShortDescription" ns="1" outkey="355"/>
+																<entry name="Description" ns="1" outkey="356"/>
+															</entry>
+															<entry name="BeginDate" ns="1" outkey="148"/>
+														</entry>
+													</entry>
+													<entry name="GradeType" ns="1" outkey="153"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1864" expanded="1">
+														<entry name="id" type="attribute" outkey="1865"/>
+														<entry name="ref" type="attribute" outkey="1866"/>
+														<entry name="EducationOrganizationIdentity" ns="1" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1867"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="StudentCompetencyReference" ns="1" expanded="1">
+												<entry name="StudentCompetencyIdentity" ns="1" expanded="1">
+													<entry name="LearningObjectiveReference" ns="1" expanded="1">
+														<entry name="ref" type="attribute" outkey="1547"/>
+														<entry name="LearningObjectiveIdentity" ns="1" expanded="1">
+															<entry name="ContentStandard" ns="1" expanded="1">
+																<entry name="BeginDate" ns="1" outkey="1878"/>
+															</entry>
+														</entry>
+													</entry>
+													<entry name="StudentReference" ns="1" outkey="1828">
+														<entry name="id" type="attribute" outkey="1829"/>
+														<entry name="ref" type="attribute" outkey="1830"/>
+														<entry name="StudentIdentity" ns="1" outkey="1831" expanded="1">
+															<entry name="StudentUniqueStateId" ns="1" outkey="1832"/>
+														</entry>
+													</entry>
+													<entry name="ProgramReference" ns="1" outkey="1833" expanded="1">
+														<entry name="id" type="attribute" outkey="1834"/>
+														<entry name="ref" type="attribute" outkey="1835"/>
+														<entry name="ProgramIdentity" ns="1" outkey="1836" expanded="1">
+															<entry name="ProgramType" ns="1" outkey="1837"/>
+															<entry name="ProgramName" ns="1" outkey="1838"/>
+															<entry name="EducationOrganizationReference" ns="1" outkey="1839" expanded="1">
+																<entry name="id" type="attribute" outkey="1840"/>
+																<entry name="ref" type="attribute" outkey="1841"/>
+																<entry name="EducationOrganizationIdentity" ns="1" outkey="1842" expanded="1">
+																	<entry name="StateOrganizationId" ns="1" outkey="1843"/>
+																</entry>
+															</entry>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="GPAGivenGradingPeriod" ns="1" outkey="154"/>
+											<entry name="GPACumulative" ns="1" outkey="155"/>
+											<entry name="NumberOfDaysAbsent" ns="1" outkey="156"/>
+											<entry name="NumberOfDaysInAttendance" ns="1" outkey="157"/>
+											<entry name="NumberOfDaysTardy" ns="1" outkey="158"/>
+											<entry name="StudentReference" ns="1" outkey="159">
+												<entry name="id" type="attribute" outkey="160"/>
+												<entry name="ref" type="attribute" outkey="161"/>
+												<entry name="StudentIdentity" ns="1" outkey="162" expanded="1"/>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" outkey="164">
+												<entry name="id" type="attribute" outkey="165"/>
+												<entry name="ref" type="attribute" outkey="166"/>
+												<entry name="GradingPeriodIdentity" ns="1" outkey="167" expanded="1">
+													<entry name="GradingPeriod" ns="1" outkey="168" expanded="1">
+														<entry name="id" type="attribute" outkey="169"/>
+														<entry name="ref" type="attribute" outkey="170"/>
+														<entry name="CodeValue" ns="1" outkey="171"/>
+													</entry>
+													<entry name="BeginDate" ns="1" outkey="172"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="Grade" ns="1" outkey="177" expanded="1">
+											<entry name="id" type="attribute" outkey="178"/>
+											<entry name="LetterGradeEarned" ns="1" outkey="179"/>
+											<entry name="NumericGradeEarned" ns="1" outkey="180"/>
+											<entry name="DiagnosticStatement" ns="1" outkey="181"/>
+											<entry name="GradeType" ns="1" outkey="182"/>
+											<entry name="PerformanceBaseConversion" ns="1" outkey="183"/>
+											<entry name="SectionReference" ns="1" outkey="1225" expanded="1">
+												<entry name="id" type="attribute" outkey="1226"/>
+												<entry name="ref" type="attribute" outkey="1227"/>
+												<entry name="SectionIdentity" ns="1" outkey="1639" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1229"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													<entry name="LocalCourseCode" ns="1" outkey="1231"/>
+													<entry name="SchoolYear" ns="1" outkey="423"/>
+													<entry name="Term" ns="1" outkey="424"/>
+													<entry name="ClassPeriodName" ns="1" outkey="1232"/>
+													<entry name="Location" ns="1" outkey="1233"/>
+												</entry>
+											</entry>
+											<entry name="StudentReference" ns="1" outkey="1234" expanded="1">
+												<entry name="id" type="attribute" outkey="1235"/>
+												<entry name="ref" type="attribute" outkey="1236"/>
+												<entry name="StudentIdentity" ns="1" outkey="1237" expanded="1">
+													<entry name="StudentIdentificationCode" ns="1" expanded="1"/>
+													<entry name="StudentUniqueStateId" ns="1" outkey="1242"/>
+													<entry name="Name" ns="1" expanded="1">
+														<entry name="PersonalInformationVerification" ns="1" expanded="1"/>
+													</entry>
+													<entry name="OtherName" ns="1" expanded="1"/>
+													<entry name="BirthData" ns="1" expanded="1"/>
+													<entry name="Race" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="GradingPeriodReference" ns="1" outkey="184" expanded="1">
+												<entry name="id" type="attribute" outkey="185"/>
+												<entry name="ref" type="attribute" outkey="186"/>
+												<entry name="GradingPeriodIdentity" ns="1" outkey="187" expanded="1">
+													<entry name="GradingPeriod" ns="1" outkey="188" expanded="1">
+														<entry name="id" type="attribute" outkey="189"/>
+														<entry name="ref" type="attribute" outkey="190"/>
+														<entry name="namespace" type="attribute" outkey="1269"/>
+														<entry name="CodeValue" ns="1" outkey="191"/>
+														<entry name="ShortDescription" ns="1" outkey="553"/>
+														<entry name="Description" ns="1" outkey="552"/>
+													</entry>
+													<entry name="SchoolYear" ns="1" outkey="792"/>
+													<entry name="BeginDate" ns="1" outkey="192"/>
+													<entry name="EducationOrganizationReference" ns="1" outkey="1389" expanded="1">
+														<entry name="id" type="attribute" outkey="1390"/>
+														<entry name="ref" type="attribute" outkey="1391"/>
+														<entry name="EducationOrganizationIdentity" ns="1" outkey="1392" expanded="1">
+															<entry name="StateOrganizationId" ns="1" outkey="1393"/>
+															<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+														</entry>
+													</entry>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCompetency" ns="1" outkey="1548">
+											<entry name="id" type="attribute" outkey="1549"/>
+											<entry name="LearningObjectiveReference" ns="1" expanded="1">
+												<entry name="ref" type="attribute" outkey="1527"/>
+												<entry name="LearningObjectiveIdentity" ns="1">
+													<entry name="ContentStandard" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+											<entry name="StudentCompetencyObjectiveReference" ns="1">
+												<entry name="StudentCompetencyObjectiveIdentity" ns="1" expanded="1"/>
+											</entry>
+											<entry name="CompetencyLevel" ns="1" outkey="1550">
+												<entry name="id" type="attribute" outkey="1551"/>
+												<entry name="ref" type="attribute" outkey="1552"/>
+												<entry name="namespace" type="attribute" outkey="1553"/>
+												<entry name="CodeValue" ns="1" outkey="443"/>
+											</entry>
+											<entry name="DiagnosticStatement" ns="1" outkey="1554"/>
+											<entry name="StudentReference" ns="1" outkey="1555" expanded="1">
+												<entry name="id" type="attribute" outkey="1556"/>
+												<entry name="ref" type="attribute" outkey="1557"/>
+												<entry name="StudentIdentity" ns="1" outkey="1558"/>
+											</entry>
+											<entry name="SectionReference" ns="1" outkey="1784" expanded="1">
+												<entry name="id" type="attribute" outkey="1785"/>
+												<entry name="ref" type="attribute" outkey="1786"/>
+												<entry name="SectionIdentity" ns="1" outkey="1787" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1788"/>
+													<entry name="UniqueSectionCode" ns="1" outkey="1789"/>
+													<entry name="SchoolYear" ns="1" outkey="1790"/>
+													<entry name="Term" ns="1" outkey="1791"/>
+													<entry name="ClassPeriodName" ns="1" outkey="1792"/>
+													<entry name="Location" ns="1" outkey="1793"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="LearningObjective" ns="1" outkey="197" expanded="1">
+											<entry name="id" type="attribute" outkey="198"/>
+											<entry name="LearningObjectiveId" ns="1" outkey="199"/>
+											<entry name="ContentStandard" ns="1" outkey="200">
+												<entry name="Title" ns="1" outkey="201"/>
+												<entry name="Author" ns="1" outkey="202"/>
+												<entry name="Version" ns="1" outkey="203"/>
+												<entry name="URI" ns="1" outkey="204"/>
+												<entry name="PublicationDate" ns="1" outkey="205"/>
+												<entry name="PublicationYear" ns="1" outkey="206"/>
+												<entry name="PublicationStatus" ns="1" outkey="207"/>
+												<entry name="MandatingEducationOrganizationReference" ns="1" outkey="208" expanded="1">
+													<entry name="id" type="attribute" outkey="209"/>
+													<entry name="ref" type="attribute" outkey="210"/>
+													<entry name="EducationOrganizationIdentity" ns="1" outkey="211" expanded="1">
+														<entry name="StateOrganizationId" ns="1" outkey="578"/>
+														<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+												<entry name="BeginDate" ns="1" outkey="212"/>
+												<entry name="EndDate" ns="1" outkey="213"/>
+											</entry>
+											<entry name="Objective" ns="1" outkey="214"/>
+											<entry name="Description" ns="1" outkey="215"/>
+											<entry name="AcademicSubject" ns="1" outkey="216">
+												<entry name="id" type="attribute" outkey="217"/>
+												<entry name="ref" type="attribute" outkey="218"/>
+												<entry name="namespace" type="attribute" outkey="1088"/>
+												<entry name="CodeValue" ns="1" outkey="219"/>
+												<entry name="ShortDescription" ns="1" outkey="579"/>
+												<entry name="Description" ns="1" outkey="580"/>
+											</entry>
+											<entry name="ObjectiveGradeLevel" ns="1" outkey="220" expanded="1">
+												<entry name="id" type="attribute" outkey="221"/>
+												<entry name="ref" type="attribute" outkey="222"/>
+												<entry name="namespace" type="attribute" outkey="1089"/>
+												<entry name="CodeValue" ns="1" outkey="223"/>
+												<entry name="ShortDescription" ns="1" outkey="581"/>
+												<entry name="Description" ns="1" outkey="582"/>
+											</entry>
+											<entry name="Nomenclature" ns="1" outkey="224"/>
+											<entry name="SuccessCriteria" ns="1" outkey="225"/>
+											<entry name="LearningStandardReference" ns="1" outkey="226">
+												<entry name="id" type="attribute" outkey="227"/>
+												<entry name="ref" type="attribute" outkey="228"/>
+												<entry name="LearningStandardIdentity" ns="1" outkey="229" expanded="1">
+													<entry name="LearningStandardId" ns="1" outkey="230"/>
+													<entry name="LearningStandardIdentificationCode" ns="1" expanded="1"/>
+													<entry name="ContentStandard" ns="1" expanded="1">
+														<entry name="MandatingEducationOrganizationReference" ns="1" expanded="1"/>
+													</entry>
+												</entry>
+											</entry>
+											<entry name="LearningObjectiveReference" ns="1" outkey="1923" expanded="1">
+												<entry name="id" type="attribute" outkey="1924"/>
+												<entry name="ref" type="attribute" outkey="1925"/>
+												<entry name="LearningObjectiveIdentity" ns="1" outkey="1926" expanded="1">
+													<entry name="Objective" ns="1" outkey="1927"/>
+													<entry name="ContentStandard" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+										<entry name="StudentCompetencyObjective" ns="1" outkey="231" expanded="1">
+											<entry name="id" type="attribute" outkey="232"/>
+											<entry name="StudentCompetencyObjectiveId" ns="1" outkey="1460"/>
+											<entry name="Objective" ns="1" outkey="1461"/>
+											<entry name="Description" ns="1" outkey="1462"/>
+											<entry name="ObjectiveGradeLevel" ns="1" outkey="1270" expanded="1">
+												<entry name="id" type="attribute" outkey="1463"/>
+												<entry name="ref" type="attribute" outkey="1464"/>
+												<entry name="namespace" type="attribute" outkey="1271"/>
+												<entry name="CodeValue" ns="1" outkey="592"/>
+												<entry name="ShortDescription" ns="1" outkey="630"/>
+												<entry name="Description" ns="1" outkey="631"/>
+											</entry>
+											<entry name="EducationOrganizationReference" ns="1" outkey="1465" expanded="1">
+												<entry name="id" type="attribute" outkey="1466"/>
+												<entry name="ref" type="attribute" outkey="1467"/>
+												<entry name="EducationOrganizationIdentity" ns="1" outkey="1468" expanded="1">
+													<entry name="StateOrganizationId" ns="1" outkey="1486"/>
+													<entry name="EducationOrgIdentificationCode" ns="1" expanded="1"/>
+												</entry>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
 						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="BeginDate" outkey="791" componentid="71"/>
-						</root>
-					</data>
-				</component>
-				<component name="FakeSectionBeginDate" library="user" blackbox="0" uid="95" kind="19" visible="0">
-					<view ltx="1176" lty="44" rbx="1335" rby="78"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="Term" inpkey="783" componentid="55"/>
-							<entry name="SchoolYear" inpkey="784" componentid="56"/>
-						</root>
-						<root rootindex="1">
-							<header>
-								<namespaces>
-									<namespace/>
-								</namespaces>
-							</header>
-							<entry name="BeginDate" outkey="785" componentid="42"/>
-						</root>
+						<document schema="..\..\..\v1.2\Schemas\Interchange-StudentGrade.xsd" inputinstance="Sample XML 1.2\StudentGrade.xml" instanceroot="{http://ed-fi.org/0120}InterchangeStudentGrade"/>
+						<wsdl/>
 					</data>
 				</component>
 			</children>
@@ -1583,6 +1651,7 @@
 						<edges>
 							<edge vertexkey="556" edgekey="599"/>
 							<edge vertexkey="1571" edgekey="1586"/>
+							<edge vertexkey="1908" edgekey="1928"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="220">
@@ -1607,6 +1676,7 @@
 						<edges>
 							<edge vertexkey="558" edgekey="600"/>
 							<edge vertexkey="1575" edgekey="1590"/>
+							<edge vertexkey="1904" edgekey="1929"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="224">
@@ -1724,21 +1794,25 @@
 					<vertex vertexkey="579">
 						<edges>
 							<edge vertexkey="557" edgekey="607"/>
+							<edge vertexkey="1909" edgekey="1930"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="580">
 						<edges>
 							<edge vertexkey="555" edgekey="608"/>
+							<edge vertexkey="1910" edgekey="1931"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="581">
 						<edges>
 							<edge vertexkey="560" edgekey="609"/>
+							<edge vertexkey="1905" edgekey="1932"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="582">
 						<edges>
 							<edge vertexkey="561" edgekey="610"/>
+							<edge vertexkey="1906" edgekey="1933"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="592">
@@ -1789,11 +1863,13 @@
 					<vertex vertexkey="1088">
 						<edges>
 							<edge vertexkey="1113" edgekey="1148"/>
+							<edge vertexkey="1917" edgekey="1934"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1089">
 						<edges>
 							<edge vertexkey="1114" edgekey="1149"/>
+							<edge vertexkey="1919" edgekey="1935"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1225">
@@ -2055,7 +2131,6 @@
 							<edge vertexkey="1725" edgekey="1739"/>
 							<edge vertexkey="1723" edgekey="1740"/>
 							<edge vertexkey="1726" edgekey="1741"/>
-							<edge vertexkey="1730" edgekey="1742"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1732">
@@ -2097,16 +2172,19 @@
 					<vertex vertexkey="1784">
 						<edges>
 							<edge vertexkey="1766" edgekey="1798"/>
+							<edge vertexkey="1920" edgekey="1936"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1785">
 						<edges>
 							<edge vertexkey="1767" edgekey="1799"/>
+							<edge vertexkey="1921" edgekey="1937"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1786">
 						<edges>
 							<edge vertexkey="1768" edgekey="1800"/>
+							<edge vertexkey="1922" edgekey="1938"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1787">
@@ -2251,6 +2329,7 @@
 					<vertex vertexkey="1867">
 						<edges>
 							<edge vertexkey="1863" edgekey="1871"/>
+							<edge vertexkey="1730" edgekey="1939"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="1878">
@@ -2266,6 +2345,41 @@
 					<vertex vertexkey="1894">
 						<edges>
 							<edge vertexkey="1885" edgekey="1902"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1903">
+						<edges>
+							<edge vertexkey="1918" edgekey="1940"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1907">
+						<edges>
+							<edge vertexkey="1916" edgekey="1941"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1923">
+						<edges>
+							<edge vertexkey="1911" edgekey="1942"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1924">
+						<edges>
+							<edge vertexkey="1912" edgekey="1943"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1925">
+						<edges>
+							<edge vertexkey="1913" edgekey="1944"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1926">
+						<edges>
+							<edge vertexkey="1914" edgekey="1945"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="1927">
+						<edges>
+							<edge vertexkey="1915" edgekey="1946"/>
 						</edges>
 					</vertex>
 				</vertices>
