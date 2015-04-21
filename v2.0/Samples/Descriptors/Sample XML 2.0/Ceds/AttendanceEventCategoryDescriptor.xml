@@ -3,7 +3,7 @@
 	<AttendanceEventCategoryDescriptor>
 		<CodeValue>Present</CodeValue>
 		<ShortDescription>Present</ShortDescription>
-		<Description>In Attendance</Description>
+		<Description>Present</Description>
 		<Namespace>http://www.ed-fi.org/CEDSDescriptor/AttendanceEventCategoryDescriptor.xml</Namespace>
 		<AttendanceEventCategoryMap>In Attendance</AttendanceEventCategoryMap>
 	</AttendanceEventCategoryDescriptor>
